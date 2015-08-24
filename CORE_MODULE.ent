@@ -1,7 +1,7 @@
 ﻿[CSPro Application]
 Version=CSPro 6.1
-Label=JS_BASELINE_GH
-Name=JS_BASELINE_GH
+Label=CORE_MODULE
+Name=CORE_MODULE
 AppType=DataEntry
 PartialSave=Yes
 CAPI=Yes
@@ -15,15 +15,15 @@ File=.\DICT\DISTRICT_LOOK_UP.dcf
 File=.\DICT\COMMUNITY_LOOK_UP.dcf
 File=.\DICT\GPS_LOOK_UP.dcf
 [AppCode]
-File=.\JS_BASELINE_GH.ent.apc
+File=.\CORE_MODULE.apc
 [Message]
-File=.\JS_BASELINE_GH.ent.mgf
+File=.\CORE_MODULE.mgf
 [Help]
-File=.\JS_BASELINE_GH.ent.qsf
+File=.\CORE_MODULE.qsf
 [Forms]
-File=.\JS_BASELINE_GH.fmf
+File=.\CORE_MODULE.fmf
 [Dictionary Types]
-Dict-Type=.\DICT\CORE_MODULE.dcf,Input,.\JS_BASELINE_GH.fmf
+Dict-Type=.\DICT\CORE_MODULE.dcf,Input,.\CORE_MODULE.fmf
 Dict-Type=.\DICT\COMMUNITY_LOOK_UP.dcf,External
 Dict-Type=.\DICT\DISTRICT_LOOK_UP.dcf,External
 Dict-Type=.\DICT\GPS_LOOK_UP.dcf,External
