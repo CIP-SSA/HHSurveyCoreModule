@@ -1,0 +1,43 @@
+﻿[Dictionary]
+Version=CSPro 6.1
+Label=DISTRICT_LOOK_UP
+Name=DISTRICT_LOOK_UP_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=DISTRICT_LOOK_UP questionnaire
+Name=DISTRICT_LOOK_UP_QUEST
+
+[IdItems]
+
+[Item]
+Label=REGION
+Name=DISTRICT_LOOK_UP_REGION
+Start=2
+Len=2
+ZeroFill=Yes
+
+[Record]
+Label=DISTRICT_LOOK_UP record
+Name=DISTRICT_LOOK_UP_REC
+RecordTypeValue='1'
+MaxRecords=999
+RecordLen=37
+
+[Item]
+Label=DISTRICT
+Name=DISTRICT_LOOK_UP_DISTRICT
+Start=4
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=DISTRICT NAME
+Name=DISTRICT_LOOK_UP_DISTRICT_NAME
+Start=8
+Len=30
+DataType=Alpha

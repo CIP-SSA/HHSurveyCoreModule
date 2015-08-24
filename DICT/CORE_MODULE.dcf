@@ -1,0 +1,10497 @@
+﻿[Dictionary]
+Version=CSPro 6.1
+Label=CORE MODULE
+Name=CORE_MODULE
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=CORE MODULE QUESTIONNAIRE
+Name=CORE_MODULE__QUEST
+
+[IdItems]
+
+[Item]
+Label=A01 STATE/REGION CODE
+Name=A01
+Start=2
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=A01 STATE/REGION CODE
+Name=A01_VS1
+Value=1;UPPER EAST
+Value=2;NORTHERN
+
+[Item]
+Label=A02 DISTRICT CODE
+Name=A02
+Start=4
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=A03 COMMUNITY CODE
+Name=A03
+Start=8
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=A04 VILLAGE CODE
+Name=A04
+Start=12
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=A05 HOUSEHOLD (HH) NUMBER (HHID) CODE
+Name=A05
+Start=16
+Len=4
+ZeroFill=Yes
+
+[ValueSet]
+Label=A05 HOUSEHOLD (HH) NUMBER (HHID) CODE
+Name=A05_VS1
+Value=1:9999
+
+[Record]
+Label=A. HOUSEHOLD ID AND STATEMENT OF AGREEMENT
+Name=A_IDENT
+RecordTypeValue='1'
+RecordLen=332
+
+[Item]
+Label=A00 COUNTRY CODE
+Name=A00
+Start=20
+Len=3
+ZeroFill=Yes
+
+[ValueSet]
+Label=A00 COUNTRY CODE
+Name=A00_VS1
+Value=2;Angola
+Value=3;Benin
+Value=5;Burkina
+Value=6;Burundi
+Value=13;Congo, Democratic Republic of
+Value=18;Ethiopia
+Value=21;Ghana
+Value=25;Kenya
+Value=29;Madagascar
+Value=30;Malawi
+Value=35;Mozambique
+Value=38;Nigeria
+Value=39;Rwanda
+Value=45;South Africa
+Value=49;Tanzania
+Value=52;Uganda
+Value=53;Zambia
+
+[Item]
+Label=A06 HH CODE
+Name=A06A
+Start=23
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=A06 NAME OF THE HEAD OF THE HH
+Name=A06
+Start=25
+Len=60
+DataType=Alpha
+
+[Item]
+Label=A07 GENDER
+Name=A07
+Start=85
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=A07 GENDER
+Name=A07_VS1
+Value=1;MAN
+Value=2;WOMAN WITH THE SUPPORT OF A NON-RESIDENT MAN
+Value=3;WOMAN WITH RESIDENT MAN
+Value=4;WOMAN WITHOUT THE SUPPORT OF A MAN
+
+[Item]
+Label=A08 CELL PHONE NUMBER
+Name=A08
+Start=86
+Len=14
+
+[Item]
+Label=A09 SIGNED THE AGREEMENT STATEMENT?
+Name=A09
+Start=100
+Len=1
+
+[ValueSet]
+Label=A09 SIGNED THE AGREEMENT STATEMENT?
+Name=A09_VS1
+Value=0;No
+Value=1;Yes
+Value=9;MISSING
+
+[Item]
+Label=A10 OR VERBALLY AGREED TO PARTICIPATE?
+Name=A10
+Start=101
+Len=1
+
+[ValueSet]
+Label=A10 OR VERBALLY AGREED TO PARTICIPATE?
+Name=A10_VS1
+Link=110345096
+Value=0;No
+Value=1;Yes
+
+[Item]
+Label=A11 IF THE PERSON REFUSED TO PARTICIPATE, THEN REGISTER THE REASON, CLOSE THE INTERVIEW
+Name=A11
+Start=102
+Len=60
+DataType=Alpha
+
+[Item]
+Label=A12 INTERVIEWEE'S NAME
+Name=A12A
+Start=162
+Len=40
+DataType=Alpha
+
+[Item]
+Label=A12 INTERVIEWEE'S CODE
+Name=A12
+Start=202
+Len=2
+
+[Item]
+Label=A13 ACCESS TO A LOW ZONE/FADAMA?
+Name=A13
+Start=204
+Len=1
+
+[ValueSet]
+Label=A13 ACCESS TO A LOW ZONE/FADAMA?
+Name=A13_VS1
+Value=0;No
+Value=1;Yes
+
+[Item]
+Label=A14A GPS COORDINATES CORRECTION FACTOR
+Name=A14A
+Note=//HH LEVEL GPS CORDINATES NOT COLLECTED IN GH SURVEY\r\n
+Note=//GPS TO BE PREFILLED AT COMMUNITY LEVEL
+Start=205
+Len=4
+Decimal=1
+DecimalChar=Yes
+
+[Item]
+Label=A14B LONGITUDE DEGREES
+Name=A14B
+Note=//HH LEVEL GPS CORDINATES NOT COLLECTED IN GH SURVEY\r\n
+Note=//GPS TO BE PREFILLED AT COMMUNITY LEVEL
+Start=209
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=A14B LONGITUDE MINUTES
+Name=A14C
+Note=//HH LEVEL GPS CORDINATES NOT COLLECTED IN GH SURVEY\r\n
+Note=//GPS TO BE PREFILLED AT COMMUNITY LEVEL
+Start=211
+Len=7
+Decimal=3
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=A14B LATITUDE DEGREES
+Name=A14D
+Note=//HH LEVEL GPS CORDINATES NOT COLLECTED IN GH SURVEY\r\n
+Note=//GPS TO BE PREFILLED AT COMMUNITY LEVEL
+Start=218
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=A14B LATITUDE MINUTES
+Name=A14E
+Note=//HH LEVEL GPS CORDINATES NOT COLLECTED IN GH SURVEY\r\n
+Note=//GPS TO BE PREFILLED AT COMMUNITY LEVEL
+Start=220
+Len=7
+Decimal=3
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=A14B ELEVATION (METRES)
+Name=A14F
+Note=//HH LEVEL GPS CORDINATES NOT COLLECTED IN GH SURVEY\r\n
+Note=//GPS TO BE PREFILLED AT COMMUNITY LEVEL
+Start=227
+Len=4
+
+[Item]
+Label=A15 INTERVIEW DATE
+Name=A15
+Start=231
+Len=8
+
+[Item]
+Label=A15 DAY OF THE INTERVIEW
+Name=A15A
+Start=231
+Len=2
+ItemType=SubItem
+
+[ValueSet]
+Label=A15 DAY OF THE INTERVIEW
+Name=A15A_VS1
+Value=1:31
+
+[Item]
+Label=A15 MONTH OF THE INTERVIEW
+Name=A15B
+Start=233
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=A15 MONTH OF THE INTERVIEW
+Name=A15B_VS1
+Value=4:6
+
+[Item]
+Label=A15 YEAR OF THE INTERVIEW
+Name=A15C
+Start=235
+Len=4
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=A15 YEAR OF THE INTERVIEW
+Name=A15C_VS1
+Value=2015
+
+[Item]
+Label=A16 ENUMERATOR
+Name=A16
+Start=239
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=A16 ENUMERATOR
+Name=A16_VS1
+Value=1;Acquah Samuel
+Value=2;Alidu A Majeed
+Value=3;Daniel Tetteh
+Value=4;Duut Millicent
+Value=5;Iddrisu Nashiru
+Value=6;Kunpuoto Evans
+Value=7;Poku Kwasi
+Value=8;Nyunmon Duut Millicent
+Value=9;Osei Amoah Micheal
+Value=10;Salifu Abukari
+Value=11;Seidu Khadiri B
+Value=12;Seidu Kadiri
+Value=13;Shaibu Lukman
+
+[Item]
+Label=A17 SUPERVISOR
+Name=A17
+Start=241
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=A17 SUPERVISOR
+Name=A17_VS1
+Value=1;Chinonso Etumnu
+Value=2;Mumuni Hamidu
+
+[Item]
+Label=A18 CALL BACK
+Name=A18
+Start=243
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=A18 CALL BACK
+Name=A18_VS1
+Link=110345096
+
+[Item]
+Label=A19 DESCRIBE PROBLEMS ENCOUNTERED
+Name=A19
+Start=244
+Len=60
+DataType=Alpha
+
+[Item]
+Label=A20 SECOND INTERVIEW DATE
+Name=A20
+Start=304
+Len=8
+
+[Item]
+Label=A20 DAY FOR THE SECOND INTERVIEW
+Name=A20A
+Start=304
+Len=2
+ItemType=SubItem
+
+[ValueSet]
+Label=A20 DAY FOR THE SECOND INTERVIEW
+Name=A20A_VS1
+Value=1:31
+
+[Item]
+Label=A20 MONTH FOR THE SECOND INTERVIEW
+Name=A20B
+Start=306
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=A20 MONTH FOR THE SECOND INTERVIEW
+Name=A20B_VS1
+Value=4:6
+
+[Item]
+Label=A20 YEAR FOR THE SECOND INTERVIEW
+Name=A20C
+Start=308
+Len=4
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=A20 YEAR FOR THE SECOND INTERVIEW
+Name=A20C_VS1
+Value=2015
+
+[Item]
+Label=A21 LAST APPROVAL - SIGNATURE PRESENT?
+Name=A21
+Start=312
+Len=1
+
+[ValueSet]
+Label=A21 LAST APPROVAL - SIGNATURE PRESENT?
+Name=A21_VS1
+Value=1;YES
+Value=0;NO
+
+[Item]
+Label=A22 DATE FOR FIRST DATA ENTRY
+Name=A22
+Start=313
+Len=8
+
+[Item]
+Label=A22 DAY FOR THE FIRST DATA ENTRY
+Name=A22A
+Start=313
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=A22 DAY FOR THE FIRST DATA ENTRY
+Name=A22A_VS1
+Value=1:31
+
+[Item]
+Label=A22 MONTH FOR THE FIRST DATA ENTRY
+Name=A22B
+Start=315
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=A22 MONTH FOR THE FIRST DATA ENTRY
+Name=A22B_VS1
+Value=1:12
+
+[Item]
+Label=A22 YEAR FOR THE FIRST DATA ENTRY
+Name=A22C
+Start=317
+Len=4
+ItemType=SubItem
+
+[ValueSet]
+Label=A22 YEAR FOR THE FIRST DATA ENTRY
+Name=A22C_VS1
+Value=2015
+
+[Item]
+Label=A23 FIRST DIGITIZER
+Name=A23
+Start=321
+Len=2
+
+[ValueSet]
+Label=A23 FIRST DIGITIZER
+Name=A23_VS1
+Value=96;JOHN KANBURI
+Value=97;SIMON IMOORO
+Value=98;LUKA WANJOHI
+
+[Item]
+Label=A24 DATE FOR SECOND DATA ENTRY
+Name=A24
+Start=323
+Len=8
+
+[Item]
+Label=A24 DAY FOR THE SECOND DATA ENTRY
+Name=A24A
+Start=323
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=A24 DAY FOR THE SECOND DATA ENTRY
+Name=A24A_VS1
+Value=1:31
+
+[Item]
+Label=A24 MONTH FOR THE SECOND DATA ENTRY
+Name=A24B
+Start=325
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=A24 MONTH FOR THE SECOND DATA ENTRY
+Name=A24B_VS1
+Value=1:12
+
+[Item]
+Label=A24 YEAR FOR THE SECOND DATA ENTRY
+Name=A24C
+Start=327
+Len=4
+ItemType=SubItem
+
+[ValueSet]
+Label=A24 YEAR FOR THE SECOND DATA ENTRY
+Name=A24C_VS1
+Value=2015
+
+[Item]
+Label=A25 CODE OF SECOND DIGITIZER
+Name=A25
+Start=331
+Len=2
+
+[ValueSet]
+Label=A25 CODE OF SECOND DIGITIZER
+Name=A25_VS1
+Value=96;JOHN KANBURI
+Value=97;SIMON IMOORO
+Value=98;LUKA WANJOHI
+
+[Record]
+Label=B. HOUSEHOLD MEMBERS WITH AN AGE ABOVE 60 MONTHS
+Name=B_ADULT
+RecordTypeValue='2'
+MaxRecords=20
+RecordLen=70
+
+[Item]
+Label=B00 MEM
+Name=MEM
+Start=20
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=B1 FIRST MIDDLE NAME AND LAST NAME
+Name=B1
+Start=22
+Len=30
+DataType=Alpha
+
+[Item]
+Label=B2 SEX
+Name=B2
+Start=52
+Len=1
+
+[ValueSet]
+Label=B2 SEX
+Name=B2_VS1
+Value=1;MALE
+Value=0;FEMALE
+
+[Item]
+Label=B3 RELATIONSHIP WITH THE HEAD OF THE HOUSEHOLD
+Name=B3
+Start=53
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=B3 RELATIONSHIP WITH THE HEAD OF THE HOUSEHOLD
+Name=B3_VS1
+Value=1;HEAD
+Value=2;SPOUSE
+Value=3;SON/DAUGHTER
+Value=4;GRANDCHILD
+Value=5;STEP CHILD
+Value=6;PARENT
+Value=7;BROTHER/SISTER
+Value=8;NEPHEW/NIECE
+Value=9;BROTHER/SISTER IN LAW
+Value=10;PARENT IN LAW
+Value=11;SON/DAUGHTER IN LAW
+Value=12;WORKER
+Value=13;OTHER RELATIVE
+Value=14;OTHER FAMILY
+Value=15;NO RELATION
+
+[Item]
+Label=B4 YEAR THE PERSON WAS BORN
+Name=B4
+Start=55
+Len=4
+
+[ValueSet]
+Label=B4 YEAR THE PERSON WAS BORN
+Name=B4_VS1
+Value=1900:2010
+
+[Item]
+Label=B5 HOW MANY MONTHS IN THE LAST 12 MONTHS HAS THIS PERSON BEEN LIVING AT HOME
+Name=B5
+Start=59
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=B5 HOW MANY MONTHS IN THE LAST 12 MONTHS HAS THIS PERSON BEEN LIVING AT HOME
+Name=B5_VS1
+Value=1:12
+
+[Item]
+Label=B6 HIGHEST LEVEL OF EDUCATION
+Name=B6
+Start=61
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=B6 HIGHEST LEVEL OF EDUCATION
+Name=B6_VS1
+Value=0;PRE SCHOOL
+Value=1;P1
+Value=2;P2
+Value=3;P3
+Value=4;P4
+Value=5;P5
+Value=6;P6
+Value=7;JS1
+Value=8;JS2
+Value=9;JS3
+Value=10;Ss1
+Value=11;Ss2
+Value=12;Ss3
+Value=13;Diploma/NCE
+Value=14;Higher National Diploma HND/BS
+Value=15;Masters
+Value=16;Proffessional
+
+[Item]
+Label=B7 MARITAL STATUS
+Name=B7
+Start=63
+Len=1
+
+[ValueSet]
+Label=B7 MARITAL STATUS
+Name=B7_VS1
+Value=1;SINGLE
+Value=2;MARRIED
+Value=3;MARITAL UNION
+Value=4;POLYGAMOUS
+Value=5;DIVORCED OR SEPARATED
+Value=6;WIDOWED
+
+[Item]
+Label=B8 IS INVOLVED IN GROWING SWEETPOTATOES CURRENTLY
+Name=B8
+Start=64
+Len=1
+
+[ValueSet]
+Label=B8 IS INVOLVED IN GROWING SWEETPOTATOES CURRENTLY
+Name=B8_VS1
+Link=110345024
+Value=0;No
+Value=1;Yes
+
+[Item]
+Label=B9 IS AGRICULTURE HIS/HER PRINCIPAL OR SECONDARY ACTIVITY
+Name=B9
+Start=65
+Len=1
+
+[ValueSet]
+Label=B9 IS AGRICULTURE HIS/HER PRINCIPAL OR SECONDARY ACTIVITY
+Name=B9_VS1
+Value=0;NOT APPLICABLE
+Value=1;PRINCIPAL
+Value=2;SECONDARY
+
+[Item]
+Label=B10 SOLD AGRICULTURAL OR LIVESTOCK PRODUCTS SINCE 2014?
+Name=B10
+Start=66
+Len=1
+
+[ValueSet]
+Label=B10 SOLD AGRICULTURAL OR LIVESTOCK PRODUCTS SINCE 2014?
+Name=B10_VS1
+Link=110345024
+
+[Item]
+Label=B11 UNDERTAKEN SALARIED EMPLOYMENT SINCE 2014?
+Name=B11
+Start=67
+Len=1
+
+[ValueSet]
+Label=B11 UNDERTAKEN SALARIED EMPLOYMENT SINCE 2014?
+Name=B11_VS1
+Link=110345024
+
+[Item]
+Label=B12 DOES CASUAL LABOUR SINCE 2014?
+Name=B12
+Start=68
+Len=1
+
+[ValueSet]
+Label=B12 DOES CASUAL LABOUR SINCE 2014?
+Name=B12_VS1
+Link=110345024
+
+[Item]
+Label=B13 BEEN INVOLVED IN INFORMAL BUSINESS SINCE 2014?
+Name=B13
+Start=69
+Len=1
+
+[ValueSet]
+Label=B13 BEEN INVOLVED IN INFORMAL BUSINESS SINCE 2014?
+Name=B13_VS1
+Link=110345024
+
+[Item]
+Label=B14 BEEN INVOLVED IN SOME OTHER FORM OF SELF EMPLOYMENT SINCE 2014?
+Name=B14
+Start=70
+Len=1
+
+[ValueSet]
+Label=B14 BEEN INVOLVED IN SOME OTHER FORM OF SELF EMPLOYMENT SINCE 2014?
+Name=B14_VS1
+Link=110345024
+
+[Record]
+Label=C. DEMOGRAPHIC OF MEMBERS OF HOUSEHOLD WHO ARE LESS OR EQUAL TO 60 MONTHS OF AGE (5 YEARS)
+Name=C_CHILD
+RecordTypeValue='4'
+Required=No
+MaxRecords=10
+RecordLen=73
+
+[Item]
+Label=C00 MEM
+Name=MEM_CHILD
+Start=20
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=C01 NAME
+Name=C01
+Start=22
+Len=30
+DataType=Alpha
+
+[Item]
+Label=C02 SEX
+Name=C02
+Start=52
+Len=1
+
+[ValueSet]
+Label=C02 SEX
+Name=C02_VS1
+Value=1;M
+Value=0;F
+
+[Item]
+Label=C03 DOB
+Name=DOB_CHILD
+Start=53
+Len=8
+ZeroFill=Yes
+
+[Item]
+Label=C03 DAY OF BIRTH
+Name=C03
+Start=53
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=C03 DAY OF BIRTH
+Name=C03_VS1
+Value=1:31
+Value=99;MISSING
+
+[Item]
+Label=C04 MONTH OF BIRTH
+Name=C04
+Start=55
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[ValueSet]
+Label=C04 MONTH OF BIRTH
+Name=C04_VS1
+Value=1:12
+Value=99;MISSING
+
+[Item]
+Label=C05 YEAR OF BIRTH
+Name=C05
+Start=57
+Len=4
+ItemType=SubItem
+
+[ValueSet]
+Label=C05 YEAR OF BIRTH
+Name=C05_VS1
+Value=2010:2015
+Value=9999;MISSING
+
+[Item]
+Label=C06 DO YOU KNOW WHAT IS A HEALTH CARD?
+Name=C6
+Start=61
+Len=1
+
+[ValueSet]
+Label=C06 DO YOU KNOW WHAT IS A HEALTH CARD?
+Name=C6_VS1
+Value=1;YES
+Value=0;NO
+
+[Item]
+Label=C07 HAS A HEALTH CARD
+Name=C7
+Start=62
+Len=1
+
+[ValueSet]
+Label=C07 HAS A HEALTH CARD
+Name=C7_VS1
+Value=1;YES
+Value=0;NO
+
+[Item]
+Label=C08 IF YES, HOW MANY REGISTERED VISITS?
+Name=C8
+Start=63
+Len=3
+
+[Item]
+Label=C09 CHILD'S MOTHER MEMBER NUMBER
+Name=C9
+Start=66
+Len=2
+
+[Item]
+Label=C10 IF CARE GIVER NOT MOTHER: MEMBER NUMBER OF MAIN CARE GIVER
+Name=C10
+Start=68
+Len=2
+
+[Item]
+Label=C11 CHILD'S FATHER MEMBER NUMBER
+Name=C11
+Start=70
+Len=2
+
+[Item]
+Label=C12 IF CARE GIVER NOT FATHER: MEMBER NUMBER OF MAIN MALE CARE GIVER
+Name=C12
+Start=72
+Len=2
+
+[Record]
+Label=D. HOUSEHOLD LEVEL DIETARY DIVERSITY AND YOUNG CHILDREN DIET DIVERSITY
+Name=D_DIVERSITY
+RecordTypeValue='T'
+RecordLen=96
+
+[Item]
+Label=D01 REFERENCE WOMAN
+Name=D01
+Start=20
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=D02 REFERENCE CHILD
+Name=D02
+Start=22
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=D03 WOMAN: ANY STARCHY STAPLE, LIKE MAIZE, SORGHUM, MILLET, RICE
+Name=D03A
+Start=24
+Len=1
+
+[ValueSet]
+Label=D03 WOMAN: ANY STARCHY STAPLE, LIKE MAIZE, SORGHUM, MILLET, RICE
+Name=D03A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D03 CHILD: ANY STARCHY STAPLE, LIKE MAIZE, SORGHUM, MILLET, RICE
+Name=D03B
+Start=25
+Len=1
+
+[ValueSet]
+Label=D03 CHILD: ANY STARCHY STAPLE, LIKE MAIZE, SORGHUM, MILLET, RICE
+Name=D03B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D04 WOMAN: ANY STARCHY ROOT AND TUBER, THAT IS WHITE OR YELLOW (POTATO, CASSAVA, YAM, WHITE-FLESHED SP)
+Name=D04A
+Start=26
+Len=1
+
+[ValueSet]
+Label=D04 WOMAN: ANY STARCHY ROOT AND TUBER, THAT IS WHITE OR YELLOW (POTATO, CASSAVA, YAM, WHITE-FLESHED SP)
+Name=D04A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D04 CHILD:  ANY STARCHY ROOT AND TUBER, THAT IS WHITE OR YELLOW (POTATO, CASSAVA, YAM, WHITE-FLESHED SP)
+Name=D04B
+Start=27
+Len=1
+
+[ValueSet]
+Label=D04 CHILD:  ANY STARCHY ROOT AND TUBER, THAT IS WHITE OR YELLOW (POTATO, CASSAVA, YAM, WHITE-FLESHED SP)
+Name=D04B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D05 WOMAN: SWEETPOTATO THAT IS ORANGE INSIDE OR ORANGE MAIZE OR IRON RICH BEANS
+Name=D05A
+Start=28
+Len=1
+
+[ValueSet]
+Label=D05 WOMAN: SWEETPOTATO THAT IS ORANGE INSIDE OR ORANGE MAIZE OR IRON RICH BEANS
+Name=D05A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D05 CHILD: SWEETPOTATO THAT IS ORANGE INSIDE OR ORANGE MAIZE OR IRON RICH BEANS
+Name=D05B
+Start=29
+Len=1
+
+[ValueSet]
+Label=D05 CHILD: SWEETPOTATO THAT IS ORANGE INSIDE OR ORANGE MAIZE OR IRON RICH BEANS
+Name=D05B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D06 WOMAN: ANY BEANS AND PEAS
+Name=D06A
+Start=30
+Len=1
+
+[ValueSet]
+Label=D06 WOMAN: ANY BEANS AND PEAS
+Name=D06A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D06 CHILD: ANY BEANS AND PEAS
+Name=D06B
+Start=31
+Len=1
+
+[ValueSet]
+Label=D06 CHILD: ANY BEANS AND PEAS
+Name=D06B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D07 WOMAN: ANY NUTS AND SEEDS
+Name=D07A
+Start=32
+Len=1
+
+[ValueSet]
+Label=D07 WOMAN: ANY NUTS AND SEEDS
+Name=D07A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D07 CHILD: ANY NUTS AND SEEDS
+Name=D07B
+Start=33
+Len=1
+
+[ValueSet]
+Label=D07 CHILD: ANY NUTS AND SEEDS
+Name=D07B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D08 WOMAN: ANY EGGS
+Name=D08A
+Start=34
+Len=1
+
+[ValueSet]
+Label=D08 WOMAN: ANY EGGS
+Name=D08A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D08 CHILD: ANY EGGS
+Name=D08B
+Start=35
+Len=1
+
+[ValueSet]
+Label=D08 CHILD: ANY EGGS
+Name=D08B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D09 WOMAN: ANY DAIRY PRODUCT LIKE MILK, YOGHURT or CHEESE
+Name=D09A
+Start=36
+Len=1
+
+[ValueSet]
+Label=D09 WOMAN: ANY DAIRY PRODUCT LIKE MILK, YOGHURT or CHEESE
+Name=D09A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D09 CHILD: ANY DAIRY PRODUCT LIKE MILK, YOGHURT or CHEESE
+Name=D09B
+Start=37
+Len=1
+
+[ValueSet]
+Label=D09 CHILD: ANY DAIRY PRODUCT LIKE MILK, YOGHURT or CHEESE
+Name=D09B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D10 WOMAN: ANY ORGAN MEAT LIKE LIVER OR HEART
+Name=D10A
+Start=38
+Len=1
+
+[ValueSet]
+Label=D10 WOMAN: ANY ORGAN MEAT LIKE LIVER OR HEART
+Name=D10A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D10 CHILD: ANY ORGAN MEAT LIKE LIVER OR HEART
+Name=D10B
+Start=39
+Len=1
+
+[ValueSet]
+Label=D10 CHILD: ANY ORGAN MEAT LIKE LIVER OR HEART
+Name=D10B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D11 WOMAN: ANY OTHER KIND OF FLESH MEAT, I.E. BEEF, PORK, CHICKEN, LAMB, GOAT, GAME MEAT
+Name=D11A
+Start=40
+Len=1
+
+[ValueSet]
+Label=D11 WOMAN: ANY OTHER KIND OF FLESH MEAT, I.E. BEEF, PORK, CHICKEN, LAMB, GOAT, GAME MEAT
+Name=D11A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D11 CHILD: ANY OTHER KIND OF FLESH MEAT, I.E. BEEF, PORK, CHICKEN, LAMB, GOAT, GAME MEAT
+Name=D11B
+Start=41
+Len=1
+
+[ValueSet]
+Label=D11 CHILD: ANY OTHER KIND OF FLESH MEAT, I.E. BEEF, PORK, CHICKEN, LAMB, GOAT, GAME MEAT
+Name=D11B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D12 WOMAN: ANY KIND OF FISH OR SEAFOOD, FRESH OR DRIED
+Name=D12A
+Start=42
+Len=1
+
+[ValueSet]
+Label=D12 WOMAN: ANY KIND OF FISH OR SEAFOOD, FRESH OR DRIED
+Name=D12A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D12 CHILD:  ANY KIND OF FISH OR SEAFOOD, FRESH OR DRIED
+Name=D12B
+Start=43
+Len=1
+
+[ValueSet]
+Label=D12 CHILD:  ANY KIND OF FISH OR SEAFOOD, FRESH OR DRIED
+Name=D12B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D13 WOMAN: ANY VITAMIN A-RICH DARK GREEN LEAFY VEGETABLE, LIKE CASSAVA LEAVES
+Name=D13A
+Start=44
+Len=1
+
+[ValueSet]
+Label=D13 WOMAN: ANY VITAMIN A-RICH DARK GREEN LEAFY VEGETABLE, LIKE CASSAVA LEAVES
+Name=D13A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D13 CHILD: ANY VITAMIN A-RICH DARK GREEN LEAFY VEGETABLE, LIKE CASSAVA LEAVES
+Name=D13B
+Start=45
+Len=1
+
+[ValueSet]
+Label=D13 CHILD: ANY VITAMIN A-RICH DARK GREEN LEAFY VEGETABLE, LIKE CASSAVA LEAVES
+Name=D13B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D14 WOMAN: ANY VEGETABLES THAT ARE ORANGE INSIDE, LIKE PUMPKIN OR CARROT OR OFSP
+Name=D14A
+Start=46
+Len=1
+
+[ValueSet]
+Label=D14 WOMAN: ANY VEGETABLES THAT ARE ORANGE INSIDE, LIKE PUMPKIN OR CARROT OR OFSP
+Name=D14A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D14 CHILD:  ANY VEGETABLES THAT ARE ORANGE INSIDE, LIKE PUMPKIN OR CARROT OR OFSP
+Name=D14B
+Start=47
+Len=1
+
+[ValueSet]
+Label=D14 CHILD:  ANY VEGETABLES THAT ARE ORANGE INSIDE, LIKE PUMPKIN OR CARROT OR OFSP
+Name=D14B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D15 WOMAN: ANY FRUITS THAT ARE ORANGE INSIDE, LIKE MANGO OR PAPAYA, EXCEPT FOR ORANGES!
+Name=D15A
+Start=48
+Len=1
+
+[ValueSet]
+Label=D15 WOMAN: ANY FRUITS THAT ARE ORANGE INSIDE, LIKE MANGO OR PAPAYA, EXCEPT FOR ORANGES!
+Name=D15A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D15 CHILD: ANY FRUITS THAT ARE ORANGE INSIDE, LIKE MANGO OR PAPAYA, EXCEPT FOR ORANGES!
+Name=D15B
+Start=49
+Len=1
+
+[ValueSet]
+Label=D15 CHILD: ANY FRUITS THAT ARE ORANGE INSIDE, LIKE MANGO OR PAPAYA, EXCEPT FOR ORANGES!
+Name=D15B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D16 WOMAN: ANY OTHER KIND OF VEGETABLES, LIKE TOMATO, ONION, AND EGGPLANT
+Name=D16A
+Start=50
+Len=1
+
+[ValueSet]
+Label=D16 WOMAN: ANY OTHER KIND OF VEGETABLES, LIKE TOMATO, ONION, AND EGGPLANT
+Name=D16A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D16 CHILD: ANY OTHER KIND OF VEGETABLES, LIKE TOMATO, ONION, AND EGGPLANT
+Name=D16B
+Start=51
+Len=1
+
+[ValueSet]
+Label=D16 CHILD: ANY OTHER KIND OF VEGETABLES, LIKE TOMATO, ONION, AND EGGPLANT
+Name=D16B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D17 WOMAN: ANY OTHER KIND OF FRUITS, AS BANANAS & ORANGES, INCLUDING WILD FRUITS & JUICES MADE FROM THESE FRUITS
+Name=D17A
+Start=52
+Len=1
+
+[ValueSet]
+Label=D17 WOMAN: ANY OTHER KIND OF FRUITS, AS BANANAS & ORANGES, INCLUDING WILD FRUITS & JUICES MADE FROM THESE FRUITS
+Name=D17A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D17 CHILD: ANY OTHER KIND OF FRUITS, AS BANANAS & ORANGES, INCLUDING WILD FRUITS & JUICES MADE FROM THESE FRUITS
+Name=D17B
+Start=53
+Len=1
+
+[ValueSet]
+Label=D17 CHILD: ANY OTHER KIND OF FRUITS, AS BANANAS & ORANGES, INCLUDING WILD FRUITS & JUICES MADE FROM THESE FRUITS
+Name=D17B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D18 WOMAN: ANY SOURCE OF FAT, LIKE COOKING OIL, COCONUT MILK, OR BUTTER
+Name=D18A
+Start=54
+Len=1
+
+[ValueSet]
+Label=D18 WOMAN: ANY SOURCE OF FAT, LIKE COOKING OIL, COCONUT MILK, OR BUTTER
+Name=D18A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D18 CHILD: ANY SOURCE OF FAT, LIKE COOKING OIL, COCONUT MILK, OR BUTTER
+Name=D18B
+Start=55
+Len=1
+
+[ValueSet]
+Label=D18 CHILD: ANY SOURCE OF FAT, LIKE COOKING OIL, COCONUT MILK, OR BUTTER
+Name=D18B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D19 WOMAN: ANY SUGARY FOODS OR DRINKS, LIKE CANDIES, SODAS, SUGAR BISCUITS OR COOKIES
+Name=D19A
+Start=56
+Len=1
+
+[ValueSet]
+Label=D19 WOMAN: ANY SUGARY FOODS OR DRINKS, LIKE CANDIES, SODAS, SUGAR BISCUITS OR COOKIES
+Name=D19A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D19 CHILD: ANY SUGARY FOODS OR DRINKS, LIKE CANDIES, SODAS, SUGAR BISCUITS OR COOKIES
+Name=D19B
+Start=57
+Len=1
+
+[ValueSet]
+Label=D19 CHILD: ANY SUGARY FOODS OR DRINKS, LIKE CANDIES, SODAS, SUGAR BISCUITS OR COOKIES
+Name=D19B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D20 WOMAN: ANY SPICES (PEPPER), CONDIMENTS (SOY SAUCE) OR BEVERAGES (TEA, SODA, BEES)
+Name=D20A
+Start=58
+Len=1
+
+[ValueSet]
+Label=D20 WOMAN: ANY SPICES (PEPPER), CONDIMENTS (SOY SAUCE) OR BEVERAGES (TEA, SODA, BEES)
+Name=D20A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D20 CHILD: ANY SPICES (PEPPER), CONDIMENTS (SOY SAUCE) OR BEVERAGES (TEA, SODA, BEES)
+Name=D20B
+Start=59
+Len=1
+
+[ValueSet]
+Label=D20 CHILD: ANY SPICES (PEPPER), CONDIMENTS (SOY SAUCE) OR BEVERAGES (TEA, SODA, BEES)
+Name=D20B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=D21 APPROXIMATELY HOW MUCH OFSP DID THE CHILD EAT DURING THE ENTIRE DAY? NUMBER OF ROOTS
+Name=D21A
+Start=60
+Len=5
+Decimal=2
+
+[Item]
+Label=D21 APPROXIMATELY HOW MUCH OFSP DID THE CHILD EAT DURING THE ENTIRE DAY? SIZE
+Name=D21B
+Start=65
+Len=1
+
+[ValueSet]
+Label=D21 APPROXIMATELY HOW MUCH OFSP DID THE CHILD EAT DURING THE ENTIRE DAY? SIZE
+Name=D21B_VS1
+Value=1;Very small
+Value=2;Small
+Value=3;Medium
+Value=4;Large
+Value=9;NA
+
+[Item]
+Label=D22 WHERE DID YOU GET THE OFSP?
+Name=D22A
+Start=66
+Len=1
+
+[ValueSet]
+Label=D22 WHERE DID YOU GET THE OFSP?
+Name=D22A_VS1
+Value=1;Your field
+Value=2;The market
+Value=3;Relatives/Neighbors
+Value=4;Other
+Value=9;N/A
+
+[Item]
+Label=D22 IF OTHER, SPECIFY WHERE DID YOU GET THE OFSP
+Name=D22B
+Start=67
+Len=30
+DataType=Alpha
+
+[Record]
+Label=E. GROUP MEMBERSHIP ROOSTER
+Name=E_ROSTER
+RecordTypeValue='5'
+MaxRecords=15
+RecordLen=59
+
+[Item]
+Label=E02 MEMBER ID
+Name=MEM_IN_GROUPS
+Start=20
+Len=2
+
+[Item]
+Label=E02A NAME OF THE ASSOCIATION OR GROUP
+Name=E02A
+Start=22
+Len=30
+DataType=Alpha
+
+[Item]
+Label=E02B ASSOCIATION OR GROUP FUNCTIONS
+Name=E02B
+Start=52
+Len=2
+
+[ValueSet]
+Label=E02B ASSOCIATION OR GROUP FUNCTIONS
+Name=E02B_VS1
+Value=1;Tree planting
+Value=2;Water harvesting
+Value=3;Irrigation
+Value=4;Financial
+Value=5;Funeral/welfare
+Value=6;Produce marketing
+Value=7;Crop production
+Value=8;Input acquisition
+Value=9;Soil and water conservation
+Value=10;Aquaculture
+Value=11;Bee keeping
+Value=12;Value addition
+Value=13;Training
+Value=14;Local business/joint shop
+Value=15;Livestock production
+Value=16;Poultry keeping
+Value=17;Other specify
+Value=99;N/A
+
+[Item]
+Label=E02C ASSOCIATION OR GROUP FUNCTIONS
+Name=E02C
+Start=54
+Len=2
+
+[ValueSet]
+Label=E02C ASSOCIATION OR GROUP FUNCTIONS
+Name=E02C_VS1
+Value=1;Tree planting
+Value=2;Water harvesting
+Value=3;Irrigation
+Value=4;Financial
+Value=5;Funeral/welfare
+Value=6;Produce marketing
+Value=7;Crop production
+Value=8;Input acquisition
+Value=9;Soil and water conservation
+Value=10;Aquaculture
+Value=11;Bee keeping
+Value=12;Value addition
+Value=13;Training
+Value=14;Local business/joint shop
+Value=15;Livestock production
+Value=16;Poultry keeping
+Value=17;Other specify
+Value=99;N/A
+
+[Item]
+Label=E02D ASSOCIATION OR GROUP FUNCTIONS
+Name=E02D
+Start=56
+Len=2
+
+[ValueSet]
+Label=E02D ASSOCIATION OR GROUP FUNCTIONS
+Name=E02D_VS1
+Value=1;Tree planting
+Value=2;Water harvesting
+Value=3;Irrigation
+Value=4;Financial
+Value=5;Funeral/welfare
+Value=6;Produce marketing
+Value=7;Crop production
+Value=8;Input acquisition
+Value=9;Soil and water conservation
+Value=10;Aquaculture
+Value=11;Bee keeping
+Value=12;Value addition
+Value=13;Training
+Value=14;Local business/joint shop
+Value=15;Livestock production
+Value=16;Poultry keeping
+Value=17;Other specify
+Value=99;N/A
+
+[Item]
+Label=E02E ROLE IN THE GROUP
+Name=E02E
+Start=58
+Len=1
+
+[ValueSet]
+Label=E02E ROLE IN THE GROUP
+Name=E02E_VS1
+Value=1;Ordinary member
+Value=2;Official
+Value=9;N/A
+
+[Item]
+Label=E02F SERVICES RECEIVED IN THE LAST 2 YEARS
+Name=E02F
+Start=59
+Len=1
+
+[ValueSet]
+Label=E02F SERVICES RECEIVED IN THE LAST 2 YEARS
+Name=E02F_VS1
+Value=1;Input
+Value=2;Financial
+Value=3;Seed
+Value=4;Training
+Value=5;None
+Value=6;Buiding houses
+Value=7;Land
+Value=8;Other (Specify)
+Value=9;N/A
+
+[Record]
+Label=E. GROUP MEMBERSHIP
+Name=E_1_GROUP
+RecordTypeValue='3'
+RecordLen=150
+
+[Item]
+Label=E01 ARE YOU A MEMBER OF A FARMER ASSOCIATION OR GROUP
+Name=E01
+Start=20
+Len=1
+
+[ValueSet]
+Label=E01 ARE YOU A MEMBER OF A FARMER ASSOCIATION OR GROUP
+Name=E01_VS1
+Value=0;No
+Value=1;Yes
+Value=9;MISSING
+
+[Item]
+Label=E03 HAVE YOU EVER OBTAINED A NEW VARIETY OF ANY CROP THROUGH ANY OF YOUR GROUPS?
+Name=E03
+Start=21
+Len=1
+
+[ValueSet]
+Label=E03 HAVE YOU EVER OBTAINED A NEW VARIETY OF ANY CROP THROUGH ANY OF YOUR GROUPS?
+Name=E03_VS1
+Value=1;Yes
+Value=0;No
+Value=9;MISSING
+
+[Item]
+Label=E04 IS THE WOMAN OF THE HOUSEHOLD AN ACTIVE MEMBER OR LEADER OF A RELIGIOUS ORGANIZATION
+Name=E04
+Start=22
+Len=1
+
+[ValueSet]
+Label=E04 IS THE WOMAN OF THE HOUSEHOLD AN ACTIVE MEMBER OR LEADER OF A RELIGIOUS ORGANIZATION
+Name=E04_VS1
+Value=1;Yes
+Value=0;No
+Value=9;MISSING
+
+[Item]
+Label=E05 IS THE MAN OF THE HOUSEHOLD AN ACTIVE MEMBER OR LEADER OF A RELIGIOUS ORGANIZATION
+Name=E05
+Start=23
+Len=1
+
+[ValueSet]
+Label=E05 IS THE MAN OF THE HOUSEHOLD AN ACTIVE MEMBER OR LEADER OF A RELIGIOUS ORGANIZATION
+Name=E05_VS1
+Value=1;Yes
+Value=0;No
+Value=9;MISSING
+
+[Item]
+Label=E06 HOW MUCH LAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? M^2
+Name=E06A
+Start=24
+Len=8
+Decimal=2
+
+[Item]
+Label=E06 HOW MUCH LAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? ACRES
+Name=E06B
+Start=32
+Len=8
+Decimal=2
+
+[Item]
+Label=E06 HOW MUCH LAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? HA
+Name=E06C
+Start=40
+Len=8
+Decimal=2
+
+[Item]
+Label=E07 HOW MUCH UPLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? M^2
+Name=E07A
+Start=48
+Len=8
+Decimal=2
+
+[Item]
+Label=E07 HOW MUCH UPLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? ACRES
+Name=E07B
+Start=56
+Len=8
+Decimal=2
+
+[Item]
+Label=E07 HOW MUCH UPLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? HA
+Name=E07C
+Start=64
+Len=8
+Decimal=2
+
+[Item]
+Label=E08 HOW MUCH LOWLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? M^2
+Name=E08A
+Start=72
+Len=8
+Decimal=2
+
+[Item]
+Label=E08 HOW MUCH LOWLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? ACRES
+Name=E08B
+Start=80
+Len=8
+Decimal=2
+
+[Item]
+Label=E08 HOW MUCH LOWLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? HA
+Name=E08C
+Start=88
+Len=8
+Decimal=2
+
+[Item]
+Label=E09 HOW MANY SEPARATE PLOTS DID YOU HAVE ON YOUR FARM IN 2014/2015 CROPPING SEASON
+Name=E09
+Start=96
+Len=2
+
+[Item]
+Label=E10 HOW MANY OF THESE PLOTS HAVE FERTILE SOILS
+Name=E10
+Start=98
+Len=2
+
+[Item]
+Label=E11 IN HOW MANY PLOTS DOES THE WOMAN OF THE HH HAS CONTROL ON WHAT IS GROWN?
+Name=E11
+Start=100
+Len=2
+
+[Item]
+Label=E12 IF E11=0, DOES THE WOMAN HAVE ANY ACCESS TO ANY OTHER PLOT OF LAND ELSEWHERE
+Name=E12
+Start=102
+Len=1
+
+[ValueSet]
+Label=E12 IF E11=0, DOES THE WOMAN HAVE ANY ACCESS TO ANY OTHER PLOT OF LAND ELSEWHERE
+Name=E12_VS1
+Value=1;Yes
+Value=0;No
+Value=9;N/A
+
+[Item]
+Label=E13 IF YES, HOW MUCH UPLAND DID SHE OWN IN THE 2014/2015 CROPPING SEASON? M^2
+Name=E13A
+Start=103
+Len=8
+Decimal=2
+
+[Item]
+Label=E13 IF YES, HOW MUCH UPLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? ACRES
+Name=E13B
+Start=111
+Len=8
+Decimal=2
+
+[Item]
+Label=E13 IF YES, HOW MUCH UPLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? HA
+Name=E13C
+Start=119
+Len=8
+Decimal=2
+
+[Item]
+Label=E14 IF YES, HOW MUCH LOWLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? M^2
+Name=E14A
+Start=127
+Len=8
+Decimal=2
+
+[Item]
+Label=E14 IF YES, HOW MUCH LOWLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? ACRES
+Name=E14B
+Start=135
+Len=8
+Decimal=2
+
+[Item]
+Label=E14 IF YES, HOW MUCH LOWLAND DID YOU OWN IN THE 2014/2015 CROPPING SEASON? HA
+Name=E14C
+Start=143
+Len=8
+Decimal=2
+
+[Record]
+Label=F. CROP PRODUCTION
+Name=F_FOOD_GROWN
+RecordTypeValue='6'
+MaxRecords=13
+RecordLen=55
+
+[Item]
+Label=F02 CROP CODE
+Name=F02
+Start=20
+Len=2
+
+[ValueSet]
+Label=F02 CROP CODE
+Name=F02_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+
+[Item]
+Label=CROP NAME
+Name=F02A
+Start=22
+Len=30
+DataType=Alpha
+
+[Item]
+Label=F03 DID HH PRODUCE THIS CROP IN 2014/2015
+Name=F03
+Start=52
+Len=1
+
+[ValueSet]
+Label=F03 DID HH PRODUCE THIS CROP IN 2014/2015
+Name=F03_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=F04 DID HH SOLD THIS CROP IN 2014/2015
+Name=F04
+Start=53
+Len=1
+
+[ValueSet]
+Label=F04 DID HH SOLD THIS CROP IN 2014/2015
+Name=F04_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=F05 MOST IMPORTANT CROP FOR HH
+Name=F05
+Start=54
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=F05 MOST IMPORTANT CROP FOR HH
+Name=F05_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;N/A
+
+[Record]
+Label=F. CROP PRODUCTION
+Name=F_1_FOOD_IMP
+RecordTypeValue='7'
+RecordLen=87
+OccurrenceLabel=1,Tobacco
+
+[Item]
+Label=F01 IN 2014/2015 CONTRACTED FULLTIME/PART TIME STAFF
+Name=F01
+Start=20
+Len=1
+
+[ValueSet]
+Label=F01 IN 2014/2015 CONTRACTED FULLTIME/PART TIME STAFF
+Name=F01_VS1
+Value=0;NO
+Value=1;TEMPORARY WORKERS
+Value=2;FULL TIME WORKERS
+Value=3;BOTH
+Value=9;N/A
+
+[Item]
+Label=F06 CROP WITH HIGHEST PRODUCTION
+Name=F06
+Start=21
+Len=2
+
+[ValueSet]
+Label=F06 CROP WITH HIGHEST PRODUCTION
+Name=F06_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;N/A
+
+[Item]
+Label=F07 QUANTITY WITH HUSK
+Name=F07
+Start=23
+Len=8
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=F08 UNIT OF MEASURE (WITH HUSK)
+Name=F08
+Start=31
+Len=2
+
+[ValueSet]
+Label=F08 UNIT OF MEASURE (WITH HUSK)
+Name=F08_VS1
+Value=1;KG
+Value=2;NUMBERS
+Value=3;100 KG BAG
+Value=4;90 KG BAG
+Value=5;70 KG BAG
+Value=6;60 KG BAG
+Value=7;50 KG BAG
+Value=8;25 KG BAG
+Value=9;10 KG BAG
+Value=10;25 LTR CAN
+Value=11;20 LTR CAN
+Value=12;10 LTR CAN
+Value=13;5 LTR CAN
+Value=14;1 LTR CAN
+Value=15;TONS
+Value=16;OX CART
+Value=17;Congo
+Value=18;BASKET - 50KG
+Value=19;BASKET - 25KG
+Value=20;BASKET - 10KG
+Value=21;GALLON - 50L
+Value=22;GALLON - 25L
+Value=23;GALLON - 10
+Value=24;GALLON - 5
+Value=25;DOZEN
+Value=99;N/A
+
+[Item]
+Label=F09 QUANTITY WITHOUT HUSK OR IN GRAIN
+Name=F09
+Start=33
+Len=8
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=F10 UNIT OF MEASURE (WITHOUT HUSK)
+Name=F10
+Start=41
+Len=2
+
+[ValueSet]
+Label=F10 UNIT OF MEASURE (WITHOUT HUSK)
+Name=F10_VS1
+Value=1;KG
+Value=2;NUMBERS
+Value=3;100 KG BAG
+Value=4;90 KG BAG
+Value=5;70 KG BAG
+Value=6;60 KG BAG
+Value=7;50 KG BAG
+Value=8;25 KG BAG
+Value=9;10 KG BAG
+Value=10;25 LTR CAN
+Value=11;20 LTR CAN
+Value=12;10 LTR CAN
+Value=13;5 LTR CAN
+Value=14;1 LTR CAN
+Value=15;TONS
+Value=16;OX CART
+Value=17;Congo
+Value=18;BASKET - 50KG
+Value=19;BASKET - 25KG
+Value=20;BASKET - 10KG
+Value=21;GALLON - 50L
+Value=22;GALLON - 25L
+Value=23;GALLON - 10
+Value=24;GALLON - 5
+Value=25;DOZEN
+Value=99;N/A
+
+[Item]
+Label=F11 CROP WITH SECOND HIGHEST PRODUCTION
+Name=F11
+Start=43
+Len=2
+
+[ValueSet]
+Label=F11 CROP WITH SECOND HIGHEST PRODUCTION
+Name=F11_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;N/A
+
+[Item]
+Label=F12 QUANTITY WITH HUSK
+Name=F12
+Start=45
+Len=8
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=F13 UNIT OF MEASURE (WITH HUSK)
+Name=F13
+Start=53
+Len=2
+
+[ValueSet]
+Label=F13 UNIT OF MEASURE (WITH HUSK)
+Name=F13_VS1
+Value=1;KG
+Value=2;NUMBERS
+Value=3;100 KG BAG
+Value=4;90 KG BAG
+Value=5;70 KG BAG
+Value=6;60 KG BAG
+Value=7;50 KG BAG
+Value=8;25 KG BAG
+Value=9;10 KG BAG
+Value=10;25 LTR CAN
+Value=11;20 LTR CAN
+Value=12;10 LTR CAN
+Value=13;5 LTR CAN
+Value=14;1 LTR CAN
+Value=15;TONS
+Value=16;OX CART
+Value=17;Congo
+Value=18;BASKET - 50KG
+Value=19;BASKET - 25KG
+Value=20;BASKET - 10KG
+Value=21;GALLON - 50L
+Value=22;GALLON - 25L
+Value=23;GALLON - 10
+Value=24;GALLON - 5
+Value=25;DOZEN
+Value=99;N/A
+
+[Item]
+Label=F14 QUANTITY WITHOUT HUSK OR IN GRAIN
+Name=F14
+Start=55
+Len=8
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=F15 UNIT OF MEASURE (WITHOUT HUSK)
+Name=F15
+Start=63
+Len=2
+
+[ValueSet]
+Label=F15 UNIT OF MEASURE (WITHOUT HUSK)
+Name=F15_VS1
+Value=1;KG
+Value=2;NUMBERS
+Value=3;100 KG BAG
+Value=4;90 KG BAG
+Value=5;70 KG BAG
+Value=6;60 KG BAG
+Value=7;50 KG BAG
+Value=8;25 KG BAG
+Value=9;10 KG BAG
+Value=10;25 LTR CAN
+Value=11;20 LTR CAN
+Value=12;10 LTR CAN
+Value=13;5 LTR CAN
+Value=14;1 LTR CAN
+Value=15;TONS
+Value=16;OX CART
+Value=17;Congo
+Value=18;BASKET - 50KG
+Value=19;BASKET - 25KG
+Value=20;BASKET - 10KG
+Value=21;GALLON - 50L
+Value=22;GALLON - 25L
+Value=23;GALLON - 10
+Value=24;GALLON - 5
+Value=25;DOZEN
+Value=99;N/A
+
+[Item]
+Label=F16 CROP WITH THIRD HIGHEST PRODUCTION
+Name=F16
+Start=65
+Len=2
+
+[ValueSet]
+Label=F16 CROP WITH THIRD HIGHEST PRODUCTION
+Name=F16_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;N/A
+
+[Item]
+Label=F17 QUANTITY WITH HUSK
+Name=F17
+Start=67
+Len=8
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=F18 UNIT OF MEASURE (WITH HUSK)
+Name=F18
+Start=75
+Len=2
+
+[ValueSet]
+Label=F18 UNIT OF MEASURE (WITH HUSK)
+Name=F18_VS1
+Value=1;KG
+Value=2;NUMBERS
+Value=3;100 KG BAG
+Value=4;90 KG BAG
+Value=5;70 KG BAG
+Value=6;60 KG BAG
+Value=7;50 KG BAG
+Value=8;25 KG BAG
+Value=9;10 KG BAG
+Value=10;25 LTR CAN
+Value=11;20 LTR CAN
+Value=12;10 LTR CAN
+Value=13;5 LTR CAN
+Value=14;1 LTR CAN
+Value=15;TONS
+Value=16;OX CART
+Value=17;Congo
+Value=18;BASKET - 50KG
+Value=19;BASKET - 25KG
+Value=20;BASKET - 10KG
+Value=21;GALLON - 50L
+Value=22;GALLON - 25L
+Value=23;GALLON - 10
+Value=24;GALLON - 5
+Value=25;DOZEN
+Value=99;N/A
+
+[Item]
+Label=F19 QUANTITY WITHOUT HUSK OR IN GRAIN
+Name=F19
+Start=77
+Len=8
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=F20 UNIT OF MEASURE (WITHOUT HUSK)
+Name=F20
+Start=85
+Len=2
+
+[ValueSet]
+Label=F20 UNIT OF MEASURE (WITHOUT HUSK)
+Name=F20_VS1
+Value=1;KG
+Value=2;NUMBERS
+Value=3;100 KG BAG
+Value=4;90 KG BAG
+Value=5;70 KG BAG
+Value=6;60 KG BAG
+Value=7;50 KG BAG
+Value=8;25 KG BAG
+Value=9;10 KG BAG
+Value=10;25 LTR CAN
+Value=11;20 LTR CAN
+Value=12;10 LTR CAN
+Value=13;5 LTR CAN
+Value=14;1 LTR CAN
+Value=15;TONS
+Value=16;OX CART
+Value=17;Congo
+Value=18;BASKET - 50KG
+Value=19;BASKET - 25KG
+Value=20;BASKET - 10KG
+Value=21;GALLON - 50L
+Value=22;GALLON - 25L
+Value=23;GALLON - 10
+Value=24;GALLON - 5
+Value=25;DOZEN
+Value=99;N/A
+
+[Item]
+Label=G01 CROP SALE EXCEPT FOR CASSAVA/SP/YAM
+Name=G01
+Start=87
+Len=1
+
+[ValueSet]
+Label=G01 CROP SALE EXCEPT FOR CASSAVA/SP/YAM
+Name=G01_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Record]
+Label=F. CROP PRODUCTION - OTHER CROPS
+Name=F_2_CASH_GROWN
+RecordTypeValue='U'
+MaxRecords=13
+RecordLen=59
+
+[Item]
+Label=F21 CROP CODE
+Name=F21
+Start=20
+Len=2
+
+[ValueSet]
+Label=F21 CROP CODE
+Name=F21_VS1
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+
+[Item]
+Label=CROP NAME
+Name=F21A
+Start=22
+Len=30
+DataType=Alpha
+
+[Item]
+Label=F22 DID HH PRODUCE THIS CROP IN 2014/2015
+Name=F22
+Start=52
+Len=1
+
+[ValueSet]
+Label=F22 DID HH PRODUCE THIS CROP IN 2014/2015
+Name=F22_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=F23 DID HH SOLD THIS CROP IN 2014/2015
+Name=F23
+Start=53
+Len=1
+
+[ValueSet]
+Label=F23 DID HH SOLD THIS CROP IN 2014/2015
+Name=F23_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=F24 HOW MANY STILL PRODUCTIVE
+Name=F24
+Start=54
+Len=6
+
+[Record]
+Label=G. CROP SALES
+Name=G_CROP_SALE
+RecordTypeValue='8'
+MaxRecords=23
+RecordLen=187
+
+[Item]
+Label=G03 CROP SOLD
+Name=G03
+Start=20
+Len=30
+DataType=Alpha
+
+[Item]
+Label=G04 CROP SOLD
+Name=G04
+Start=50
+Len=2
+
+[ValueSet]
+Label=G04 CROP SOLD
+Name=G04_VS1
+Value=1;MAIZE
+Value=2;RICE
+Value=3;SORGHUM
+Value=4;CASSAVA
+Value=5;SWEETPOTATO
+Value=6;BEANS
+Value=7;YAM
+Value=8;BANANA/PLANTAIN
+Value=9;IRISH POTATO
+Value=10;EGGPLANT
+Value=11;PIGEON PEAS
+Value=12;MILLET
+Value=13;COCOYAM
+Value=14;TOBACCO
+Value=15;COTTON
+Value=16;PAPRIKA
+Value=17;CHILLIES OR PEPPER
+Value=18;PINEAPPLE
+Value=19;SUNFLOWER
+Value=20;SESAME
+Value=21;SUGAR CANE
+Value=22;CASHEW NUT
+Value=23;PEANUT/GROUNDNUT
+Value=24;COCONUT
+Value=25;PALM OIL
+Value=26;MANGO
+Value=99;FINISH ENTERING CROPS
+
+[Item]
+Label=G05 YEAR SOLD
+Name=G05
+Start=52
+Len=1
+
+[ValueSet]
+Label=G05 YEAR SOLD
+Name=G05_VS1
+Value=1;2014
+Value=2;2015
+Value=9;N/A
+
+[Item]
+Label=G06 MONTH SOLD
+Name=G06
+Start=53
+Len=2
+
+[ValueSet]
+Label=G06 MONTH SOLD
+Name=G06_VS1
+Value=1;JANUARY
+Value=2;FEBRUARY
+Value=3;MARCH
+Value=4;APRIL
+Value=5;MAY
+Value=6;JUNE
+Value=7;JULY
+Value=8;AUGUST
+Value=9;SEPTEMBER
+Value=10;OCTOBER
+Value=11;NOVEMBER
+Value=12;DECEMBER
+Value=99;N/A
+
+[Item]
+Label=G07 QUANTITY SOLD
+Name=G07
+Start=55
+Len=14
+Decimal=2
+
+[Item]
+Label=G08 UNIT SOLD
+Name=G08
+Start=69
+Len=2
+
+[ValueSet]
+Label=G08 UNIT SOLD
+Name=G08_VS1
+Value=1;Kg
+Value=2;Numbers
+Value=3;100 Kg Bag
+Value=4;90 Kg Bag
+Value=5;70 Kg Bag
+Value=6;60 Kg Bag
+Value=7;50 Kg Bag
+Value=8;25 Kg Bag
+Value=9;10 Kg Bag
+Value=10;25 Ltr Can
+Value=11;20 Ltr Can
+Value=12;10 Ltr Can
+Value=13;5 Ltr Can
+Value=14;1 Ltr Can
+Value=15;Tons
+Value=16;Ox Cart
+Value=17;Camionette
+Value=18;Camion
+Value=19;grams
+Value=20;Other
+Value=99;MISSING
+
+[Item]
+Label=G08 OTHER UNIT SOLD (SPECIFY)
+Name=G08B
+Start=71
+Len=30
+DataType=Alpha
+
+[Item]
+Label=G09 TOTAL SALES RECEIVED (PRICE)
+Name=G09
+Start=101
+Len=14
+Decimal=2
+
+[Item]
+Label=G10 UNIT PRICE SOLD
+Name=G10
+Start=115
+Len=8
+Decimal=2
+
+[Item]
+Label=G11 WHERE DID YOU SELL THE CROP PRODUCE?
+Name=G11
+Start=123
+Len=1
+
+[ValueSet]
+Label=G11 WHERE DID YOU SELL THE CROP PRODUCE?
+Name=G11_VS1
+Value=1;FARM GATE
+Value=2;LOCAL MARKET
+Value=3;BIG TOWN MARKET
+Value=4;INSTITUTION
+Value=5;LOCAL AGRO-DEALERS
+Value=6;GOVERNMENT BOARD/LGA
+Value=9;N/A
+
+[Item]
+Label=G12 WHO BOUGHT THE CROP PRODUCED
+Name=G12
+Start=124
+Len=1
+
+[ValueSet]
+Label=G12 WHO BOUGHT THE CROP PRODUCED
+Name=G12_VS1
+Value=1;FARMER
+Value=2;LOCAL TRADER
+Value=3;INSTITUTION
+Value=4;NGO
+Value=5;CONSUMER AT A LOCAL MARKET
+Value=6;GOVERNMENT BOARD/LGA
+Value=7;OTHER
+Value=9;MISSING
+
+[Item]
+Label=G12 WHO BOUGHT THE CROP PRODUCED (OTHER)
+Name=G12A
+Start=125
+Len=30
+DataType=Alpha
+
+[Item]
+Label=G13 WHAT IS THE MAIN REASON YOU SOLD YOUR CROP THIS MONTH
+Name=G13
+Start=155
+Len=2
+
+[ValueSet]
+Label=G13 WHAT IS THE MAIN REASON YOU SOLD YOUR CROP THIS MONTH
+Name=G13_VS1
+Value=1;GOOD PRICE
+Value=2;BUY FOOD ITEMS
+Value=3;SCHOOL FEES
+Value=4;MEDICAL FEES
+Value=5;BUY HOUSEHOLD ITEMS
+Value=6;TO AVOID PEST ATTACK
+Value=7;DIFFICULT TO STORE
+Value=8;BUILD HOUSE
+Value=9;BUY LIVESTOCK
+Value=10;BUY FERTILIZER
+Value=11;CROP MATURED
+Value=12;OTHER
+Value=99;N/A
+
+[Item]
+Label=G13 MAIN REASON FOR SALE (OTHER)
+Name=G13A
+Start=157
+Len=30
+DataType=Alpha
+
+[Item]
+Label=G14 WHO TOOK THE MONEY FROM SALES
+Name=G14
+Start=187
+Len=1
+
+[ValueSet]
+Label=G14 WHO TOOK THE MONEY FROM SALES
+Name=G14_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;BOTH
+Value=9;N/A
+
+[Record]
+Label=H. ROAD ACCESS QUESTIONS
+Name=H_ROAD
+RecordTypeValue=']'
+RecordLen=67
+
+[Item]
+Label=H01 WHAT TYPE OF ROAD PROVIDES THE MAIN ACCESS TO THIS VILLAGE
+Name=H01
+Start=20
+Len=1
+
+[ValueSet]
+Label=H01 WHAT TYPE OF ROAD PROVIDES THE MAIN ACCESS TO THIS VILLAGE
+Name=H01_VS1
+Value=1;FOOT PATHS
+Value=2;SECONDARY EARTH ROAD
+Value=3;PRIMARY EARTH OR MURRAM ROAD
+Value=4;TARMAC/PAVED ROAD
+Value=5;WATER TRANSPORT
+Value=9;N/A
+
+[Item]
+Label=H02 DISTANCE TO NEAREST CROP OR ANIMAL PRODUCTS OUTLET/MARKET IN KM
+Name=H02A
+Start=21
+Len=3
+
+[Item]
+Label=H02 DISTANCE TO NEAREST CROP OR ANIMAL PRODUCTS OUTLET/MARKET IN MINUTES
+Name=H02B
+Start=24
+Len=5
+
+[Item]
+Label=H03 DISTANCE TO NEAREST SEED OR FERTILIZER OUTLET/MARKET IN KM
+Name=H03A
+Start=29
+Len=3
+
+[Item]
+Label=H03 DISTANCE TO NEAREST  SEED OR FERTILIZER OUTLET/MARKET IN MINUTES
+Name=H03B
+Start=32
+Len=5
+
+[Item]
+Label=H04 WHAT IS THE MAIN TRANSPORTATION MODE TO THE NEAREST MARKET
+Name=H04A
+Start=37
+Len=1
+
+[ValueSet]
+Label=H04 WHAT IS THE MAIN TRANSPORTATION MODE TO THE NEAREST MARKET
+Name=H04A_VS1
+Value=1;ON FOOT
+Value=2;BICYCLE
+Value=3;MOTORBIKE
+Value=4;BUS/SMALL VAN
+Value=5;CAR/TRUCK
+Value=6;OX/DONKEY
+Value=7;OTHER
+Value=9;N/A
+
+[Item]
+Label=H04 MAIN TRANSPORTATION MODE TO THE NEAREST MARKET: OTHER (SPECIFY)
+Name=H04B
+Start=38
+Len=30
+DataType=Alpha
+
+[Record]
+Label=I. SWEETPOTATO PRODUCTION
+Name=I_SP_LAND
+RecordTypeValue='9'
+RecordLen=72
+
+[Item]
+Label=I01 DO YOU GROW SWEETPOTATO
+Name=I01
+Start=20
+Len=1
+
+[ValueSet]
+Label=I01 DO YOU GROW SWEETPOTATO
+Name=I01_VS1
+Value=0;NO
+Value=1;YES
+Value=9;N/A
+
+[Item]
+Label=I02 IF NO, WHY?
+Name=I02
+Start=21
+Len=1
+
+[ValueSet]
+Label=I02 IF NO, WHY?
+Name=I02_VS1
+Value=1;I DON'T KNOW HOW TO GROW
+Value=2;CAN'T FIND VINE
+Value=3;CAN'T SELL IT
+Value=4;I DON'T EAT SP
+Value=5;NOT POPULAR IN THIS AREA
+Value=9;N/A
+
+[Item]
+Label=I03 IF YES, WHAT IS THE TOTAL UPLAND USED TO PRODUCE SWEETPOTATO M^2
+Name=I03
+Start=22
+Len=8
+Decimal=2
+
+[Item]
+Label=I03 IF YES, WHAT IS THE TOTAL UPLAND USED TO PRODUCE SWEETPOTATO ACRES
+Name=I03A
+Start=30
+Len=8
+Decimal=2
+
+[Item]
+Label=I03 IF YES, WHAT IS THE TOTAL UPLAND USED TO PRODUCE SWEETPOTATO HA
+Name=I03B
+Start=38
+Len=8
+Decimal=2
+
+[Item]
+Label=I03 IF YES, WHAT IS THE TOTAL LOWLAND USED TO PRODUCE SWEETPOTATO M^2
+Name=I03C
+Start=46
+Len=8
+Decimal=2
+
+[Item]
+Label=I03 IF YES, WHAT IS THE TOTAL LOWLAND USED TO PRODUCE SWEETPOTATO ACRES
+Name=I03D
+Start=54
+Len=8
+Decimal=2
+
+[Item]
+Label=I03 IF YES, WHAT IS THE TOTAL LOWLAND USED TO PRODUCE SWEETPOTATO HA
+Name=I03E
+Start=62
+Len=8
+Decimal=2
+
+[Item]
+Label=I04 WHAT IS THE MAIN REASON FOR GROWING SWEETPOTATO
+Name=I04
+Start=70
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=I04 WHAT IS THE MAIN REASON FOR GROWING SWEETPOTATO
+Name=I04_VS1
+Value=1;FOR FOOD
+Value=2;FOR SALE
+Value=3;THE ONLY FOOD THAT CAN TOLERATE DROUGHT
+Value=4;FOR FOOD AND FOR SALE
+Value=9;N/A
+
+[Item]
+Label=I05 IF YES, HAVE YOU GROWN ORANGE FLESHED SWEETPOTATO
+Name=I05
+Start=71
+Len=1
+
+[ValueSet]
+Label=I05 IF YES, HAVE YOU GROWN ORANGE FLESHED SWEETPOTATO
+Name=I05_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=I06 IF YES, HAVE YOU EVER HAD ANY TRAINING ON SWEETPOTATO PRODUCTION AND MANAGEMENT
+Name=I06
+Start=72
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=I06 IF YES, HAVE YOU EVER HAD ANY TRAINING ON SWEETPOTATO PRODUCTION AND MANAGEMENT
+Name=I06_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Record]
+Label=I. SWEETPOTATO PRODUCTION CONT...
+Name=I_1_SP_PROD
+RecordTypeValue='A'
+MaxRecords=4
+RecordLen=94
+
+[Item]
+Label=I07 CROP NAME
+Name=I07
+Start=20
+Len=20
+DataType=Alpha
+
+[Item]
+Label=I08 CROP CODE
+Name=I08
+Start=40
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=I08 CROP CODE
+Name=I08_VS1
+Value=4;CASSAVA
+Value=5;OTHER SWEETPOTATO
+Value=7;YAM
+Value=27;OFSP
+Value=99;N/A
+
+[Item]
+Label=I09 WHO DECIDES HOW MUCH TO GROW OF THIS CROP?
+Name=I09
+Start=42
+Len=1
+
+[ValueSet]
+Label=I09 WHO DECIDES HOW MUCH TO GROW OF THIS CROP?
+Name=I09_VS1
+Value=1;HUSBAND
+Value=2;WIFE
+Value=3;BOTH
+Value=4;OTHER
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: OCT
+Name=I10A
+Start=43
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: OCT
+Name=I10A_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: NOV
+Name=I10B
+Start=44
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: NOV
+Name=I10B_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: DEC
+Name=I10C
+Start=45
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: DEC
+Name=I10C_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: JAN
+Name=I10D
+Start=46
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: JAN
+Name=I10D_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: FEB
+Name=I10E
+Start=47
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: FEB
+Name=I10E_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: MAR
+Name=I10F
+Start=48
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: MAR
+Name=I10F_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: APR
+Name=I10G
+Start=49
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: APR
+Name=I10G_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: MAY
+Name=I10H
+Start=50
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: MAY
+Name=I10H_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: JUN
+Name=I10I
+Start=51
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: JUN
+Name=I10I_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: JUL
+Name=I10J
+Start=52
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: JUL
+Name=I10J_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: AUG
+Name=I10K
+Start=53
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: AUG
+Name=I10K_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: SEP
+Name=I10L
+Start=54
+Len=1
+
+[ValueSet]
+Label=I10 MONTH HARVEST LARGEST/LEAST QUANTITY: SEP
+Name=I10L_VS1
+Value=0;NO HARVEST
+Value=1;MONTHS OF MINOR
+Value=2;MONTHS OF MAJOR HARVEST
+Value=9;N/A
+
+[Item]
+Label=I11 HOW MANY TIMES HARVESTED (MAJOR)
+Name=I11A
+Start=55
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=I11 HOW MANY TIMES HARVESTED (MAJOR)
+Name=I11A_VS1
+Value=1;JANUARY
+Value=2;FEBRUARY
+Value=3;MARCH
+Value=4;APRIL
+Value=5;MAY
+Value=6;JUNE
+Value=7;JULY
+Value=8;AUGUST
+Value=9;SEPTEMBER
+Value=10;OCTOBER
+Value=11;NOVEMBER
+Value=12;DECEMBER
+Value=99;N/A
+
+[Item]
+Label=I11 TIMES HARVESTED UNITS (MAJOR)
+Name=I11B
+Start=57
+Len=1
+
+[ValueSet]
+Label=I11 TIMES HARVESTED UNITS (MAJOR)
+Name=I11B_VS1
+Value=1;DAY
+Value=2;WEEK
+Value=3;MONTH
+Value=9;N/A
+
+[Item]
+Label=I12 EACH TIME YOU HARVEST, HOW MUCH DID YOU HARVEST IN QUANTITY (MAJOR)
+Name=I12A
+Start=58
+Len=6
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=I12 HARVEST QUANTITY UNITS (MAJOR)
+Name=I12B
+Start=64
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=I13 HOW MANY TIMES HARVESTED (MINOR)
+Name=I13A
+Start=66
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=I13 HOW MANY TIMES HARVESTED (MINOR)
+Name=I13A_VS1
+Value=1;JANUARY
+Value=2;FEBRUARY
+Value=3;MARCH
+Value=4;APRIL
+Value=5;MAY
+Value=6;JUNE
+Value=7;JULY
+Value=8;AUGUST
+Value=9;SEPTEMBER
+Value=10;OCTOBER
+Value=11;NOVEMBER
+Value=12;DECEMBER
+Value=99;N/A
+
+[Item]
+Label=I13 TIMES HARVESTED UNITS (MINOR)
+Name=I13B
+Start=68
+Len=1
+
+[ValueSet]
+Label=I13 TIMES HARVESTED UNITS (MINOR)
+Name=I13B_VS1
+Value=1;DAY
+Value=2;WEEK
+Value=3;MONTH
+Value=9;N/A
+
+[Item]
+Label=I14 EACH TIME YOU HARVEST, HOW MUCH DID YOU HARVEST IN QUANTITY (MINOR)
+Name=I14A
+Start=69
+Len=6
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=I14 HARVEST QUANTITY UNITS (MINOR)
+Name=I14B
+Start=75
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=I15 TOTAL AREA OF (CROP) YOU CULTIVATED IN THIS PERIOD: QUANTITY
+Name=I15A
+Start=77
+Len=12
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=I15 TOTAL AREA OF (CROP) YOU CULTIVATED IN THIS PERIOD: UNIT
+Name=I15B
+Start=89
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=I15 TOTAL AREA OF (CROP) YOU CULTIVATED IN THIS PERIOD: UNIT
+Name=I15B_VS1
+Value=1;M^2
+Value=2;ACRES
+Value=3;HECTARE
+Value=9;N/A
+
+[Item]
+Label=I16 DO YOU CHIP AND DRY THIS CROP
+Name=I16
+Start=90
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=I16 DO YOU CHIP AND DRY THIS CROP
+Name=I16_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=I17 IF YES, FOR HOW LONG CAN YOU STORE THE CROP IN TIME
+Name=I17A
+Start=91
+Len=3
+ZeroFill=Yes
+
+[Item]
+Label=I17 IF YES, FOR HOW LONG CAN YOU STORE THE CROP UNITS
+Name=I17B
+Start=94
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=I17 IF YES, FOR HOW LONG CAN YOU STORE THE CROP UNITS
+Name=I17B_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=4;YEARS
+Value=9;N/A
+
+[Record]
+Label=I. SWEETPOTATO CASSAVA AND YAM SALES
+Name=I_2_SP_SOLD
+RecordTypeValue='B'
+MaxRecords=8
+RecordLen=101
+
+[Item]
+Label=I18 CROP NAMES
+Name=I18A
+Start=20
+Len=30
+DataType=Alpha
+
+[Item]
+Label=I18 CROP CODE
+Name=I18B
+Start=50
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=I18 CROP CODE
+Name=I18B_VS1
+Value=4;CASSAVA
+Value=5;SWEETPOTATO
+Value=7;YAM
+Value=27;OFSP
+Value=99;FINISH ENTERING CROPS
+
+[Item]
+Label=I19 WHO DECIDES HOW MUCH TO SELL OF THIS CROP?
+Name=I19A
+Start=52
+Len=1
+
+[ValueSet]
+Label=I19 WHO DECIDES HOW MUCH TO SELL OF THIS CROP?
+Name=I19A_VS1
+Value=1;HUSBAND
+Value=2;WIFE
+Value=3;BOTH
+Value=9;N/A
+
+[Item]
+Label=I20 WHICH MONTH DID YOU SELL THIS CROP?
+Name=I20
+Start=53
+Len=2
+
+[ValueSet]
+Label=I20 WHICH MONTH DID YOU SELL THIS CROP?
+Name=I20_VS1
+Value=1;JANUARY
+Value=2;FEBRUARY
+Value=3;MARCH
+Value=4;APRIL
+Value=5;MAY
+Value=6;JUNE
+Value=7;JULY
+Value=8;AUGUST
+Value=9;SEPTEMBER
+Value=10;OCTOBER
+Value=11;NOVEMBER
+Value=12;DECEMBER
+Value=99;N/A
+
+[Item]
+Label=I21 AMOUNT SOLD IN QUANTITY
+Name=I21A
+Start=55
+Len=12
+Decimal=2
+
+[Item]
+Label=I21 AMOUNT SOLD IN UNITS
+Name=I21B
+Start=67
+Len=2
+
+[ValueSet]
+Label=I21 AMOUNT SOLD IN UNITS
+Name=I21B_VS1
+Value=1;KG
+Value=2;NUMBERS
+Value=3;100 KG BAG
+Value=4;90 KG BAG
+Value=5;70 KG BAG
+Value=6;60 KG BAG
+Value=7;50 KG BAG
+Value=8;25 KG BAG
+Value=9;10 KG BAG
+Value=10;25 LTR CAN
+Value=11;20 LTR CAN
+Value=12;10 LTR CAN
+Value=13;5 LTR CAN
+Value=14;1 LTR CAN
+Value=15;TONS
+Value=16;OX CART
+Value=17;Congo
+Value=18;BASKET - 50KG
+Value=19;BASKET - 25KG
+Value=20;BASKET - 10KG
+Value=21;GALLON - 50L
+Value=22;GALLON - 25L
+Value=23;GALLON - 10
+Value=24;GALLON - 5
+Value=99;N/A
+
+[Item]
+Label=I22 MONEY RECEIVED PER SALE IN TOTAL (SALE AMOUNT)
+Name=I22A
+Start=69
+Len=12
+
+[Item]
+Label=I22 MONEY RECEIVED PER SALE IN UNIT PRICE (SPECIFY)
+Name=I22B
+Start=81
+Len=12
+
+[Item]
+Label=I23 WHERE DID YOU SELL THE CROP PRODUCED?
+Name=I23
+Start=93
+Len=1
+
+[ValueSet]
+Label=I23 WHERE DID YOU SELL THE CROP PRODUCED?
+Name=I23_VS1
+Value=1;FARM GATE
+Value=2;LOCAL MARKET
+Value=3;BIG TOWN MARKET
+Value=4;DOOR TO DOOR
+Value=5;INSTITUTION
+Value=9;N/A
+
+[Item]
+Label=I24 WHO BOUGHT THE CROP PRODUCED (SEE CODES)
+Name=I24
+Start=94
+Len=1
+
+[ValueSet]
+Label=I24 WHO BOUGHT THE CROP PRODUCED (SEE CODES)
+Name=I24_VS1
+Value=1;FARMER
+Value=2;LOCAL TRADER
+Value=3;INSTITUTION
+Value=4;NGO
+Value=5;LOCAL CONSUMER
+Value=6;GOVERNMENT/LGA
+Value=7;OTHER
+Value=9;N/A
+
+[Item]
+Label=I25 WHAT IS THE MAIN REASON FOR SALE
+Name=I25A
+Start=95
+Len=2
+
+[ValueSet]
+Label=I25 WHAT IS THE MAIN REASON FOR SALE
+Name=I25A_VS1
+Value=1;GOOD PRICE
+Value=2;BUY FOOD ITEMS
+Value=3;SCHOOL FEES
+Value=4;MEDICAL FEES
+Value=5;BUY SEED
+Value=6;TO AVOID PEST ATTACK
+Value=7;DIFFICULT TO STORE
+Value=8;BUILD HOUSE
+Value=9;BUY LIVESTOCK
+Value=10;BUY FERTILIZER
+Value=11;CROP MATURED
+Value=12;BUY HOUSEHOLD ITEMS
+Value=13;OTHER
+Value=99;N/A
+
+[Item]
+Label=I25 WHAT IS THE MAIN REASON FOR SALE
+Name=I25B
+Start=97
+Len=2
+
+[ValueSet]
+Label=I25 WHAT IS THE MAIN REASON FOR SALE
+Name=I25B_VS1
+Value=1;GOOD PRICE
+Value=2;BUY FOOD ITEMS
+Value=3;SCHOOL FEES
+Value=4;MEDICAL FEES
+Value=5;BUY SEED
+Value=6;TO AVOID PEST ATTACK
+Value=7;DIFFICULT TO STORE
+Value=8;BUILD HOUSE
+Value=9;BUY LIVESTOCK
+Value=10;BUY FERTILIZER
+Value=11;CROP MATURED
+Value=12;BUY HOUSEHOLD ITEMS
+Value=13;OTHER
+Value=99;N/A
+
+[Item]
+Label=I25 WHAT IS THE MAIN REASON FOR SALE
+Name=I25C
+Start=99
+Len=2
+
+[ValueSet]
+Label=I25 WHAT IS THE MAIN REASON FOR SALE
+Name=I25C_VS1
+Value=1;GOOD PRICE
+Value=2;BUY FOOD ITEMS
+Value=3;SCHOOL FEES
+Value=4;MEDICAL FEES
+Value=5;BUY SEED
+Value=6;TO AVOID PEST ATTACK
+Value=7;DIFFICULT TO STORE
+Value=8;BUILD HOUSE
+Value=9;BUY LIVESTOCK
+Value=10;BUY FERTILIZER
+Value=11;CROP MATURED
+Value=12;BUY HOUSEHOLD ITEMS
+Value=13;OTHER
+Value=99;N/A
+
+[Item]
+Label=I26 WHO SOLD THE CROP
+Name=I26
+Start=101
+Len=1
+
+[ValueSet]
+Label=I26 WHO SOLD THE CROP
+Name=I26_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;BOTH
+Value=3;CHILDREN/PARENTS
+Value=9;N/A
+
+[Record]
+Label=J. LABOR
+Name=J_LABOR
+RecordTypeValue='G'
+RecordLen=155
+
+[Item]
+Label=J01 DO YOU EVER USE HIRED OR HAVE SALARIED LABOR
+Name=J01
+Start=20
+Len=1
+
+[ValueSet]
+Label=J01 DO YOU EVER USE HIRED OR HAVE SALARIED LABOR
+Name=J01_VS1
+Value=0;NO
+Value=1;YES, BOTH
+Value=2;ONLY SALARIED LABOR
+Value=3;ONLY HIRED LABOR
+Value=9;N/A
+
+[Item]
+Label=J02 WHAT IS THE DAILY WAGE RATE FOR GENERAL FARM LABOR FOR MEN
+Name=J02A
+Start=21
+Len=6
+
+[Item]
+Label=J02 WHAT IS THE DAILY WAGE RATE FOR GENERAL FARM LABOR FOR WOMEN
+Name=J02B
+Start=27
+Len=6
+
+[Item]
+Label=J03 TYPICAL NUMBER OF HOURS FOR MEN
+Name=J03A
+Start=33
+Len=2
+
+[Item]
+Label=J03 TYPICAL NUMBER OF HOURS FOR WOMEN
+Name=J03B
+Start=35
+Len=2
+
+[Item]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE: CASUAL LABOR
+Name=J04A
+Start=37
+Len=1
+
+[ValueSet]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE: CASUAL LABOR
+Name=J04A_VS1
+Value=0;NO IMPORTANCE
+Value=1;VERY IMPORTANT
+Value=2;IMPORTANT
+Value=3;SOMEWHAT IMPORTANT
+Value=4;LEAST IMPORTANT
+Value=9;N/A
+
+[Item]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE: SALARIED
+Name=J04B
+Start=38
+Len=1
+
+[ValueSet]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE: SALARIED
+Name=J04B_VS1
+Value=0;NO IMPORTANCE
+Value=1;VERY IMPORTANT
+Value=2;IMPORTANT
+Value=3;SOMEWHAT IMPORTANT
+Value=4;LEAST IMPORTANT
+Value=9;N/A
+
+[Item]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE:FAMILY LABOR MEN
+Name=J04C
+Start=39
+Len=1
+
+[ValueSet]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE:FAMILY LABOR MEN
+Name=J04C_VS1
+Value=0;NO IMPORTANCE
+Value=1;VERY IMPORTANT
+Value=2;IMPORTANT
+Value=3;SOMEWHAT IMPORTANT
+Value=4;LEAST IMPORTANT
+Value=9;N/A
+
+[Item]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE: FAMILY LABOR WOMEN
+Name=J04D
+Start=40
+Len=1
+
+[ValueSet]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE: FAMILY LABOR WOMEN
+Name=J04D_VS1
+Value=0;NO IMPORTANCE
+Value=1;VERY IMPORTANT
+Value=2;IMPORTANT
+Value=3;SOMEWHAT IMPORTANT
+Value=4;LEAST IMPORTANT
+Value=9;N/A
+
+[Item]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE: GROUP LABOR
+Name=J04E
+Start=41
+Len=1
+
+[ValueSet]
+Label=J04 RANK THE FOLLOWING DIFFERENT LABOR TYPES AS USED ON YOUR CROP FARMING ACCORDING TO THE DEGREE OF USAGE: GROUP LABOR
+Name=J04E_VS1
+Value=0;NO IMPORTANCE
+Value=1;VERY IMPORTANT
+Value=2;IMPORTANT
+Value=3;SOMEWHAT IMPORTANT
+Value=4;LEAST IMPORTANT
+Value=9;N/A
+
+[Item]
+Label=J05 IS LABOR READILY AVAILABLE FOR HIRING WHEN NEEDED
+Name=J05
+Start=42
+Len=1
+
+[ValueSet]
+Label=J05 IS LABOR READILY AVAILABLE FOR HIRING WHEN NEEDED
+Name=J05_VS1
+Value=0;NO
+Value=1;YES
+Value=4;LEAST IMPORTANT
+Value=9;N/A
+
+[Item]
+Label=J06 DO YOU USE HIRED LABOR FOR SP PRODUCTION ACTIVITIES
+Name=J06
+Start=43
+Len=1
+
+[ValueSet]
+Label=J06 DO YOU USE HIRED LABOR FOR SP PRODUCTION ACTIVITIES
+Name=J06_VS1
+Value=0;NO
+Value=1;YES
+Value=9;N/A
+
+[Item]
+Label=J07 IF YES, WHICH ONE: LAND PREPARATION
+Name=J07A
+Start=44
+Len=1
+
+[ValueSet]
+Label=J07 IF YES, WHICH ONE: LAND PREPARATION
+Name=J07A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=J07 IF YES, WHICH ONE: PLANTING
+Name=J07B
+Start=45
+Len=1
+
+[ValueSet]
+Label=J07 IF YES, WHICH ONE: PLANTING
+Name=J07B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=J07 IF YES, WHICH ONE: WEEDING
+Name=J07C
+Start=46
+Len=1
+
+[ValueSet]
+Label=J07 IF YES, WHICH ONE: WEEDING
+Name=J07C_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=J07 IF YES, WHICH ONE: HARVESTING
+Name=J07D
+Start=47
+Len=1
+
+[ValueSet]
+Label=J07 IF YES, WHICH ONE: HARVESTING
+Name=J07D_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=J07 IF YES, WHICH ONE: PROCESSING
+Name=J07E
+Start=48
+Len=1
+
+[ValueSet]
+Label=J07 IF YES, WHICH ONE: PROCESSING
+Name=J07E_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=J07 IF YES, WHICH ONE: MARKETING
+Name=J07F
+Start=49
+Len=1
+
+[ValueSet]
+Label=J07 IF YES, WHICH ONE: MARKETING
+Name=J07F_VS1
+Value=1;YES
+Value=0;NO
+Value=9;N/A
+
+[Item]
+Label=J08 IF NO HIRED LABOR USED FOR SP, WHY
+Name=J08
+Start=50
+Len=80
+DataType=Alpha
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR PLOUGHING THE PLOT
+Name=J09A
+Start=130
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR PLOUGHING THE PLOT
+Name=J09A_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR RIDGING THE PLOT
+Name=J09B
+Start=132
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR RIDGING THE PLOT
+Name=J09B_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR PREPARING THE BED
+Name=J09C
+Start=134
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR PREPARING THE BED
+Name=J09C_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR PREPARING THE MOUNT
+Name=J09D
+Start=136
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR PREPARING THE MOUNT
+Name=J09D_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR CUTTING THE VINES
+Name=J09E
+Start=138
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR CUTTING THE VINES
+Name=J09E_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR CARRYING VINES TO THE PLOT
+Name=J09F
+Start=140
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR CARRYING VINES TO THE PLOT
+Name=J09F_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR PLANTING THE VINES
+Name=J09G
+Start=142
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR PLANTING THE VINES
+Name=J09G_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR WEEDING FOR THE SP
+Name=J09H
+Start=144
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR WEEDING FOR THE SP
+Name=J09H_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR HARVESTING
+Name=J09I
+Start=146
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR HARVESTING
+Name=J09I_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR BAGGING
+Name=J09J
+Start=148
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR BAGGING
+Name=J09J_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR TRANSPORT TO THE MARKET
+Name=J09K
+Start=150
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR TRANSPORT TO THE MARKET
+Name=J09K_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR SELLING IN THE MARKET
+Name=J09L
+Start=152
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR SELLING IN THE MARKET
+Name=J09L_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Item]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR DECIDING HOW THE FUNDS WILL BE SPENT
+Name=J09M
+Start=154
+Len=2
+
+[ValueSet]
+Label=J09 FOR THE FOLLOWING SP ACTIVITIES, WHO IS RESPONSIBLE FOR DECIDING HOW THE FUNDS WILL BE SPENT
+Name=J09M_VS1
+Value=1;WOMEN
+Value=2;WOMEN AND ALL CHILDREN
+Value=3;MEN
+Value=4;MEN AND ALL CHILDREN
+Value=5;WOMEN AND MEN EQUALLY
+Value=6;WOMEN, MEN AND CHILDREN
+Value=7;WOMEN WITH GIRLS
+Value=8;WOMEN WITH BOYS
+Value=9;MEN WITH GIRLS
+Value=10;MEN WITH BOYS
+Value=11;CHILDREN
+Value=12;GIRLS
+Value=13;BOYS
+Value=99;N/A
+
+[Record]
+Label=K. ATTITUDE, PERCEPTION, PRACTICE AND KNOWLEDGE
+Name=K_KAP
+RecordTypeValue='L'
+RecordLen=76
+
+[Item]
+Label=K01 SWEETPOTATO ROOTS CANNOT BE EATEN RAW/UNCOOKED
+Name=K01
+Start=20
+Len=1
+
+[ValueSet]
+Label=K01 SWEETPOTATO ROOTS CANNOT BE EATEN RAW/UNCOOKED
+Name=K01_VS1
+Value=1;STRONGLY AGREE
+Value=2;AGREE
+Value=3;DO NOT KNOW OR DO NOT HAVE AN OPINON
+Value=4;DISAGREE
+Value=5;STRONGLY DISAGREE
+Value=9;MISSING
+
+[Item]
+Label=K02 SP LEAVES GOOD FOR HUMAN BEINGS TO CONSUME
+Name=K02
+Start=21
+Len=1
+
+[ValueSet]
+Label=K02 SP LEAVES GOOD FOR HUMAN BEINGS TO CONSUME
+Name=K02_VS1
+Value=1;STRONGLY AGREE
+Value=2;AGREE
+Value=3;DO NOT KNOW OR DO NOT HAVE AN OPINON
+Value=4;DISAGREE
+Value=5;STRONGLY DISAGREE
+Value=9;MISSING
+
+[Item]
+Label=K03 SP IS A FOOD FOR WOMEN AND CHILDREN ONLY
+Name=K03
+Start=22
+Len=1
+
+[ValueSet]
+Label=K03 SP IS A FOOD FOR WOMEN AND CHILDREN ONLY
+Name=K03_VS1
+Value=1;STRONGLY AGREE
+Value=2;AGREE
+Value=3;DO NOT KNOW OR DO NOT HAVE AN OPINON
+Value=4;DISAGREE
+Value=5;STRONGLY DISAGREE
+Value=9;MISSING
+
+[Item]
+Label=K04 SP THAT ARE ORANGE INSIDE ARE HEALTHIER THAN ONES THAT ARE WHITE INSIDE
+Name=K04
+Start=23
+Len=1
+
+[ValueSet]
+Label=K04 SP THAT ARE ORANGE INSIDE ARE HEALTHIER THAN ONES THAT ARE WHITE INSIDE
+Name=K04_VS1
+Value=1;STRONGLY AGREE
+Value=2;AGREE
+Value=3;DO NOT KNOW OR DO NOT HAVE AN OPINON
+Value=4;DISAGREE
+Value=5;STRONGLY DISAGREE
+Value=9;MISSING
+
+[Item]
+Label=K05 SP IS THE MOST RELIABLE FOOD CROP FOR OUR FAMILY DURING SHORTAGE
+Name=K05
+Start=24
+Len=1
+
+[ValueSet]
+Label=K05 SP IS THE MOST RELIABLE FOOD CROP FOR OUR FAMILY DURING SHORTAGE
+Name=K05_VS1
+Value=1;STRONGLY AGREE
+Value=2;AGREE
+Value=3;DO NOT KNOW OR DO NOT HAVE AN OPINON
+Value=4;DISAGREE
+Value=5;STRONGLY DISAGREE
+Value=9;MISSING
+
+[Item]
+Label=K06 EVEN WHEN WE HAVE LOTS OF MAIZE,/IRISH POTATO/YAM (USE MAJOR CROP IN THE AREA)  TO EAT, WE STILL HAVE SP IN DIET
+Name=K06
+Start=25
+Len=1
+
+[ValueSet]
+Label=K06 EVEN WHEN WE HAVE LOTS OF MAIZE,/IRISH POTATO/YAM (USE MAJOR CROP IN THE AREA)  TO EAT, WE STILL HAVE SP IN DIET
+Name=K06_VS1
+Value=1;STRONGLY AGREE
+Value=2;AGREE
+Value=3;DO NOT KNOW OR DO NOT HAVE AN OPINON
+Value=4;DISAGREE
+Value=5;STRONGLY DISAGREE
+Value=9;MISSING
+
+[Item]
+Label=K07 MEN CANNOT EAT SP BECAUSE THEIR 'PERFORMANCE' WILL BE AFFECTED
+Name=K07
+Start=26
+Len=1
+
+[ValueSet]
+Label=K07 MEN CANNOT EAT SP BECAUSE THEIR 'PERFORMANCE' WILL BE AFFECTED
+Name=K07_VS1
+Value=1;STRONGLY AGREE
+Value=2;AGREE
+Value=3;DO NOT KNOW OR DO NOT HAVE AN OPINON
+Value=4;DISAGREE
+Value=5;STRONGLY DISAGREE
+Value=9;MISSING
+
+[Item]
+Label=K08 YOU CAN'T EAT TOO MUCH SP BECAUSE YOU WILL GET STOMACH PROBLEMS
+Name=K08
+Start=27
+Len=1
+
+[ValueSet]
+Label=K08 YOU CAN'T EAT TOO MUCH SP BECAUSE YOU WILL GET STOMACH PROBLEMS
+Name=K08_VS1
+Value=1;STRONGLY AGREE
+Value=2;AGREE
+Value=3;DO NOT KNOW OR DO NOT HAVE AN OPINON
+Value=4;DISAGREE
+Value=5;STRONGLY DISAGREE
+Value=9;MISSING
+
+[Item]
+Label=K09 IF AN IMPORTANTPERSON COMES TO YOUR HOUSE, DO YOU SERVE THEM A MEAL WITH SP
+Name=K09
+Start=28
+Len=1
+
+[ValueSet]
+Label=K09 IF AN IMPORTANTPERSON COMES TO YOUR HOUSE, DO YOU SERVE THEM A MEAL WITH SP
+Name=K09_VS1
+Value=1;YES, ALWAYS
+Value=2;YES, SOMETIMES
+Value=3;RARELY
+Value=4;NO
+Value=9;MISSING
+
+[Item]
+Label=K10 IF YOU GOT RICHER, WOULD YOU EAT MORE OR LESS SP
+Name=K10
+Start=29
+Len=1
+
+[ValueSet]
+Label=K10 IF YOU GOT RICHER, WOULD YOU EAT MORE OR LESS SP
+Name=K10_VS1
+Value=1;LESS
+Value=2;MORE
+Value=3;THE SAME
+Value=9;MISSING
+
+[Item]
+Label=K11 HOW MANY DAYS IN A WEEK DOES YOUR HH CONSUME SP WHEN THEY ARE IN PRODUCTION
+Name=K11
+Start=30
+Len=1
+
+[Item]
+Label=K12 DOES YOU HH EAT SOMETHING WHEN YOU START YOUR DAY OR BEFORE MID-MORNING
+Name=K12
+Start=31
+Len=1
+
+[ValueSet]
+Label=K12 DOES YOU HH EAT SOMETHING WHEN YOU START YOUR DAY OR BEFORE MID-MORNING
+Name=K12_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=K13 IF YES, WHAT DO YOU EAT CROP CODE
+Name=K13
+Start=32
+Len=2
+
+[ValueSet]
+Label=K13 IF YES, WHAT DO YOU EAT CROP CODE
+Name=K13_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;MISSING
+
+[Item]
+Label=K14 IF NO, WHY NOT
+Name=K14
+Start=34
+Len=1
+
+[ValueSet]
+Label=K14 IF NO, WHY NOT
+Name=K14_VS1
+Value=0;CAN'T STAND THEM
+Value=1;I DON'T HAVE ENOUGH FOOD TO EAT IN THE MORNING
+Value=2;I DON'T HAVE ENOUGH MONEY TO EAT IN THE MORNING
+Value=3;OTHER
+Value=9;MISSING
+
+[Item]
+Label=K14 OTHER
+Name=K14A
+Start=35
+Len=40
+DataType=Alpha
+
+[Item]
+Label=K15 WHAT IS HEALTHIER TO EAT IN THE MORNING, BREAD OR SP OR RICE
+Name=K15
+Start=75
+Len=1
+
+[ValueSet]
+Label=K15 WHAT IS HEALTHIER TO EAT IN THE MORNING, BREAD OR SP OR RICE
+Name=K15_VS1
+Value=1;YAM
+Value=2;SWEEETPOTATO
+Value=3;RICE
+Value=9;MISSING
+
+[Item]
+Label=K16 EATING TOO MUCH SP WILL CAUSE DIABETES
+Name=K16
+Start=76
+Len=1
+
+[ValueSet]
+Label=K16 EATING TOO MUCH SP WILL CAUSE DIABETES
+Name=K16_VS1
+Value=1;STRONGLY AGREE
+Value=2;AGREE
+Value=3;DO NOT KNOW OR DO NOT HAVE AN OPINON
+Value=4;DISAGREE
+Value=5;STRONGLY DISAGREE
+Value=9;MISSING
+
+[Record]
+Label=L. SEED SYSTEM: VINE DIFFUSION
+Name=L_VINE_SOURCE
+RecordTypeValue='H'
+RecordLen=97
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: OWN FARM
+Name=L01A
+Start=20
+Len=1
+
+[ValueSet]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: OWN FARM
+Name=L01A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: MALE NEIGHBOUR
+Name=L01B
+Start=21
+Len=1
+
+[ValueSet]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: MALE NEIGHBOUR
+Name=L01B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: FEMALE NEIGHBOUR
+Name=L01C
+Start=22
+Len=1
+
+[ValueSet]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: FEMALE NEIGHBOUR
+Name=L01C_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: RELATIVES
+Name=L01D
+Start=23
+Len=1
+
+[ValueSet]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: RELATIVES
+Name=L01D_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: FARMER GROUP
+Name=L01E
+Start=24
+Len=1
+
+[ValueSet]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: FARMER GROUP
+Name=L01E_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: RESEARCH INSTITUTION
+Name=L01F
+Start=25
+Len=1
+
+[ValueSet]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: RESEARCH INSTITUTION
+Name=L01F_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: VINE MULTIPLIERS FAR AWAY
+Name=L01G
+Start=26
+Len=1
+
+[ValueSet]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: VINE MULTIPLIERS FAR AWAY
+Name=L01G_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: NGO
+Name=L01H
+Start=27
+Len=1
+
+[ValueSet]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: NGO
+Name=L01H_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: LAKE SHORE/VALLEY WITH WATER
+Name=L01I
+Start=28
+Len=1
+
+[ValueSet]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: LAKE SHORE/VALLEY WITH WATER
+Name=L01I_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L01 WHERE DO YOU NORMALLY OBTAIN SWEETPOTATO VINES FROM: OTHER
+Name=L01J
+Start=29
+Len=20
+DataType=Alpha
+
+[Item]
+Label=LO2 ARE THE VINES READILY AVAILABLE WHEN NEEDED
+Name=L02
+Start=49
+Len=1
+
+[ValueSet]
+Label=LO2 ARE THE VINES READILY AVAILABLE WHEN NEEDED
+Name=L02_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=L03 ARE YOU SATISFIED WITH THE QUALITY OF VINES USUALLY AVAILABLE AT PLANTING TIME
+Name=L03
+Start=50
+Len=1
+
+[ValueSet]
+Label=L03 ARE YOU SATISFIED WITH THE QUALITY OF VINES USUALLY AVAILABLE AT PLANTING TIME
+Name=L03_VS1
+Value=1;SATISFIED
+Value=2;SOMEWHAT SATISFIED
+Value=3;NOT SATISFIED
+Value=9;MISSING
+
+[Item]
+Label=L04 IF YOU WANT A NEW VARIETY, WHERE DO YOU GET IT
+Name=L04A
+Start=51
+Len=2
+ZeroFill=Yes
+
+[ValueSet]
+Label=L04 IF YOU WANT A NEW VARIETY, WHERE DO YOU GET IT
+Name=L04A_VS1
+Value=1;LOCAL NEARBY FARMERS
+Value=2;FARMERS FAR AWAY
+Value=3;SPECIALIZED MULTIPLIERS
+Value=4;EXTENSION AGENTS
+Value=5;RESEARCH STATIONS
+Value=6;MARKETS
+Value=7;NGO
+Value=8;MDA
+Value=9;OTHER (SPECIFY)
+Value=99;MISSING
+
+[Item]
+Label=L04 IF OTHER VINE SOURCE, SPECIFY
+Name=L04B
+Start=53
+Len=40
+DataType=Alpha
+
+[Item]
+Label=LO5 DO YOU KNOW A SPECIALISED MULTIPLIER
+Name=L05
+Start=93
+Len=1
+
+[ValueSet]
+Label=LO5 DO YOU KNOW A SPECIALISED MULTIPLIER
+Name=L05_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=L06 IN THE PAST 12 MONTHS, DID YOU OR ANYONE IN HH PURCHASE VINES
+Name=L06
+Start=94
+Len=1
+
+[ValueSet]
+Label=L06 IN THE PAST 12 MONTHS, DID YOU OR ANYONE IN HH PURCHASE VINES
+Name=L06_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=L07 IN THE PAST 12 MONTHS, DID YOU OR ANYONE IN HH GET ANY VINES FROM ELSEWHERE APART FROM YOUR FARM FOR FREE
+Name=L07
+Start=95
+Len=1
+
+[ValueSet]
+Label=L07 IN THE PAST 12 MONTHS, DID YOU OR ANYONE IN HH GET ANY VINES FROM ELSEWHERE APART FROM YOUR FARM FOR FREE
+Name=L07_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=L08 IN THE PAST 12 MONTHS, DID YOU OR ANYONE IN HH SELL SP VINES TO ANOTHER PERSON
+Name=L08
+Start=96
+Len=1
+
+[ValueSet]
+Label=L08 IN THE PAST 12 MONTHS, DID YOU OR ANYONE IN HH SELL SP VINES TO ANOTHER PERSON
+Name=L08_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=L09 IN THE PAST 12 MONTHS, DID YOU OR ANYONE IN HH GIVE SP VINES TO ANOTHER PERSON FOR FREE
+Name=L09
+Start=97
+Len=1
+
+[ValueSet]
+Label=L09 IN THE PAST 12 MONTHS, DID YOU OR ANYONE IN HH GIVE SP VINES TO ANOTHER PERSON FOR FREE
+Name=L09_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Record]
+Label=L. SEED SYSTEM: VINE DIFFUSION HH SP SALES
+Name=L_1_VINE_GIVE
+RecordTypeValue='C'
+MaxRecords=6
+RecordLen=46
+
+[Item]
+Label=L11 TRANSANCTION NUMBER
+Name=L11
+Start=20
+Len=2
+
+[ValueSet]
+Label=L11 TRANSANCTION NUMBER
+Name=L11_VS1
+Value=1:20
+Value=99;MISSING
+
+[Item]
+Label=L12 RECIPIENT
+Name=L12
+Start=22
+Len=1
+
+[ValueSet]
+Label=L12 RECIPIENT
+Name=L12_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;NGO
+Value=9;MISSING
+
+[Item]
+Label=L13 GENDER OF GIVER
+Name=L13
+Start=23
+Len=1
+
+[ValueSet]
+Label=L13 GENDER OF GIVER
+Name=L13_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;BOTH
+Value=9;MISSING
+
+[Item]
+Label=L14 IS THE GIVER A SPECIALISED VINE MULTIPLIER
+Name=L14
+Start=24
+Len=1
+
+[ValueSet]
+Label=L14 IS THE GIVER A SPECIALISED VINE MULTIPLIER
+Name=L14_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L15 IS THE RECEIVER A FARMER GROUP MEMBER
+Name=L15
+Start=25
+Len=1
+
+[ValueSet]
+Label=L15 IS THE RECEIVER A FARMER GROUP MEMBER
+Name=L15_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L16 IS THE RECEIVER A RELATIVE
+Name=L16
+Start=26
+Len=1
+
+[ValueSet]
+Label=L16 IS THE RECEIVER A RELATIVE
+Name=L16_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L17 GAVE SP VINES BEFORE/DURING/AFTER RAIN
+Name=L17
+Start=27
+Len=1
+
+[ValueSet]
+Label=L17 GAVE SP VINES BEFORE/DURING/AFTER RAIN
+Name=L17_VS1
+Value=1;BEFORE
+Value=2;DURING
+Value=3;AFTER
+Value=4;ALL
+Value=9;MISSING
+
+[Item]
+Label=L18 TOTAL SP VINES GIVE: QUANTITY
+Name=L18
+Start=28
+Len=6
+Decimal=2
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=L19 TOTAL SP VINES GIVE: UNIT
+Name=L19
+Start=34
+Len=1
+
+[ValueSet]
+Label=L19 TOTAL SP VINES GIVE: UNIT
+Name=L19_VS1
+Value=1;KG
+Value=2;NUMBER IN 30 CM LONG EQUIVALENT
+Value=3;SMALL BUNDLE
+Value=4;MEDIUM BUNDLE
+Value=5;BIG BUNDLE
+Value=6;90 KG SACK
+Value=7;50 KG SACK
+Value=8;OTHER
+Value=9;MISSING
+
+[Item]
+Label=L20 DID YOU SELL THE SP VINES
+Name=L20
+Start=35
+Len=1
+
+[ValueSet]
+Label=L20 DID YOU SELL THE SP VINES
+Name=L20_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L21 IF SOLD, TOTAL VALUE OF SP VINES
+Name=L21
+Start=36
+Len=8
+
+[Item]
+Label=L22 CURRENCY USED
+Name=L22
+Start=44
+Len=1
+
+[ValueSet]
+Label=L22 CURRENCY USED
+Name=L22_VS1
+Value=1;FCFA
+Value=2;GHS
+Value=3;NGN
+Value=9;MISSING
+
+[Item]
+Label=L23 IF YOU SOLD, WHO KEPT AND MANAGED THE MONEY
+Name=L23
+Start=45
+Len=2
+
+[ValueSet]
+Label=L23 IF YOU SOLD, WHO KEPT AND MANAGED THE MONEY
+Name=L23_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;BOTH
+Value=88;N/A
+Value=99;MISSING
+
+[Record]
+Label=L. SEED SYSTEM: VINE DIFFUSION HH SP VINES RECEIVED
+Name=L_2_VINE_GET
+RecordTypeValue='D'
+MaxRecords=6
+RecordLen=54
+
+[Item]
+Label=L24 TRANSANCTION NUMBER
+Name=L24
+Start=20
+Len=2
+
+[ValueSet]
+Label=L24 TRANSANCTION NUMBER
+Name=L24_VS1
+Value=1:20
+Value=99;MISSING
+
+[Item]
+Label=L25 GENDER OF GIVER TO YOUR HH MEMBER
+Name=L25
+Start=22
+Len=1
+
+[ValueSet]
+Label=L25 GENDER OF GIVER TO YOUR HH MEMBER
+Name=L25_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;NGO
+Value=9;MISSING
+
+[Item]
+Label=L26 GENDER OF RECEIVER
+Name=L26
+Start=23
+Len=1
+
+[ValueSet]
+Label=L26 GENDER OF RECEIVER
+Name=L26_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;BOTH
+Value=9;MISSING
+
+[Item]
+Label=L27 IS THE RECEIVER A SPECIALISED VINE MULTIPLIER
+Name=L27
+Start=24
+Len=1
+
+[ValueSet]
+Label=L27 IS THE RECEIVER A SPECIALISED VINE MULTIPLIER
+Name=L27_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L28 IS THIS HH A FARMER GROUP MEMBER
+Name=L28
+Start=25
+Len=1
+
+[ValueSet]
+Label=L28 IS THIS HH A FARMER GROUP MEMBER
+Name=L28_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L29 DID YOU RECEIVE THE VINES FROIM A RELATIVE
+Name=L29
+Start=26
+Len=1
+
+[ValueSet]
+Label=L29 DID YOU RECEIVE THE VINES FROIM A RELATIVE
+Name=L29_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L30 DID THE VINES HAVE A LABEL
+Name=L30
+Start=27
+Len=1
+
+[ValueSet]
+Label=L30 DID THE VINES HAVE A LABEL
+Name=L30_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L31 DID YOU RECEIVE SP VINES BEFORE/DURING/AFTER RAIN
+Name=L31
+Start=28
+Len=1
+
+[ValueSet]
+Label=L31 DID YOU RECEIVE SP VINES BEFORE/DURING/AFTER RAIN
+Name=L31_VS1
+Value=1;BEFORE
+Value=2;DURING
+Value=3;AFTER
+Value=4;ALL
+Value=9;MISSING
+
+[Item]
+Label=L32 TOTAL SP VINES GIVEN: QUANTITY
+Name=L32
+Start=29
+Len=12
+Decimal=2
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=L33 TOTAL SP VINES GIVEN: UNIT
+Name=L33
+Start=41
+Len=2
+
+[ValueSet]
+Label=L33 TOTAL SP VINES GIVEN: UNIT
+Name=L33_VS1
+Value=1;KG
+Value=2;NUMBERS
+Value=3;100 KG BAG
+Value=4;90 KG BAG
+Value=5;70 KG BAG
+Value=6;60 KG BAG
+Value=7;50 KG BAG
+Value=8;25 KG BAG
+Value=9;10 KG BAG
+Value=10;25 LTR CAN
+Value=11;20 LTR CAN
+Value=12;10 LTR CAN
+Value=13;5 LTR CAN
+Value=14;1 LTR CAN
+Value=15;TONS
+Value=16;OX CART
+Value=17;Congo
+Value=18;BASKET - 50KG
+Value=19;BASKET - 25KG
+Value=20;BASKET - 10KG
+Value=21;GALLON - 50L
+Value=22;GALLON - 25L
+Value=23;GALLON - 10
+Value=24;GALLON - 5
+Value=99;MISSING
+
+[Item]
+Label=L34 DID YOU BUY THE SP VINES
+Name=L34
+Start=43
+Len=1
+
+[ValueSet]
+Label=L34 DID YOU BUY THE SP VINES
+Name=L34_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=L35 TOTAL VALUE OF SP VINES RECEIVED
+Name=L35
+Start=44
+Len=8
+
+[Item]
+Label=L36 CURRENCY USED
+Name=L36
+Start=52
+Len=1
+
+[ValueSet]
+Label=L36 CURRENCY USED
+Name=L36_VS1
+Value=1;FCFA
+Value=2;GHS
+Value=3;NGN
+Value=9;MISSING
+
+[Item]
+Label=L37 WHO BOUGHT OR BORROWED THE VINES
+Name=L37
+Start=53
+Len=2
+
+[ValueSet]
+Label=L37 WHO BOUGHT OR BORROWED THE VINES
+Name=L37_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;BOTH
+Value=88;NA
+Value=99;MISSING
+
+[Record]
+Label=L. SEED SYSTEM: VINE DIFFUSION CONT...
+Name=L_3_VINE_CARE
+RecordTypeValue='E'
+RecordLen=270
+
+[Item]
+Label=L38 UNDER WHAT FORM DO YOU USUALLY GET/GIVE VINES
+Name=L38
+Start=20
+Len=1
+
+[ValueSet]
+Label=L38 UNDER WHAT FORM DO YOU USUALLY GET/GIVE VINES
+Name=L38_VS1
+Value=1;VINES
+Value=2;ROOTS
+Value=3;BOTH
+Value=9;MISSING
+
+[Item]
+Label=L39 DO YOU PRODUCE VINES TO SELL AND /OR DISTRIBUTE TO OTHER FARMERS
+Name=L39
+Start=21
+Len=1
+
+[ValueSet]
+Label=L39 DO YOU PRODUCE VINES TO SELL AND /OR DISTRIBUTE TO OTHER FARMERS
+Name=L39_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Item]
+Label=L40 IF YES WHERE DO YOU GET YOUR VINES FROM
+Name=L40
+Start=22
+Len=1
+
+[ValueSet]
+Label=L40 IF YES WHERE DO YOU GET YOUR VINES FROM
+Name=L40_VS1
+Value=1;ADP
+Value=2;NRCRI
+Value=3;HKI
+Value=4;RAINBOW
+Value=9;MISSING
+
+[Item]
+Label=L41 DO YOU KNOW THE VARIETIES OF THE PLANTING MATERIALS THAT YOU HAVE
+Name=L41
+Start=23
+Len=1
+
+[ValueSet]
+Label=L41 DO YOU KNOW THE VARIETIES OF THE PLANTING MATERIALS THAT YOU HAVE
+Name=L41_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Item]
+Label=L42 WHAT VARIETIES DO YOU CURRENTLY HAVE
+Name=L42
+Start=24
+Len=80
+DataType=Alpha
+
+[Item]
+Label=L43 HOW DO YOU PLANT THEM
+Name=L43
+Start=104
+Len=1
+
+[ValueSet]
+Label=L43 HOW DO YOU PLANT THEM
+Name=L43_VS1
+Value=1;SEPARATELY
+Value=2;MIXED
+Value=3;BOTH
+Value=9;MISSING
+
+[Item]
+Label=L44 WHERE DO YOU PLANT YOUR SWEETPOTATO
+Name=L44
+Start=105
+Len=1
+
+[ValueSet]
+Label=L44 WHERE DO YOU PLANT YOUR SWEETPOTATO
+Name=L44_VS1
+Value=1;HOMESTEAD
+Value=2;BUSH FARM
+Value=9;MISSING
+
+[Item]
+Label=L45 DO YOU KNOW THE DISTANCE BETWEEN THE RIDGES/BED
+Name=L45
+Start=106
+Len=1
+
+[ValueSet]
+Label=L45 DO YOU KNOW THE DISTANCE BETWEEN THE RIDGES/BED
+Name=L45_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Item]
+Label=L46 DISTANCE BETWEEN THE RIDGES/BED
+Name=L46A
+Start=107
+Len=8
+Decimal=2
+
+[Item]
+Label=L46 DISTANCE BETWEEN THE RIDGES/BED: UNITS
+Name=L46B
+Start=115
+Len=1
+
+[ValueSet]
+Label=L46 DISTANCE BETWEEN THE RIDGES/BED: UNITS
+Name=L46B_VS1
+Value=1;CENTIMETER
+Value=2;METER
+Value=3;FEET
+Value=9;MISSING
+
+[Item]
+Label=L47 DO YOU KNOW THE DISTANCE BETWEEN THE PLANTED MATERIALS
+Name=L47
+Start=116
+Len=1
+
+[ValueSet]
+Label=L47 DO YOU KNOW THE DISTANCE BETWEEN THE PLANTED MATERIALS
+Name=L47_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Item]
+Label=L48 DISTANCE BETWEEN THE PLANTED MATERIALS
+Name=L48A
+Start=117
+Len=8
+Decimal=2
+
+[Item]
+Label=L48 DISTANCE BETWEEN THE PLANTED MATERIALS: UNITS
+Name=L48B
+Start=125
+Len=1
+
+[ValueSet]
+Label=L48 DISTANCE BETWEEN THE PLANTED MATERIALS: UNITS
+Name=L48B_VS1
+Value=1;CENTIMETER
+Value=2;METER
+Value=3;FEET
+Value=9;N/A
+
+[Item]
+Label=L49 HAVE YOU HEARD ABOUT LABELING PLANTED MATERIALS
+Name=L49
+Start=126
+Len=1
+
+[ValueSet]
+Label=L49 HAVE YOU HEARD ABOUT LABELING PLANTED MATERIALS
+Name=L49_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Item]
+Label=L50 IF YES, WERE YOUR PLANTING MATERIALS LABELED WHEN YOU OBTAINED THEM
+Name=L50
+Start=127
+Len=1
+
+[ValueSet]
+Label=L50 IF YES, WERE YOUR PLANTING MATERIALS LABELED WHEN YOU OBTAINED THEM
+Name=L50_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Item]
+Label=L51 DO YOU LABEL YOUR PLANTED SP OR WILL YOU LABEL THEM
+Name=L51
+Start=128
+Len=1
+
+[ValueSet]
+Label=L51 DO YOU LABEL YOUR PLANTED SP OR WILL YOU LABEL THEM
+Name=L51_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Item]
+Label=L52 WHAT DO YOU USE AS LABEL?
+Name=L52
+Start=129
+Len=60
+DataType=Alpha
+
+[Item]
+Label=L53 WHERE WILL YOU GET THE LABELS
+Name=L53
+Start=189
+Len=60
+DataType=Alpha
+
+[Item]
+Label=L54 INFORMATION PUT ON LABELS
+Name=L54
+Start=249
+Len=1
+
+[Item]
+Label=L55 DID YOU TELL ANYONE ABOUT HOW TO PROTECT VINES/ROOTS
+Name=L55
+Start=250
+Len=1
+
+[ValueSet]
+Label=L55 DID YOU TELL ANYONE ABOUT HOW TO PROTECT VINES/ROOTS
+Name=L55_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Item]
+Label=L56 DO YOU KNOW ANY PRODUCER WHO USES LABELS FOR HIS/HER SP
+Name=L56
+Start=251
+Len=1
+
+[ValueSet]
+Label=L56 DO YOU KNOW ANY PRODUCER WHO USES LABELS FOR HIS/HER SP
+Name=L56_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Item]
+Label=L57 HOW LARGE IS THE LAND YOU USE SPECIFICALLY FOR VINES TO SELL/DISTRIBUTE
+Name=L57
+Start=252
+Len=8
+Decimal=2
+
+[Item]
+Label=L57 LAND UNITS
+Name=L57A
+Start=260
+Len=1
+
+[ValueSet]
+Label=L57 LAND UNITS
+Name=L57A_VS1
+Value=1;M^2
+Value=2;ACRES
+Value=3;HA
+Value=4;SQ FEET
+Value=5;OTHER
+Value=9;MISSING
+
+[Item]
+Label=L58 HOW LONG HAVE YOU BEEN MULTIPLYING VINES TO SELL/DISTRIBUTE
+Name=L58
+Start=261
+Len=8
+Decimal=2
+
+[Item]
+Label=L58 UNITS
+Name=L58A
+Start=269
+Len=1
+
+[ValueSet]
+Label=L58 UNITS
+Name=L58A_VS1
+Value=1;Days
+Value=2;Weeks
+Value=3;Months
+Value=4;Years
+Value=9;MISSING
+
+[Item]
+Label=L59 WOULD YOU BE WILLING TO PARTICIPATE ON FARM TRIALS AND DEMO PLOTS
+Name=L59
+Start=270
+Len=1
+
+[ValueSet]
+Label=L59 WOULD YOU BE WILLING TO PARTICIPATE ON FARM TRIALS AND DEMO PLOTS
+Name=L59_VS1
+Value=1;YES
+Value=2;NO
+Value=9;MISSING
+
+[Record]
+Label=M. SWEETPOTATO KNOWLEDGE AND PRACTICES
+Name=M_SP_KAP
+RecordTypeValue='M'
+RecordLen=359
+
+[Item]
+Label=M01 WHO IS MOST KNOWLEDGEABLE ABOUT SP
+Name=M01
+Start=20
+Len=2
+
+[Item]
+Label=M02 WHO ANSWERED THE QUESTIONS
+Name=M02
+Start=22
+Len=2
+
+[Item]
+Label=M03 WHAT CAUSES HOLES IN THESE SWEETPOTATOES
+Name=M03
+Start=24
+Len=1
+
+[ValueSet]
+Label=M03 WHAT CAUSES HOLES IN THESE SWEETPOTATOES
+Name=M03_VS1
+Value=1;INSECT KIND NOT SPECIFIED
+Value=2;SWEETPOTATO WEEVIL
+Value=3;LACK OF RAIN
+Value=4;INFECTION/ROT
+Value=5;ANIMAL/PEST
+Value=6;DO NOT KNOW
+Value=7;OTHER
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M03 OTHER CAUSE
+Name=M03B
+Start=25
+Len=80
+DataType=Alpha
+
+[Item]
+Label=M04 HAVE YOUR SP EVER SUFFERED FROM PROBLEM IN THE PICTURE ABOVE
+Name=M04
+Start=105
+Len=1
+
+[ValueSet]
+Label=M04 HAVE YOUR SP EVER SUFFERED FROM PROBLEM IN THE PICTURE ABOVE
+Name=M04_VS1
+Value=0;NO
+Value=1;YES
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M05 IF YES, IS PROBLEM MAJOR OR MINOR
+Name=M05
+Start=106
+Len=1
+
+[ValueSet]
+Label=M05 IF YES, IS PROBLEM MAJOR OR MINOR
+Name=M05_VS1
+Value=0;MINOR
+Value=1;MAJOR
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M06 IF YES, DOES PROBLEM FORCE YOU TO HARVEST YOUR SP FIELD EARLIER
+Name=M06
+Start=107
+Len=2
+
+[ValueSet]
+Label=M06 IF YES, DOES PROBLEM FORCE YOU TO HARVEST YOUR SP FIELD EARLIER
+Name=M06_VS1
+Value=0;NO
+Value=1;YES
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: DISINFECT VINES
+Name=M07A
+Start=109
+Len=1
+
+[ValueSet]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: DISINFECT VINES
+Name=M07A_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: HILLING UP
+Name=M07B
+Start=110
+Len=1
+
+[ValueSet]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: HILLING UP
+Name=M07B_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: SELECTION OF CLEAN PLANTING MATERIAL
+Name=M07C
+Start=111
+Len=1
+
+[ValueSet]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: SELECTION OF CLEAN PLANTING MATERIAL
+Name=M07C_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: WEEDING
+Name=M07D
+Start=112
+Len=1
+
+[ValueSet]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: WEEDING
+Name=M07D_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: USE ROTATION
+Name=M07E
+Start=113
+Len=1
+
+[ValueSet]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: USE ROTATION
+Name=M07E_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: HARVEST EARLY
+Name=M07F
+Start=114
+Len=1
+
+[ValueSet]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: HARVEST EARLY
+Name=M07F_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M07 METHODS USED TO TRY CONTROL PROBLEM: OTHER
+Name=M07G
+Start=115
+Len=60
+DataType=Alpha
+
+[Item]
+Label=M08 IF YOU SEE A TIRED LOOKING PLANT IN THE FIELD, DO YOU REMOVE OR LEAVE IT
+Name=M08
+Start=175
+Len=1
+
+[ValueSet]
+Label=M08 IF YOU SEE A TIRED LOOKING PLANT IN THE FIELD, DO YOU REMOVE OR LEAVE IT
+Name=M08_VS1
+Value=1;REMOVE
+Value=2;LEAVE IT
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M09 STOPPED GROWING A VARIETY OR GOT NEW MATERIALS OF SAME VARIETY BACAUSE IT HAD BECOME TIRED
+Name=M09
+Start=176
+Len=1
+
+[ValueSet]
+Label=M09 STOPPED GROWING A VARIETY OR GOT NEW MATERIALS OF SAME VARIETY BACAUSE IT HAD BECOME TIRED
+Name=M09_VS1
+Value=1;YES
+Value=0;NO
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M10 DO YOU THINK THIS PLANT IS HEALTHY OR SICK: HEALTHY PLANT
+Name=M10
+Start=177
+Len=1
+
+[ValueSet]
+Label=M10 DO YOU THINK THIS PLANT IS HEALTHY OR SICK: HEALTHY PLANT
+Name=M10_VS1
+Value=1;HEALTHY
+Value=2;SICK
+Value=3;DO NOT KNOW
+Value=9;MISSING
+
+[Item]
+Label=M11 DO YOU THINK THIS PLANT IS HEALTHY OR SICK: MEDIUM VIRUS PLANT
+Name=M11
+Start=178
+Len=1
+
+[ValueSet]
+Label=M11 DO YOU THINK THIS PLANT IS HEALTHY OR SICK: MEDIUM VIRUS PLANT
+Name=M11_VS1
+Value=1;HEALTHY
+Value=2;SICK
+Value=3;DO NOT KNOW
+Value=9;MISSING
+
+[Item]
+Label=M12 IF RESPODENT SAYS PLANT IS SICK, WHAT IS IT SUFFERING FROM
+Name=M12A
+Start=179
+Len=1
+
+[ValueSet]
+Label=M12 IF RESPODENT SAYS PLANT IS SICK, WHAT IS IT SUFFERING FROM
+Name=M12A_VS1
+Value=1;VIRUS
+Value=2;DISEASE(GENERAL)
+Value=3;DROUGHT
+Value=4;INSECT DAMAGE
+Value=6;OTHER
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M12 SPECIFY OTHER DISEASE
+Name=M12B
+Start=180
+Len=30
+DataType=Alpha
+
+[Item]
+Label=M13 IF THIS HAPPENS IN YOUR FARM WHAT DO YOU DO ABOUT IT
+Name=M13
+Start=210
+Len=1
+
+[ValueSet]
+Label=M13 IF THIS HAPPENS IN YOUR FARM WHAT DO YOU DO ABOUT IT
+Name=M13_VS1
+Value=1;USE CHEMICAL
+Value=2;USE CLEAN  MATERIALS
+Value=3;GET RID OF INFESTED PLANTS
+Value=4;OTHER
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M13 OTHER CONTROL MEASURE
+Name=M13A
+Start=211
+Len=30
+DataType=Alpha
+
+[Item]
+Label=M14 DO RATS ATTACK YOUR ROOTS AND OTHER CROPS
+Name=M14
+Start=241
+Len=1
+
+[ValueSet]
+Label=M14 DO RATS ATTACK YOUR ROOTS AND OTHER CROPS
+Name=M14_VS1
+Value=0;NO
+Value=1;YES
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M15 WHAT DO YOU DO TO PROTECT YOUR ROOTS
+Name=M15
+Start=242
+Len=1
+
+[ValueSet]
+Label=M15 WHAT DO YOU DO TO PROTECT YOUR ROOTS
+Name=M15_VS1
+Value=1;SET TRAPS
+Value=2;CELAR UP THE WOODS IN THE FARM
+Value=3;CLEARING SURROUNDING BUSH
+Value=4;APPLYING RAT POISON
+Value=5;OTHER
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M15 SPECIFY OTHER MEASURE TO PROTECT ROOTS
+Name=M15A
+Start=243
+Len=30
+DataType=Alpha
+
+[Item]
+Label=M16 DO YOU KNOW WHAT IS THIS (PICTURE OF ROOT ATTACKED AND WEEVIL)
+Name=M16
+Start=273
+Len=1
+
+[ValueSet]
+Label=M16 DO YOU KNOW WHAT IS THIS (PICTURE OF ROOT ATTACKED AND WEEVIL)
+Name=M16_VS1
+Value=1;YES
+Value=0;NO
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M17 WHAT DO YOU DO TO PROTECT (ROOT ATTACKED AND WEEVIL)
+Name=M17
+Start=274
+Len=1
+
+[ValueSet]
+Label=M17 WHAT DO YOU DO TO PROTECT (ROOT ATTACKED AND WEEVIL)
+Name=M17_VS1
+Value=1;EARLY HARVESTING
+Value=2;HEATING UP/CLOSING CRACKS
+Value=3;MARCHING ON THE RIDGES TO CLOSE CRACKS
+Value=4;APPLY CHEMICALS
+Value=5;OTHERS
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M17 OTHER MEASURES (ROOT ATTACKED AND WEEVIL)
+Name=M17A
+Start=275
+Len=30
+DataType=Alpha
+
+[Item]
+Label=M18 HOW MANY TIMES DO YOU GROW SP IN SAME PLOT BEFORE YOU PLAN ANOTHER CROP OR FALLOW
+Name=M18
+Start=305
+Len=2
+
+[Item]
+Label=M19 WHICH PART OF THE SP VINE IS BEST TO USE FOR PLANTING
+Name=M19
+Start=307
+Len=1
+
+[ValueSet]
+Label=M19 WHICH PART OF THE SP VINE IS BEST TO USE FOR PLANTING
+Name=M19_VS1
+Value=1;TOP
+Value=2;MIDDLE
+Value=3;BOTTOM
+Value=4;TOP AND MIDDLE
+Value=5;ALL PARTS
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M20 WHY DID YOU INDICATE PART BEING BETTER
+Name=M20
+Start=308
+Len=1
+
+[ValueSet]
+Label=M20 WHY DID YOU INDICATE PART BEING BETTER
+Name=M20_VS1
+Value=1;BETTER OUTPUT
+Value=2;LESS DISEASES
+Value=3;EASIER TO CUT
+Value=4;MORE VIGOROUS GROWTH AFTER PLANTING
+Value=5;OTHER (SPECIFY)
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M20 WHY INDICATE PART BEING BETTER: OTHER
+Name=M20A
+Start=309
+Len=30
+DataType=Alpha
+
+[Item]
+Label=M21 GROW SP ON: RAISED BEDS
+Name=M21A
+Start=339
+Len=1
+
+[ValueSet]
+Label=M21 GROW SP ON: RAISED BEDS
+Name=M21A_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M21 GROW SP ON: FLAT BEDS
+Name=M21B
+Start=340
+Len=1
+
+[ValueSet]
+Label=M21 GROW SP ON: FLAT BEDS
+Name=M21B_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M21 GROW SP ON: RIDGES
+Name=M21C
+Start=341
+Len=1
+
+[ValueSet]
+Label=M21 GROW SP ON: RIDGES
+Name=M21C_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M21 GROW SP ON: MOUNDS
+Name=M21D
+Start=342
+Len=1
+
+[ValueSet]
+Label=M21 GROW SP ON: MOUNDS
+Name=M21D_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M21 GROW SP ON: FIELD WITHOUT RAISING THE SOIL
+Name=M21E
+Start=343
+Len=1
+
+[ValueSet]
+Label=M21 GROW SP ON: FIELD WITHOUT RAISING THE SOIL
+Name=M21E_VS1
+Value=0:1
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M22 DO YOU GROW SP ON ITS OWN OR MIXED WITH OTHER CROPS?
+Name=M22
+Start=344
+Len=1
+
+[ValueSet]
+Label=M22 DO YOU GROW SP ON ITS OWN OR MIXED WITH OTHER CROPS?
+Name=M22_VS1
+Value=1;PURE STAND
+Value=2;MIXED CROP
+Value=3;BOTH
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M23 INTERCROP WITH CROP 1 CODE
+Name=M23A2
+Start=345
+Len=2
+
+[ValueSet]
+Label=M23 INTERCROP WITH CROP 1 CODE
+Name=M23A2_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;MISSING
+
+[Item]
+Label=M23 INTERCROP WITH CROP 2 CODE
+Name=M23B2
+Start=347
+Len=2
+
+[ValueSet]
+Label=M23 INTERCROP WITH CROP 2 CODE
+Name=M23B2_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;MISSING
+
+[Item]
+Label=M23 INTERCROP WITH CROP 3 CODE
+Name=M23C2
+Start=349
+Len=2
+
+[ValueSet]
+Label=M23 INTERCROP WITH CROP 3 CODE
+Name=M23C2_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;MISSING
+
+[Item]
+Label=M23 INTERCROP WITH CROP 4 CODE
+Name=M23D2
+Start=351
+Len=2
+
+[ValueSet]
+Label=M23 INTERCROP WITH CROP 4 CODE
+Name=M23D2_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;MISSING
+
+[Item]
+Label=M24 DO YOU GROW ALL VARIETIES OF SP MIXED TOGETHER OR SEPARATE THEM IN DIFFERENT PLOTS
+Name=M24
+Start=353
+Len=1
+
+[ValueSet]
+Label=M24 DO YOU GROW ALL VARIETIES OF SP MIXED TOGETHER OR SEPARATE THEM IN DIFFERENT PLOTS
+Name=M24_VS1
+Value=1;MIXED
+Value=0;SEPARATE
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M25 DO YOU NORMALLY PLANT MORE THAN ONE CUTTINGS IN ONE HOLE?
+Name=M25
+Start=354
+Len=1
+
+[ValueSet]
+Label=M25 DO YOU NORMALLY PLANT MORE THAN ONE CUTTINGS IN ONE HOLE?
+Name=M25_VS1
+Value=1;YES
+Value=0;NO
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M26 DO YOU USUALLY USE MANURE OR FERTILIZER OR BOTH TO PRODUCE SP ROOTS
+Name=M26
+Start=355
+Len=1
+
+[ValueSet]
+Label=M26 DO YOU USUALLY USE MANURE OR FERTILIZER OR BOTH TO PRODUCE SP ROOTS
+Name=M26_VS1
+Value=0;NEITHER
+Value=1;MANURE ONLY
+Value=2;FERTILIZER ONLY
+Value=3;BOTH MANURE AND FERTILIZER
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M27 DO YOU USE ANY MANURE OR FERTILIZER OR BOTH TO INCREASE NUMBER OF VINES YOU PRODUCE FOR PLANTING MATERIALS
+Name=M27
+Start=356
+Len=1
+
+[ValueSet]
+Label=M27 DO YOU USE ANY MANURE OR FERTILIZER OR BOTH TO INCREASE NUMBER OF VINES YOU PRODUCE FOR PLANTING MATERIALS
+Name=M27_VS1
+Value=0;NEITHER
+Value=1;MANURE ONLY
+Value=2;FERTILIZER ONLY
+Value=3;BOTH MANURE AND FERTILIZER
+Value=8;DON'T KNOW
+Value=9;MISSING
+
+[Item]
+Label=M28 HOW MANY VARIETIES OF SP HAVE YOU TRIED GROWING IN THE PAST 5 YEARS
+Name=M28
+Start=357
+Len=3
+
+[ValueSet]
+Label=M28 HOW MANY VARIETIES OF SP HAVE YOU TRIED GROWING IN THE PAST 5 YEARS
+Name=M28_VS1
+Value=1:98
+Value=99;DON'T KNOW
+Value=999;MISSING
+
+[Record]
+Label=M. SWEETPOTATO KNOWLEDGE AND PRACTICES CONTINUED
+Name=M_2
+RecordTypeValue='J'
+RecordLen=542
+
+[Item]
+Label=M29 DO YOU PLANT SP WITHIN ONE WEEK OF THE START OF THE RAINS
+Name=M29
+Start=20
+Len=1
+
+[ValueSet]
+Label=M29 DO YOU PLANT SP WITHIN ONE WEEK OF THE START OF THE RAINS
+Name=M29_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M30 IF NOT, WHY NOT
+Name=M30
+Start=21
+Len=80
+DataType=Alpha
+
+[Item]
+Label=M31 DO YOU PLANT SP SEVERAL TIMES DURING ONE SEASON
+Name=M31
+Start=101
+Len=1
+
+[ValueSet]
+Label=M31 DO YOU PLANT SP SEVERAL TIMES DURING ONE SEASON
+Name=M31_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M32 IF YES, WHY? LACK OF PLANTING MATERIAL
+Name=M32A
+Start=102
+Len=1
+
+[ValueSet]
+Label=M32 IF YES, WHY? LACK OF PLANTING MATERIAL
+Name=M32A_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M32 IF YES, WHY? CANNOT DEPEND ON RAIN
+Name=M32B
+Start=103
+Len=1
+
+[ValueSet]
+Label=M32 IF YES, WHY? CANNOT DEPEND ON RAIN
+Name=M32B_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M32 IF YES, WHY? SPREAD OUT PRODUCTION
+Name=M32C
+Start=104
+Len=1
+
+[ValueSet]
+Label=M32 IF YES, WHY? SPREAD OUT PRODUCTION
+Name=M32C_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M32 IF YES, WHY? LACK OF LABOR
+Name=M32D
+Start=105
+Len=1
+
+[ValueSet]
+Label=M32 IF YES, WHY? LACK OF LABOR
+Name=M32D_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M32 IF YES, WHY? DIFFERENT VARIETIES HAVE DIFFERENT MATURING PERIOD
+Name=M32E
+Start=106
+Len=1
+
+[ValueSet]
+Label=M32 IF YES, WHY? DIFFERENT VARIETIES HAVE DIFFERENT MATURING PERIOD
+Name=M32E_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M32 IF YES, WHY? TO CONSERVE PLANTING MATERIALS
+Name=M32F
+Start=107
+Len=1
+
+[ValueSet]
+Label=M32 IF YES, WHY? TO CONSERVE PLANTING MATERIALS
+Name=M32F_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M32 IF YES, WHY? SPECIFY OTHER
+Name=M32G
+Start=108
+Len=60
+DataType=Alpha
+
+[Item]
+Label=M33 DO YOU CONSERVE SP VINES DURING THE LONG DRY SEASON
+Name=M33
+Start=168
+Len=1
+
+[ValueSet]
+Label=M33 DO YOU CONSERVE SP VINES DURING THE LONG DRY SEASON
+Name=M33_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M34 PLANT VINES IN FENCED LOWLAND/SWAMP TO CONSERVE SP VINES
+Name=M34A
+Start=169
+Len=1
+
+[ValueSet]
+Label=M34 PLANT VINES IN FENCED LOWLAND/SWAMP TO CONSERVE SP VINES
+Name=M34A_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M34 PLANT VINES IN NOT FENCED LOWLAND/SWAMP TO CONSERVE SP VINES
+Name=M34B
+Start=170
+Len=1
+
+[ValueSet]
+Label=M34 PLANT VINES IN NOT FENCED LOWLAND/SWAMP TO CONSERVE SP VINES
+Name=M34B_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M34 VINES IN SMALL PLOTS NEAR HOUSE/WATER TO CONSERVE SP VINES
+Name=M34C
+Start=171
+Len=1
+
+[ValueSet]
+Label=M34 VINES IN SMALL PLOTS NEAR HOUSE/WATER TO CONSERVE SP VINES
+Name=M34C_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M34 KEEP VINES UNDER SHADE OF OTHER CROPS AND WATER THEM TO CONSERVE SP VINES
+Name=M34D
+Start=172
+Len=1
+
+[ValueSet]
+Label=M34 KEEP VINES UNDER SHADE OF OTHER CROPS AND WATER THEM TO CONSERVE SP VINES
+Name=M34D_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M34 KEEP VINES UNDER SHADE OF OTHER CROPS AND NOT WATER THEM TO CONSERVE SP VINES
+Name=M34E
+Start=173
+Len=1
+
+[ValueSet]
+Label=M34 KEEP VINES UNDER SHADE OF OTHER CROPS AND NOT WATER THEM TO CONSERVE SP VINES
+Name=M34E_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M34 DO NOT HARVEST PART OF EXISTING FIELD TO CONSERVE SP VINES
+Name=M34F
+Start=174
+Len=1
+
+[ValueSet]
+Label=M34 DO NOT HARVEST PART OF EXISTING FIELD TO CONSERVE SP VINES
+Name=M34F_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M34 PLANT NEAR A BATHROOM TO CONSERVE SP VINES
+Name=M34G
+Start=175
+Len=1
+
+[ValueSet]
+Label=M34 PLANT NEAR A BATHROOM TO CONSERVE SP VINES
+Name=M34G_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M34 BURRIED ROOTS TO CONSERVE SP VINES
+Name=M34H
+Start=176
+Len=1
+
+[ValueSet]
+Label=M34 BURRIED ROOTS TO CONSERVE SP VINES
+Name=M34H_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M34 OTHER SPECIFY
+Name=M34I
+Start=177
+Len=60
+DataType=Alpha
+
+[Item]
+Label=M35 BUY VINES MATERIALS AFTER LONG DRY SEASON
+Name=M35A
+Start=237
+Len=1
+
+[ValueSet]
+Label=M35 BUY VINES MATERIALS AFTER LONG DRY SEASON
+Name=M35A_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M35 BORROW FROM NEIGHBORS MATERIALS AFTER LONG DRY SEASON
+Name=M35B
+Start=238
+Len=1
+
+[ValueSet]
+Label=M35 BORROW FROM NEIGHBORS MATERIALS AFTER LONG DRY SEASON
+Name=M35B_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M35 ASK RELATIVES FOR VINES
+Name=M35C
+Start=239
+Len=1
+
+[ValueSet]
+Label=M35 ASK RELATIVES FOR VINES
+Name=M35C_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M35 USE LEFT OVER ROOTS RE-SPROUTS IN THE FIELD
+Name=M35D
+Start=240
+Len=1
+
+[ValueSet]
+Label=M35 USE LEFT OVER ROOTS RE-SPROUTS IN THE FIELD
+Name=M35D_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M36 HAVE YOU EVER STORED SP ROOTS WHOLE AND FRESH AFTER HARVEST
+Name=M36
+Start=241
+Len=1
+
+[ValueSet]
+Label=M36 HAVE YOU EVER STORED SP ROOTS WHOLE AND FRESH AFTER HARVEST
+Name=M36_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M37 STORED PILE IN A HOUSE
+Name=M37A
+Start=242
+Len=1
+
+[ValueSet]
+Label=M37 STORED PILE IN A HOUSE
+Name=M37A_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M38 PERIOD STORED PILE IN A HOUSE
+Name=M38_PILE
+Start=243
+Len=3
+Decimal=1
+
+[Item]
+Label=M38 PERIOD STORED PILE IN A HOUSE: UNIT
+Name=M38_PILE_UNITS
+Start=246
+Len=1
+
+[ValueSet]
+Label=M38 PERIOD STORED PILE IN A HOUSE: UNIT
+Name=M38_PILE_UNITS_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=M37 STORED IN A SACK
+Name=M37_SACK
+Start=247
+Len=1
+
+[ValueSet]
+Label=M37 STORED IN A SACK
+Name=M37_SACK_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M38 PERIOD STORED IN A SACK
+Name=M38_SACK
+Start=248
+Len=3
+Decimal=1
+
+[Item]
+Label=M38 PERIOD STORED IN A SACK: UNIT
+Name=M38_SACK_UNITS
+Start=251
+Len=1
+
+[ValueSet]
+Label=M38 PERIOD STORED IN A SACK: UNIT
+Name=M38_SACK_UNITS_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=M37 STORED IN A PIT
+Name=M37_PIT
+Start=252
+Len=1
+
+[ValueSet]
+Label=M37 STORED IN A PIT
+Name=M37_PIT_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M38 PERIOD STORED IN A PIT
+Name=M38_PIT
+Start=253
+Len=3
+Decimal=1
+
+[Item]
+Label=M38 PERIOD STORED IN A PIT: UNIT
+Name=M38_PIT_UNITS
+Start=256
+Len=1
+
+[ValueSet]
+Label=M38 PERIOD STORED IN A PIT: UNIT
+Name=M38_PIT_UNITS_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=M37 STORED IN A WOODEN CRATES/COVERED BY WOOD
+Name=M37_WOOD
+Start=257
+Len=1
+
+[ValueSet]
+Label=M37 STORED IN A WOODEN CRATES/COVERED BY WOOD
+Name=M37_WOOD_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M38 PERIOD STORED IN A WOODEN CRATES/COVERED BY WOOD
+Name=M38_WOOD
+Start=258
+Len=3
+Decimal=1
+
+[Item]
+Label=M38 PERIOD STORED IN A WOODEN CRATES/COVERED BY WOOD:UNIT
+Name=M38_WOOD_UNITS
+Start=261
+Len=1
+
+[ValueSet]
+Label=M38 PERIOD STORED IN A WOODEN CRATES/COVERED BY WOOD:UNIT
+Name=M38_WOOD_UNITS_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=M37 STORED IN A PIT WITH ASH
+Name=M37_ASH
+Start=262
+Len=1
+
+[ValueSet]
+Label=M37 STORED IN A PIT WITH ASH
+Name=M37_ASH_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M38 PERIOD STORED IN A PIT WITH ASH
+Name=M38_ASH
+Start=263
+Len=3
+Decimal=1
+
+[Item]
+Label=M38 PERIOD STORED IN A PIT WITH ASH: UNIT
+Name=M38_ASH_UNITS
+Start=266
+Len=1
+
+[ValueSet]
+Label=M38 PERIOD STORED IN A PIT WITH ASH: UNIT
+Name=M38_ASH_UNITS_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=M37 STORED IN A PIT WITH SAND
+Name=M37_SAND
+Start=267
+Len=1
+
+[ValueSet]
+Label=M37 STORED IN A PIT WITH SAND
+Name=M37_SAND_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M38 PERIOD STORED IN A PIT WITH SAND
+Name=M38_SAND
+Start=268
+Len=3
+Decimal=1
+
+[Item]
+Label=M38 PERIOD STORED IN A PIT WITH SAND: UNIT
+Name=M38_SAND_UNITS
+Start=271
+Len=1
+
+[ValueSet]
+Label=M38 PERIOD STORED IN A PIT WITH SAND: UNIT
+Name=M38_SAND_UNITS_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=M37 STORED IN A PIT WITH SOIL/SLAY & ASH
+Name=M37_SOIL
+Start=272
+Len=1
+
+[ValueSet]
+Label=M37 STORED IN A PIT WITH SOIL/SLAY & ASH
+Name=M37_SOIL_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=M38 PERIOD STORED IN A PIT WITH SOIL/CLAY & ASH
+Name=M38_SOIL
+Start=273
+Len=3
+Decimal=1
+
+[Item]
+Label=M38 PERIOD STORED IN A PIT WITH SOIL/CLAY & ASH: UNIT
+Name=M38_SOIL_UNITS
+Start=276
+Len=1
+
+[ValueSet]
+Label=M38 PERIOD STORED IN A PIT WITH SOIL/CLAY & ASH: UNIT
+Name=M38_SOIL_UNITS_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=M37 OTHER STORAGE METHOD (SPECIFY)
+Name=M37_OTHER
+Start=277
+Len=30
+DataType=Alpha
+
+[Item]
+Label=M38 OTHER STORAGE PERIOD: SPECIFY
+Name=M38_OTHER
+Start=307
+Len=3
+Decimal=1
+
+[Item]
+Label=M38 OTHER STORAGE: SPECIFY UNIT
+Name=M38_OTHER_UNITS
+Start=310
+Len=10
+DataType=Alpha
+
+[Item]
+Label=M39 DO YOU EVER DRY SP FOR STORAGE
+Name=M39
+Start=320
+Len=1
+
+[ValueSet]
+Label=M39 DO YOU EVER DRY SP FOR STORAGE
+Name=M39_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M40 IF YES, WHICH METHOD DO YOU USE
+Name=M40
+Start=321
+Len=1
+
+[ValueSet]
+Label=M40 IF YES, WHICH METHOD DO YOU USE
+Name=M40_VS1
+Value=1;CHIPPED AND DRIED
+Value=2;BOILED, CHIPPED AND DRIED
+Value=3;OTHER (SPECIFY)
+Value=9;MISSING
+
+[Item]
+Label=M40 IF YES, WHICH METHOD DO YOU USE: OTHER
+Name=M40A
+Start=322
+Len=30
+DataType=Alpha
+
+[Item]
+Label=M41 IF YES, HOW LONG DID YOU STORE DRY SP: DAYS
+Name=M41A
+Start=352
+Len=2
+
+[ValueSet]
+Label=M41 IF YES, HOW LONG DID YOU STORE DRY SP: DAYS
+Name=M41A_VS1
+Value=0:31
+Value=99;MISSING
+
+[Item]
+Label=M41 IF YES, HOW LONG DID YOU STORE DRY SP: WEEKS
+Name=M41B
+Start=354
+Len=2
+
+[ValueSet]
+Label=M41 IF YES, HOW LONG DID YOU STORE DRY SP: WEEKS
+Name=M41B_VS1
+Value=0:52
+Value=99;MISSING
+
+[Item]
+Label=M41 IF YES, HOW LONG DID YOU STORE DRY SP: MONTHS
+Name=M41C
+Start=356
+Len=2
+
+[ValueSet]
+Label=M41 IF YES, HOW LONG DID YOU STORE DRY SP: MONTHS
+Name=M41C_VS1
+Value=0:12
+Value=99;MISSING
+
+[Item]
+Label=M42 HOW DID YOU STORE IT
+Name=M42
+Start=358
+Len=2
+
+[ValueSet]
+Label=M42 HOW DID YOU STORE IT
+Name=M42_VS1
+Value=1;IN A ROOM
+Value=2;IN A PIT
+Value=3;UNDER A SHADE
+Value=4;OTHER (SPECIFY)
+Value=99;MISSING
+
+[Item]
+Label=M42 HOW DID YOU STORE IT: OTHER
+Name=M42A
+Start=360
+Len=60
+DataType=Alpha
+
+[Item]
+Label=M43 HAVE YOU STOPPED GROWING ANY VARIETIES IN THE PAST 5 YEARS
+Name=M43
+Start=420
+Len=1
+
+[ValueSet]
+Label=M43 HAVE YOU STOPPED GROWING ANY VARIETIES IN THE PAST 5 YEARS
+Name=M43_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M44 IF YES, HOW MANY
+Name=M44
+Start=421
+Len=2
+
+[Item]
+Label=M45 IF YES, NAME ONE VARIETY DISCONTINUED
+Name=M45
+Start=423
+Len=60
+DataType=Alpha
+
+[Item]
+Label=M46 IF YES, WHAT WAS THE REASON
+Name=M46
+Start=483
+Len=60
+DataType=Alpha
+
+[Record]
+Label=M. SWEETPOTATO KOWLEDGE AND PRACTICES CONTINUED
+Name=M_3
+RecordTypeValue='O'
+RecordLen=165
+
+[Item]
+Label=M47 DESIRABILITY: EARLY MATURITY
+Name=M47A
+Start=20
+Len=1
+
+[ValueSet]
+Label=M47 DESIRABILITY: EARLY MATURITY
+Name=M47A_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 COOKS QUICKLY
+Name=M47B
+Start=21
+Len=1
+
+[ValueSet]
+Label=M47 COOKS QUICKLY
+Name=M47B_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 RESISTS DISEASES
+Name=M47C
+Start=22
+Len=1
+
+[ValueSet]
+Label=M47 RESISTS DISEASES
+Name=M47C_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 EASY TO STORE IN GROUND
+Name=M47D
+Start=23
+Len=1
+
+[ValueSet]
+Label=M47 EASY TO STORE IN GROUND
+Name=M47D_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 HIGH YIELDING
+Name=M47E
+Start=24
+Len=1
+
+[ValueSet]
+Label=M47 HIGH YIELDING
+Name=M47E_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 ROOTS TASTES GOOD
+Name=M47F
+Start=25
+Len=1
+
+[ValueSet]
+Label=M47 ROOTS TASTES GOOD
+Name=M47F_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 LEAVES TASTE GOOD
+Name=M47G
+Start=26
+Len=1
+
+[ValueSet]
+Label=M47 LEAVES TASTE GOOD
+Name=M47G_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 EASY GROWING IF RAINS STOP WHILE GROWING
+Name=M47H
+Start=27
+Len=1
+
+[ValueSet]
+Label=M47 EASY GROWING IF RAINS STOP WHILE GROWING
+Name=M47H_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 EASY TO CONSERVE VINES DURING THE LONG DRY PERIOD
+Name=M47I
+Start=28
+Len=1
+
+[ValueSet]
+Label=M47 EASY TO CONSERVE VINES DURING THE LONG DRY PERIOD
+Name=M47I_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 RED SKIN
+Name=M47J
+Start=29
+Len=1
+
+[ValueSet]
+Label=M47 RED SKIN
+Name=M47J_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 WHITE SKIN
+Name=M47K
+Start=30
+Len=1
+
+[ValueSet]
+Label=M47 WHITE SKIN
+Name=M47K_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 WHITE FLESH
+Name=M47L
+Start=31
+Len=1
+
+[ValueSet]
+Label=M47 WHITE FLESH
+Name=M47L_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 YELLOW FLESH
+Name=M47M
+Start=32
+Len=1
+
+[ValueSet]
+Label=M47 YELLOW FLESH
+Name=M47M_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 ORANGE FLESH
+Name=M47N
+Start=33
+Len=1
+
+[ValueSet]
+Label=M47 ORANGE FLESH
+Name=M47N_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 VINES SPREAD OUT WHEN THEY GROW
+Name=M47O
+Start=34
+Len=1
+
+[ValueSet]
+Label=M47 VINES SPREAD OUT WHEN THEY GROW
+Name=M47O_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 GIVES LOT OF ROOTS AND LOTS OF VINES AT THE SAME TIME
+Name=M47P
+Start=35
+Len=1
+
+[ValueSet]
+Label=M47 GIVES LOT OF ROOTS AND LOTS OF VINES AT THE SAME TIME
+Name=M47P_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 VERY LITTLE SUGARY
+Name=M47Q
+Start=36
+Len=1
+
+[ValueSet]
+Label=M47 VERY LITTLE SUGARY
+Name=M47Q_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 VERY SUGARY
+Name=M47R
+Start=37
+Len=1
+
+[ValueSet]
+Label=M47 VERY SUGARY
+Name=M47R_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 NOT WATERY
+Name=M47S
+Start=38
+Len=1
+
+[ValueSet]
+Label=M47 NOT WATERY
+Name=M47S_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 EASY TO ESTABLISH WHEN THERE IS LITTLE RAIN
+Name=M47T
+Start=39
+Len=1
+
+[ValueSet]
+Label=M47 EASY TO ESTABLISH WHEN THERE IS LITTLE RAIN
+Name=M47T_VS1
+Value=1;LIKE IT
+Value=2;DISLIKE IT
+Value=3;NOT IMPORTANT
+Value=9;MISSING
+
+[Item]
+Label=M47 HIGH DRY MATTER
+Name=M47U
+Start=40
+Len=1
+
+[Item]
+Label=M48 WHAT ARE THE TWO TOP SP VARIETIES YOU GROW: FIRST
+Name=M48A
+Start=41
+Len=60
+DataType=Alpha
+
+[Item]
+Label=M48 WHAT ARE THE TWO TOP SP VARIETIES YOU GROW: SECOND
+Name=M48B
+Start=101
+Len=60
+DataType=Alpha
+
+[Item]
+Label=M49 VARIETIES GROWN: APOMUDEN
+Name=M49A
+Start=161
+Len=1
+
+[ValueSet]
+Label=M49 VARIETIES GROWN: APOMUDEN
+Name=M49A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M49 VARIETIES GROWN: KUFFOUR
+Name=M49B
+Start=162
+Len=1
+
+[ValueSet]
+Label=M49 VARIETIES GROWN: KUFFOUR
+Name=M49B_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M49 VARIETIES GROWN: NANUGUNGUNGU
+Name=M49C
+Start=163
+Len=1
+
+[ValueSet]
+Label=M49 VARIETIES GROWN: NANUGUNGUNGU
+Name=M49C_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M50 DO YOU GIVE SP LEAVES TO LIVESTOCK
+Name=M50
+Start=164
+Len=1
+
+[ValueSet]
+Label=M50 DO YOU GIVE SP LEAVES TO LIVESTOCK
+Name=M50_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=M51 DO YOU SELL SP LEAVES
+Name=M51
+Start=165
+Len=1
+
+[ValueSet]
+Label=M51 DO YOU SELL SP LEAVES
+Name=M51_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Record]
+Label=N. KNOWLEDGE ABOUT VITAMIN A
+Name=N_VITAA
+RecordTypeValue='N'
+RecordLen=281
+
+[Item]
+Label=N01 HAVE YOU HEARD ABOUT VITAMIN A
+Name=N01
+Start=20
+Len=1
+
+[ValueSet]
+Label=N01 HAVE YOU HEARD ABOUT VITAMIN A
+Name=N01_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=N02 WHY VITAMIN A IS IMPORTANT TO US
+Name=N02
+Start=21
+Len=60
+DataType=Alpha
+
+[Item]
+Label=N02 MENTIONED PROTECT BODY
+Name=N02A
+Start=81
+Len=3
+
+[ValueSet]
+Label=N02 MENTIONED PROTECT BODY
+Name=N02A_VS1
+Value=1;YES
+Value=0;NO
+Value=99;DON'T KNOW
+Value=999;MISSING
+
+[Item]
+Label=N02 MENTIONED PROTECT EYES
+Name=N02B
+Start=84
+Len=3
+
+[ValueSet]
+Label=N02 MENTIONED PROTECT EYES
+Name=N02B_VS1
+Value=1;YES
+Value=0;NO
+Value=99;DON'T KNOW
+Value=999;MISSING
+
+[Item]
+Label=N02 MENTIONED ANY CORRECT FACT
+Name=N02C
+Start=87
+Len=3
+
+[ValueSet]
+Label=N02 MENTIONED ANY CORRECT FACT
+Name=N02C_VS1
+Value=1;YES
+Value=0;NO
+Value=99;DON'T KNOW
+Value=999;MISSING
+
+[Item]
+Label=N03 GIVE 3 EXAMPLES OF FOODS RICH IN VITAMIN A: FIRST EXAMPLE
+Name=N03A
+Start=90
+Len=2
+
+[Item]
+Label=N03 GIVE 3 EXAMPLES OF FOODS RICH IN VITAMIN A: SECOND EXPLE
+Name=N03B
+Start=92
+Len=2
+
+[Item]
+Label=N03 GIVE 3 EXAMPLES OF FOODS RICH IN VITAMIN A: THIRD EXAMPLE
+Name=N03C
+Start=94
+Len=2
+
+[Item]
+Label=N04 WHERE LEARN NAMES OF VITAMIN A: SOURCE 1
+Name=N04A
+Start=96
+Len=2
+
+[ValueSet]
+Label=N04 WHERE LEARN NAMES OF VITAMIN A: SOURCE 1
+Name=N04A_VS1
+Value=1;RADIO PROGRAM IN LOCAL LANGUAGE
+Value=2;RADIO PROGRAM IN ENGLISH
+Value=3;HEALTH UNIT
+Value=4;HEALTH EXTENSIONIST
+Value=5;LOCAL LEADER
+Value=6;RELIGIOUS LEADER
+Value=7;FRIEND
+Value=8;RELATIVE
+Value=9;SIGN IN THE MARKET/ELSEWHERE
+Value=10;SCHOOL
+Value=11;NUTRITION BOOKS
+Value=12;SEMINARS
+Value=13;OTHER
+Value=99;MISSING
+
+[Item]
+Label=N04 WHERE LEARN NAMES OF VITAMIN A: OTHER/SPECIFY
+Name=N04_OTHER_A
+Start=98
+Len=60
+DataType=Alpha
+
+[Item]
+Label=N04 WHERE LEARN NAMES OF VITAMIN A: SOURCE 2
+Name=N04B
+Start=158
+Len=2
+
+[ValueSet]
+Label=N04 WHERE LEARN NAMES OF VITAMIN A: SOURCE 2
+Name=N04B_VS1
+Value=1;RADIO PROGRAM IN LOCAL LANGUAGE
+Value=2;RADIO PROGRAM IN ENGLISH
+Value=3;HEALTH UNIT
+Value=4;HEALTH EXTENSIONIST
+Value=5;LOCAL LEADER
+Value=6;RELIGIOUS LEADER
+Value=7;FRIEND
+Value=8;RELATIVE
+Value=9;SIGN IN THE MARKET/ELSEWHERE
+Value=10;SCHOOL
+Value=11;NUTRITION BOOKS
+Value=12;SEMINARS
+Value=13;OTHER
+Value=99;MISSING
+
+[Item]
+Label=N04 WHERE LEARN NAMES OF VITAMIN A: OTHER/SPECIFY
+Name=N04_OTHER_B
+Start=160
+Len=60
+DataType=Alpha
+
+[Item]
+Label=N04 WHERE LEARN NAMES OF VITAMIN A: SOURCE 3
+Name=N04C
+Start=220
+Len=2
+
+[ValueSet]
+Label=N04 WHERE LEARN NAMES OF VITAMIN A: SOURCE 3
+Name=N04C_VS1
+Value=1;RADIO PROGRAM IN LOCAL LANGUAGE
+Value=2;RADIO PROGRAM IN ENGLISH
+Value=3;HEALTH UNIT
+Value=4;HEALTH EXTENSIONIST
+Value=5;LOCAL LEADER
+Value=6;RELIGIOUS LEADER
+Value=7;FRIEND
+Value=8;RELATIVE
+Value=9;SIGN IN THE MARKET/ELSEWHERE
+Value=10;SCHOOL
+Value=11;NUTRITION BOOKS
+Value=12;SEMINARS
+Value=13;OTHER
+Value=99;MISSING
+
+[Item]
+Label=N04 WHERE LEARN NAMES OF VITAMIN A: OTHER/SPECIFY
+Name=N04_OTHER_C
+Start=222
+Len=60
+DataType=Alpha
+
+[Record]
+Label=O. NUTRITION KNOWLEDGE, DIETARY HABITS AND PRACTICES, AND RADIO USE
+Name=O_NUTN_KNOW
+RecordTypeValue='I'
+RecordLen=191
+
+[Item]
+Label=O01 THINKING BACK TO WHEN A BABY IS BORN, IS IT BAD OR GOOD TO GIVE A BABY BREASTMILK?
+Name=O01
+Start=20
+Len=3
+
+[ValueSet]
+Label=O01 THINKING BACK TO WHEN A BABY IS BORN, IS IT BAD OR GOOD TO GIVE A BABY BREASTMILK?
+Name=O01_VS1
+Value=0;BAD
+Value=1;GOOD
+Value=99;DON'T KNOW
+Value=999;MISSING
+
+[Item]
+Label=O02 GIVEN YOUR EXPERIENCE AND KNOWLEDGE, WOULD YOU SAY THAT BABIES SHOULD BE GIVEN: SELECT ONE
+Name=O02
+Start=23
+Len=1
+
+[ValueSet]
+Label=O02 GIVEN YOUR EXPERIENCE AND KNOWLEDGE, WOULD YOU SAY THAT BABIES SHOULD BE GIVEN: SELECT ONE
+Name=O02_VS1
+Value=1;ONLY BREASTMILK
+Value=2;ONLY POWDER MILK
+Value=3;ONLY FRESH COW/GOAT MILK
+Value=4;ONLY PORRIDGE
+Value=5;MIXTURE OF ALL
+Value=6;OTHER
+Value=9;MISSING
+
+[Item]
+Label=O02 SPECIFY OTHER (WHAT BABIES SHOULD BE GIVEN)
+Name=O02A
+Start=24
+Len=30
+DataType=Alpha
+
+[Item]
+Label=O03 AT WHAT AGE SHOULD A BABY BE GIVEN WATER
+Name=O03
+Start=54
+Len=2
+
+[Item]
+Label=O03 AT WHAT AGE SHOULD A BABY BE GIVEN WATER: UNIT
+Name=O03U
+Start=56
+Len=1
+
+[ValueSet]
+Label=O03 AT WHAT AGE SHOULD A BABY BE GIVEN WATER: UNIT
+Name=O03U_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=O04 AT WHAT AGE SHOULD A BABY BE GIVEN FOOD SUCH AS PORRIDGE FOR THE FIRST TIME
+Name=O04
+Start=57
+Len=2
+
+[Item]
+Label=O04 AT WHAT AGE SHOULD A BABY BE GIVEN FOOD SUCH AS PORRIDGE FOR THE FIRST TIME: UNIT
+Name=O04U
+Start=59
+Len=1
+
+[ValueSet]
+Label=O04 AT WHAT AGE SHOULD A BABY BE GIVEN FOOD SUCH AS PORRIDGE FOR THE FIRST TIME: UNIT
+Name=O04U_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=O05 AT WHAT AGE SHOULD A BABY BE GIVEN SWEETPOTATO FOR THE FIRST TIME
+Name=O05
+Start=60
+Len=2
+
+[Item]
+Label=O05 AT WHAT AGE SHOULD A BABY BE GIVEN SWEETPOTATO FOR THE FIRST TIME: UNIT
+Name=O05U
+Start=62
+Len=1
+
+[ValueSet]
+Label=O05 AT WHAT AGE SHOULD A BABY BE GIVEN SWEETPOTATO FOR THE FIRST TIME: UNIT
+Name=O05U_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=9;MISSING
+
+[Item]
+Label=O06 UNDER NORMAL CIRCUMSTANCES, HOW LONG SHOULD A MOTHER BREASTFEED HER CHILD
+Name=O06
+Start=63
+Len=2
+
+[Item]
+Label=O06 UNDER NORMAL CIRCUMSTANCES, HOW LONG SHOULD A MOTHER BREASTFEED HER CHILD: UNIT
+Name=O06U
+Start=65
+Len=1
+
+[ValueSet]
+Label=O06 UNDER NORMAL CIRCUMSTANCES, HOW LONG SHOULD A MOTHER BREASTFEED HER CHILD: UNIT
+Name=O06U_VS1
+Value=1;DAYS
+Value=2;WEEKS
+Value=3;MONTHS
+Value=4;YEARS
+Value=9;MISSING
+
+[Item]
+Label=O07 HOW MANY TIMES DURING THE DAY A BABY THAT IS OLD ENOUGH TO CRAWL BUT NOT YET WALKING, BE FED PORRIDGE OR OTHER FOOD
+Name=O07A
+Start=66
+Len=3
+
+[ValueSet]
+Label=O07 HOW MANY TIMES DURING THE DAY A BABY THAT IS OLD ENOUGH TO CRAWL BUT NOT YET WALKING, BE FED PORRIDGE OR OTHER FOOD
+Name=O07A_VS1
+Value=0:98
+Value=99;DON'T KNOW
+Value=999;MISSING
+
+[Item]
+Label=O08 HOW MANY TIMES DURING THE DAY A BABY SHOULD A CHILD OF ONE TO TWO YEARS BE FED (COUNT MEALS AND SNACKS)?
+Name=O08
+Start=69
+Len=3
+
+[ValueSet]
+Label=O08 HOW MANY TIMES DURING THE DAY A BABY SHOULD A CHILD OF ONE TO TWO YEARS BE FED (COUNT MEALS AND SNACKS)?
+Name=O08_VS1
+Value=0:98
+Value=99;DON'T KNOW
+Value=999;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: HEALTH CENTER
+Name=O09A
+Start=72
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: HEALTH CENTER
+Name=O09A_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: EXTENSION AGENT
+Name=O09B
+Start=73
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: EXTENSION AGENT
+Name=O09B_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: MOSQUE/CHURCH
+Name=O09C
+Start=74
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: MOSQUE/CHURCH
+Name=O09C_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: HUSBAND
+Name=O09D
+Start=75
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: HUSBAND
+Name=O09D_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: MOTHER
+Name=O09E
+Start=76
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: MOTHER
+Name=O09E_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: MOTHER IN LAW
+Name=O09F
+Start=77
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: MOTHER IN LAW
+Name=O09F_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: OTHER RELATIVE
+Name=O09G
+Start=78
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: OTHER RELATIVE
+Name=O09G_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: OTHER FEMALE
+Name=O09H
+Start=79
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: OTHER FEMALE
+Name=O09H_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: OTHER MALE
+Name=O09I
+Start=80
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: OTHER MALE
+Name=O09I_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: RADIO
+Name=O09J
+Start=81
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: RADIO
+Name=O09J_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: SCHOOL
+Name=O09K
+Start=82
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: SCHOOL
+Name=O09K_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: TRADITIONAL HEALER
+Name=O09L
+Start=83
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: TRADITIONAL HEALER
+Name=O09L_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O09 WHERE DID YOU LEARN: TRAINED HEALTH VOLUNTEER/PROMOTER
+Name=O09M
+Start=84
+Len=1
+
+[ValueSet]
+Label=O09 WHERE DID YOU LEARN: TRAINED HEALTH VOLUNTEER/PROMOTER
+Name=O09M_VS1
+Value=1;MENTIONED
+Value=0;NOT MENTIONED
+Value=9;MISSING
+
+[Item]
+Label=O10 LAST MONTH, HOW MANY TIMES DID YOU LISTEN TO THE RADIO
+Name=O10
+Start=85
+Len=1
+
+[ValueSet]
+Label=O10 LAST MONTH, HOW MANY TIMES DID YOU LISTEN TO THE RADIO
+Name=O10_VS1
+Value=1;EVERY DAY
+Value=2;3-4 TIMES PER WEEK
+Value=3;1-2 TIMES PER WEEK
+Value=4;IRREGULARLY
+Value=5;DID NOT LISTEN
+Value=8;DO NOT KNOW
+Value=9;MISSING
+
+[Item]
+Label=O11 WHAT IS THE STATION YOU LISTEN TO MOST OFTEN
+Name=O11
+Start=86
+Len=1
+
+[ValueSet]
+Label=O11 WHAT IS THE STATION YOU LISTEN TO MOST OFTEN
+Name=O11_VS1
+Value=1;NATIONAL RADIO
+Value=2;REGIONAL RADIO
+Value=3;COMMUNITY LEVEL RADIO
+Value=8;DON'T KNOW
+Value=9;NOT APPLICABLE, DO NOT LISTEN
+Value=9;MISSING
+
+[Item]
+Label=O12 WHAT IS THE NAME OF THE STATION YOU USUALLY LISTEN TO: STATION 1
+Name=O012A
+Start=87
+Len=30
+DataType=Alpha
+
+[Item]
+Label=O12 WHAT IS THE NAME OF THE STATION YOU USUALLY LISTEN TO: STATION 2
+Name=O012B
+Start=117
+Len=30
+DataType=Alpha
+
+[Item]
+Label=O12 WHAT IS THE NAME OF THE STATION YOU USUALLY LISTEN TO: STATION 3
+Name=O012C
+Start=147
+Len=30
+DataType=Alpha
+
+[Item]
+Label=O13 WHEN PREFER LISTEN TO RADIO: FIRST THING IN THE MORNING
+Name=O13A
+Start=177
+Len=2
+
+[ValueSet]
+Label=O13 WHEN PREFER LISTEN TO RADIO: FIRST THING IN THE MORNING
+Name=O13A_VS1
+Value=1
+Value=0
+Value=99;MISSING
+
+[Item]
+Label=O13 WHEN PREFER LISTEN TO RADIO: LATER IN THE MORNING
+Name=O13B
+Start=179
+Len=2
+
+[ValueSet]
+Label=O13 WHEN PREFER LISTEN TO RADIO: LATER IN THE MORNING
+Name=O13B_VS1
+Value=1
+Value=0
+Value=99;MISSING
+
+[Item]
+Label=O13 WHEN PREFER LISTEN TO RADIO: AFTERNOON
+Name=O13C
+Start=181
+Len=2
+
+[ValueSet]
+Label=O13 WHEN PREFER LISTEN TO RADIO: AFTERNOON
+Name=O13C_VS1
+Value=1
+Value=0
+Value=99;MISSING
+
+[Item]
+Label=O13 WHEN PREFER LISTEN TO RADIO: EVENING
+Name=O13D
+Start=183
+Len=2
+
+[ValueSet]
+Label=O13 WHEN PREFER LISTEN TO RADIO: EVENING
+Name=O13D_VS1
+Value=1
+Value=0
+Value=99;MISSING
+
+[Item]
+Label=O13 WHEN PREFER LISTEN TO RADIO: AFTER DINNER
+Name=O13E
+Start=185
+Len=2
+
+[ValueSet]
+Label=O13 WHEN PREFER LISTEN TO RADIO: AFTER DINNER
+Name=O13E_VS1
+Value=1
+Value=0
+Value=99;MISSING
+
+[Item]
+Label=O13 WHEN PREFER LISTEN TO RADIO: VARIES, NO SPECIFIC TIME
+Name=O13F
+Start=187
+Len=2
+
+[ValueSet]
+Label=O13 WHEN PREFER LISTEN TO RADIO: VARIES, NO SPECIFIC TIME
+Name=O13F_VS1
+Value=1
+Value=0
+Value=99;MISSING
+
+[Item]
+Label=O13 WHEN PREFER LISTEN TO RADIO: DON'T KNOW
+Name=O13G
+Start=189
+Len=2
+
+[ValueSet]
+Label=O13 WHEN PREFER LISTEN TO RADIO: DON'T KNOW
+Name=O13G_VS1
+Value=1
+Value=0
+Value=99;MISSING
+
+[Item]
+Label=O14 DO YOU EVER GET INFORMATION ABOUT PRICES OR CROPS OR OTHER MESAGES THROUGH THE CELL PHONE
+Name=O014
+Start=191
+Len=1
+
+[ValueSet]
+Label=O14 DO YOU EVER GET INFORMATION ABOUT PRICES OR CROPS OR OTHER MESAGES THROUGH THE CELL PHONE
+Name=O014_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Record]
+Label=P. FREQUENCY OF CONSUMPTION OF VITAMIN A RICH FOODS
+Name=P_FREQ_VITA
+RecordTypeValue='K'
+RecordLen=151
+
+[Item]
+Label=P00 REFERENCE CHILD
+Name=P00
+Start=20
+Len=2
+
+[Item]
+Label=P01 ARE YOU BREASTFEEDING A CHILD?
+Name=P01
+Start=22
+Len=1
+
+[ValueSet]
+Label=P01 ARE YOU BREASTFEEDING A CHILD?
+Name=P01_VS1
+Value=1;Yes
+Value=0;No
+Value=9;MISSING
+
+[Item]
+Label=P02 IF YES, HOW MANY TIMES ON AVERAGE DO YOU BREASTFEED PER DAY
+Name=P02
+Start=23
+Len=2
+
+[Item]
+Label=P03 DO YOU THINK THE CHILD GETS ENOUGH MILK EVERYDAY?
+Name=P03
+Start=25
+Len=1
+
+[ValueSet]
+Label=P03 DO YOU THINK THE CHILD GETS ENOUGH MILK EVERYDAY?
+Name=P03_VS1
+Value=1;Yes
+Value=0;No
+Value=9;MISSING
+
+[Item]
+Label=P04 IF NOT, AT WHAT AGE DID THE REFERENCE CHILD STOP BREASTFEEDING?
+Name=P04
+Start=26
+Len=2
+
+[Item]
+Label=P04 IF NOT, AT WHAT AGE DID THE REFERENCE CHILD STOP BREASTFEEDING? UNIT
+Name=P04A
+Start=28
+Len=1
+
+[ValueSet]
+Label=P04 IF NOT, AT WHAT AGE DID THE REFERENCE CHILD STOP BREASTFEEDING? UNIT
+Name=P04A_VS1
+Value=1;MONTHS
+Value=2;YEARS
+Value=9;MISSING
+
+[Item]
+Label=P05 HOW MANY TIMES YESTERDAY DID THE CHILD RECEIVE FOOD?
+Name=P05
+Start=29
+Len=2
+
+[Item]
+Label=P06 IF THE CHILD IS NOT BREASTFEEDING, HOW MANY TIMES YESTERDAY DID THE CHILD RECEIVE MILK FROM A COW, GOAT, OR FROM A PACKAGE/POWDER...?
+Name=P06
+Start=31
+Len=2
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: MAIZE/SORG/MILLET (CHILD)
+Name=P07A
+Start=33
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: MAIZE/SORG/MILLET (CHILD)
+Name=P07A_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: MAIZE/SORG/MILLET (CAREGIVER)
+Name=P08A
+Start=34
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: MAIZE/SORG/MILLET (CAREGIVER)
+Name=P08A_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: WHOLE CHILLIES (CHILD)
+Name=P07B
+Start=35
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: WHOLE CHILLIES (CHILD)
+Name=P07B_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: WHOLE CHILLIES (CAREGIVER)
+Name=P08B
+Start=36
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: WHOLE CHILLIES (CAREGIVER)
+Name=P08B_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: DARK GREEN LEAVES (CHILD)
+Name=P07C
+Start=37
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: DARK GREEN LEAVES (CHILD)
+Name=P07C_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: DARK GREEN LEAVES (CAREGIVER)
+Name=P08C
+Start=38
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: DARK GREEN LEAVES (CAREGIVER)
+Name=P08C_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: PUMPKIN LEAVES (CHILD)
+Name=P07D
+Start=39
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: PUMPKIN LEAVES (CHILD)
+Name=P07D_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: PUMPKIN LEAVES (CAREGIVER`)
+Name=P08D
+Start=40
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: PUMPKIN LEAVES (CAREGIVER`)
+Name=P08D_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: SP LEAVES (CHILD)
+Name=P07E
+Start=41
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: SP LEAVES (CHILD)
+Name=P07E_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: SP LEAVES (CAREGIVER)
+Name=P08E
+Start=42
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: SP LEAVES (CAREGIVER)
+Name=P08E_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: SP AMARANTHA LEAVES (CHILD)
+Name=P07F
+Start=43
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: SP AMARANTHA LEAVES (CHILD)
+Name=P07F_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: SP AMARANTHA LEAVES (CAREGIVER)
+Name=P08F
+Start=44
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: SP AMARANTHA LEAVES (CAREGIVER)
+Name=P08F_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: WFSP (CHILD)
+Name=P07G
+Start=45
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: WFSP (CHILD)
+Name=P07G_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: WFSP (CAREGIVER)
+Name=P08G
+Start=46
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: WFSP (CAREGIVER)
+Name=P08G_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: WHEAT/BISCUITS/COOKIES/BREAD (CHILD)
+Name=P07H
+Start=47
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: WHEAT/BISCUITS/COOKIES/BREAD (CHILD)
+Name=P07H_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: WHEAT/BISCUITS/COOKIES/BREAD (CAREGIVER)
+Name=P08H
+Start=48
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: WHEAT/BISCUITS/COOKIES/BREAD (CAREGIVER)
+Name=P08H_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: CASSAVA, IRISH POTATO, YAM, OTHER TUBERS (CHILD)
+Name=P07I
+Start=49
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: CASSAVA, IRISH POTATO, YAM, OTHER TUBERS (CHILD)
+Name=P07I_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: CASSAVA, IRISH POTATO, YAM, OTHER TUBERS (CAREGIVER)
+Name=P08I
+Start=50
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: CASSAVA, IRISH POTATO, YAM, OTHER TUBERS (CAREGIVER)
+Name=P08I_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: COWS MILK/GOATS/YORGHUT/CHEESE (CHILD)
+Name=P07J
+Start=51
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: COWS MILK/GOATS/YORGHUT/CHEESE (CHILD)
+Name=P07J_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: COWS MILK/GOATS/YORGHUT/CHEESE (CAREGIVER)
+Name=P08J
+Start=52
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: COWS MILK/GOATS/YORGHUT/CHEESE (CAREGIVER)
+Name=P08J_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: CARROTS (CHILD)
+Name=P07K
+Start=53
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: CARROTS (CHILD)
+Name=P07K_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: CARROTS (CAREGIVER)
+Name=P08K
+Start=54
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: CARROTS (CAREGIVER)
+Name=P08K_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: RIPE MANGOES (CHILD)
+Name=P07L
+Start=55
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: RIPE MANGOES (CHILD)
+Name=P07L_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: RIPE MANGOES (CAREGIVER)
+Name=P08L
+Start=56
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: RIPE MANGOES (CAREGIVER)
+Name=P08L_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: PUMPKIN  (CHILD)
+Name=P07M
+Start=57
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: PUMPKIN  (CHILD)
+Name=P07M_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: PUMPKIN (CAREGIVER)
+Name=P08M
+Start=58
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: PUMPKIN (CAREGIVER)
+Name=P08M_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: RIPE PAPAYA (CHILD)
+Name=P07N
+Start=59
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: RIPE PAPAYA (CHILD)
+Name=P07N_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: RIPE PAPAYA (CAREGIVER)
+Name=P08N
+Start=60
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: RIPE PAPAYA (CAREGIVER)
+Name=P08N_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS COMSUMPTION: OTHER FRUITS FRESH OR AS JUICE (CHILD)
+Name=P07O
+Start=61
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS COMSUMPTION: OTHER FRUITS FRESH OR AS JUICE (CHILD)
+Name=P07O_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS COMSUMPTION: OTHER FRUITS FRESH OR AS JUICE (CAREGIVER)
+Name=P08O
+Start=62
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS COMSUMPTION: OTHER FRUITS FRESH OR AS JUICE (CAREGIVER)
+Name=P08O_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: RED PALM OIL (CHILD)
+Name=P07P
+Start=63
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: RED PALM OIL (CHILD)
+Name=P07P_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: RED PALM OIL (CAREGIVER)
+Name=P08P
+Start=64
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: RED PALM OIL (CAREGIVER)
+Name=P08P_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: OFSP (CHILD)
+Name=P07Q
+Start=65
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: OFSP (CHILD)
+Name=P07Q_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: OFSP (CAREGIVER)
+Name=P08Q
+Start=66
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: OFSP (CAREGIVER)
+Name=P08Q_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: YFSP (CHILD)
+Name=P07R
+Start=67
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: YFSP (CHILD)
+Name=P07R_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: YFSP (CAREGIVER)
+Name=P08R
+Start=68
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: YFSP (CAREGIVER)
+Name=P08R_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: OTHER VEGETABLES (CHILD)
+Name=P07S
+Start=69
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: OTHER VEGETABLES (CHILD)
+Name=P07S_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: OTHER VEGETABLES (CAREGIVER)
+Name=P08S
+Start=70
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: OTHER VEGETABLES (CAREGIVER)
+Name=P08S_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: EGGS WITH YOLK (CHILD)
+Name=P07T
+Start=71
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: EGGS WITH YOLK (CHILD)
+Name=P07T_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: EGGS WITH YOLK (CAREGIVER)
+Name=P08T
+Start=72
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: EGGS WITH YOLK (CAREGIVER)
+Name=P08T_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: SMALL FISH OR LARGE FISH SOUP (CHILD)
+Name=P07U
+Start=73
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: SMALL FISH OR LARGE FISH SOUP (CHILD)
+Name=P07U_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: SMALL FISH OR LARGE FISH SOUP (CAREGIVER)
+Name=P08U
+Start=74
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: SMALL FISH OR LARGE FISH SOUP (CAREGIVER)
+Name=P08U_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: SMALL FISH FRESH (CHILD)
+Name=P07V
+Start=75
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: SMALL FISH FRESH (CHILD)
+Name=P07V_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: SMALL FISH FRESH (CAREGIVER)
+Name=P08V
+Start=76
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: SMALL FISH FRESH (CAREGIVER)
+Name=P08V_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: SMALL DRIED (CHILD)
+Name=P07W
+Start=77
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: SMALL DRIED (CHILD)
+Name=P07W_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: SMALL DRIED (CAREGIVER)
+Name=P08W
+Start=78
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: SMALL DRIED (CAREGIVER)
+Name=P08W_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: GROUNDNUT OR CASHEWNUT (CHILD)
+Name=P07X
+Start=79
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: GROUNDNUT OR CASHEWNUT (CHILD)
+Name=P07X_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: GROUNDNUT OR CASHEWNUT (CAREGIVER)
+Name=P08X
+Start=80
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: GROUNDNUT OR CASHEWNUT (CAREGIVER)
+Name=P08X_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: PUMPKIN SEEDS OR OTHER SEEDS (CHILD)
+Name=P07Y
+Start=81
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: PUMPKIN SEEDS OR OTHER SEEDS (CHILD)
+Name=P07Y_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: PUMPKIN SEEDS OR OTHER SEEDS (CAREGIVER)
+Name=P08Y
+Start=82
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: PUMPKIN SEEDS OR OTHER SEEDS (CAREGIVER)
+Name=P08Y_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: LIVER FROM ANY ANIMAL (CHILD)
+Name=P07Z
+Start=83
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: LIVER FROM ANY ANIMAL (CHILD)
+Name=P07Z_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: LIVER FROM ANY ANIMAL (CAREGIVER)
+Name=P08Z
+Start=84
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: LIVER FROM ANY ANIMAL (CAREGIVER)
+Name=P08Z_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: MEAT FROM COW/PIG/SHEEP/RABBIT/RAT (CHILD)
+Name=P07AA
+Start=85
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: MEAT FROM COW/PIG/SHEEP/RABBIT/RAT (CHILD)
+Name=P07AA_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: MEAT FROM COW/PIG/SHEEP/RABBIT/RAT (CAREGIVER)
+Name=P08AA
+Start=86
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: MEAT FROM COW/PIG/SHEEP/RABBIT/RAT (CAREGIVER)
+Name=P08AA_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: BUTTER (CHILD)
+Name=P07BB
+Start=87
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: BUTTER (CHILD)
+Name=P07BB_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: BUTTER (CAREGIVER)
+Name=P08BB
+Start=88
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: BUTTER (CAREGIVER)
+Name=P08BB_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: BEANS - ALL KINDS (CHILD)
+Name=P07CC
+Start=89
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: BEANS - ALL KINDS (CHILD)
+Name=P07CC_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: BEANS - ALL KINDS (CAREGIVER)
+Name=P08CC
+Start=90
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: BEANS - ALL KINDS (CAREGIVER)
+Name=P08CC_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: RICE (CHILD)
+Name=P07DD
+Start=91
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: RICE (CHILD)
+Name=P07DD_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: RICE (CAREGIVER)
+Name=P08DD
+Start=92
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: RICE (CAREGIVER)
+Name=P08DD_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: COD LIVER OIL (CHILD)
+Name=P07EE
+Start=93
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: COD LIVER OIL (CHILD)
+Name=P07EE_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: COD LIVER OIL (CAREGIVER)
+Name=P08EE
+Start=94
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: COD LIVER OIL (CAREGIVER)
+Name=P08EE_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: FOOD FRIED IN OIL OR WITH OIL (CHILD)
+Name=P07FF
+Start=95
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: FOOD FRIED IN OIL OR WITH OIL (CHILD)
+Name=P07FF_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: FOOD FRIED IN OIL OR WITH OIL (CAREGIVER)
+Name=P08FF
+Start=96
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: FOOD FRIED IN OIL OR WITH OIL (CAREGIVER)
+Name=P08FF_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: VITAMIN A FORTIFIED MARGARINE OR OIL ADDED (CHILD)
+Name=P07GG
+Start=97
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: VITAMIN A FORTIFIED MARGARINE OR OIL ADDED (CHILD)
+Name=P07GG_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: VITAMIN A FORTIFIED MARGARINE OR OIL ADDED (CAREGIVER)
+Name=P08GG
+Start=98
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: VITAMIN A FORTIFIED MARGARINE OR OIL ADDED (CAREGIVER)
+Name=P08GG_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: ANY OTHER TYPE OF FAT (CHILD)
+Name=P07HH
+Start=99
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: ANY OTHER TYPE OF FAT (CHILD)
+Name=P07HH_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: ANY OTHER TYPE OF FAT (CAREGIVER)
+Name=P08HH
+Start=100
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: ANY OTHER TYPE OF FAT (CAREGIVER)
+Name=P08HH_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: COCONUT MILK (CHILD)
+Name=P07II
+Start=101
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: COCONUT MILK (CHILD)
+Name=P07II_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: COCONUT MILK (CAREGIVER)
+Name=P08II
+Start=102
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: COCONUT MILK (CAREGIVER)
+Name=P08II_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: WEANING FOOD FORTIFIED WITH VIT A LIKE CERELAC (CHILD)
+Name=P07JJ
+Start=103
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: WEANING FOOD FORTIFIED WITH VIT A LIKE CERELAC (CHILD)
+Name=P07JJ_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: WEANING FOOD FORTIFIED WITH VIT A LIKE CERELAC (CAREGIVER)
+Name=P08JJ
+Start=104
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: WEANING FOOD FORTIFIED WITH VIT A LIKE CERELAC (CAREGIVER)
+Name=P08JJ_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: INFANT FORMULA (CHILD)
+Name=P07KK
+Start=105
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: INFANT FORMULA (CHILD)
+Name=P07KK_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: INFANT FORMULA (CAREGIVER)
+Name=P08KK
+Start=106
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: INFANT FORMULA (CAREGIVER)
+Name=P08KK_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: BLOOD ADDED AS AN INGRIDIENT (CHILD)
+Name=P07LL
+Start=107
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: BLOOD ADDED AS AN INGRIDIENT (CHILD)
+Name=P07LL_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: BLOOD ADDED AS AN INGRIDIENT (CAREGIVER)
+Name=P08LL
+Start=108
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: BLOOD ADDED AS AN INGRIDIENT (CAREGIVER)
+Name=P08LL_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: ANY SUGAR TO WHICH VITAMIN A HAS BEEN ADDED (CHILD)
+Name=P07MM
+Start=109
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: ANY SUGAR TO WHICH VITAMIN A HAS BEEN ADDED (CHILD)
+Name=P07MM_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: ANY SUGAR TO WHICH VITAMIN A HAS BEEN ADDED (CAREGIVER)
+Name=P08MM
+Start=110
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: ANY SUGAR TO WHICH VITAMIN A HAS BEEN ADDED (CAREGIVER)
+Name=P08MM_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: ANY LARGER FISH THAN OMENA - FRESH OR DRIED (CHILD)
+Name=P07NN
+Start=111
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: ANY LARGER FISH THAN OMENA - FRESH OR DRIED (CHILD)
+Name=P07NN_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: ANY LARGER FISH THAN OMENA - FRESH OR DRIED (CAREGIVER)
+Name=P08NN
+Start=112
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: ANY LARGER FISH THAN OMENA - FRESH OR DRIED (CAREGIVER)
+Name=P08NN_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: SODA OR ANY OTHER DRINK LIKE FANTA, SWEETS OR OTHER SUGAR(CHILD)
+Name=P07OO
+Start=113
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: SODA OR ANY OTHER DRINK LIKE FANTA, SWEETS OR OTHER SUGAR(CHILD)
+Name=P07OO_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: SODA OR ANY OTHER DRINK LIKE FANTA, SWEETS OR OTHER SUGAR (CAREGIVER)
+Name=P08OO
+Start=114
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: SODA OR ANY OTHER DRINK LIKE FANTA, SWEETS OR OTHER SUGAR (CAREGIVER)
+Name=P08OO_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P07 PAST 7 DAYS CONSUMPTION: SPICES, HOT SAUCE, FISH POWDER, BEVERAGES - COFFEE, TEA (CHILD)
+Name=P07PP
+Start=115
+Len=1
+
+[ValueSet]
+Label=P07 PAST 7 DAYS CONSUMPTION: SPICES, HOT SAUCE, FISH POWDER, BEVERAGES - COFFEE, TEA (CHILD)
+Name=P07PP_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P08 PAST 7 DAYS CONSUMPTION: SPICES, HOT SAUCE, FISH POWDER, BEVERAGES - COFFEE, TEA (CAREGIVER)
+Name=P08PP
+Start=116
+Len=1
+
+[ValueSet]
+Label=P08 PAST 7 DAYS CONSUMPTION: SPICES, HOT SAUCE, FISH POWDER, BEVERAGES - COFFEE, TEA (CAREGIVER)
+Name=P08PP_VS1
+Value=0:7
+Value=9;MISSING
+
+[Item]
+Label=P09 WHY CHILD DIDN'T EAT OFSP OR YFSP IN LAST SEVEN DAYS
+Name=P09
+Start=117
+Len=1
+
+[ValueSet]
+Label=P09 WHY CHILD DIDN'T EAT OFSP OR YFSP IN LAST SEVEN DAYS
+Name=P09_VS1
+Value=1;OFSP & YFSP not available
+Value=2;They do not like them
+Value=3;Too young to eat
+Value=4;Other specify
+Value=9;MISSING
+
+[Item]
+Label=P09 CHILD NOT EAT BECAUSE: OTHER (SPECIFY)
+Name=P09A
+Start=118
+Len=30
+DataType=Alpha
+
+[Item]
+Label=P10 TYPICAL NUMBER OF ROOTS OF SP THE CHILD EATS ON  TYPICAL DAY
+Name=P10
+Start=148
+Len=2
+
+[Item]
+Label=P10 TYPICAL NUMBER OF ROOTS OF SP THE CHILD EATS ON  TYPICAL DAY (SIZE OF ROOTS)
+Name=P10A
+Start=150
+Len=1
+
+[ValueSet]
+Label=P10 TYPICAL NUMBER OF ROOTS OF SP THE CHILD EATS ON  TYPICAL DAY (SIZE OF ROOTS)
+Name=P10A_VS1
+Value=1;VERY SMALL
+Value=2;SMALL
+Value=3;MEDIUM
+Value=4;LARGE
+Value=9;MISSING
+
+[Item]
+Label=P11 CHILD EATS SP ROOTS FOR
+Name=P11
+Start=151
+Len=1
+
+[ValueSet]
+Label=P11 CHILD EATS SP ROOTS FOR
+Name=P11_VS1
+Value=1;SNACK
+Value=2;BREAKFAST
+Value=3;LUNCH
+Value=4;DINNER/SUPPER
+Value=9;MISSING
+
+[Record]
+Label=Q. MINIMUM MEAL FREQUENCY OF THE REFERENCE CHILD
+Name=Q_MEAL
+RecordTypeValue='P'
+RecordLen=139
+
+[Item]
+Label=Q01 REFERENCE CHILD
+Name=Q01
+Start=20
+Len=2
+
+[Item]
+Label=Q02 GENDER OF THE REFERENCE CHILD
+Name=Q02
+Start=22
+Len=1
+
+[ValueSet]
+Label=Q02 GENDER OF THE REFERENCE CHILD
+Name=Q02_VS1
+Value=1;MALE
+Value=0;FEMALE
+Value=9;MISSING
+
+[Item]
+Label=Q03 DOB FOR REF CHILD
+Name=Q03
+Start=23
+Len=8
+
+[Item]
+Label=Q03 DAY OF THE BABY'S BIRTH
+Name=Q03A
+Start=23
+Len=2
+ItemType=SubItem
+
+[ValueSet]
+Label=Q03 DAY OF THE BABY'S BIRTH
+Name=Q03A_VS1
+Value=1:31
+Value=99;MISSING
+
+[Item]
+Label=Q03 MONTH OF THE BABY'S BIRTH
+Name=Q03B
+Start=25
+Len=2
+ItemType=SubItem
+
+[ValueSet]
+Label=Q03 MONTH OF THE BABY'S BIRTH
+Name=Q03B_VS1
+Value=1:12
+Value=99;MISSING
+
+[Item]
+Label=Q03 YEAR OF THE BABY'S BIRTH
+Name=Q03C
+Start=27
+Len=4
+ItemType=SubItem
+
+[ValueSet]
+Label=Q03 YEAR OF THE BABY'S BIRTH
+Name=Q03C_VS1
+Value=2010:2015
+Value=9999;MISSING
+
+[Item]
+Label=Q04 AGE IN MONTHS
+Name=Q04
+Start=31
+Len=2
+
+[ValueSet]
+Label=Q04 AGE IN MONTHS
+Name=Q04_VS1
+Value=1:60
+Value=99;MISSING
+
+[Item]
+Label=Q05 HOW MANY DAYS IN THE PAST WEEK WAS YOUR BABY LEFT ALONE: ALONE AN HOUR
+Name=Q05A
+Start=33
+Len=2
+
+[ValueSet]
+Label=Q05 HOW MANY DAYS IN THE PAST WEEK WAS YOUR BABY LEFT ALONE: ALONE AN HOUR
+Name=Q05A_VS1
+Value=0:7
+Value=99;MISSING
+
+[Item]
+Label=Q05 HOW MANY DAYS IN THE PAST WEEK WAS YOUR BABY LEFT ALONE: CARE OF ANOTHER CHILD MORE THAN AN HOUR
+Name=Q05B
+Start=35
+Len=2
+
+[ValueSet]
+Label=Q05 HOW MANY DAYS IN THE PAST WEEK WAS YOUR BABY LEFT ALONE: CARE OF ANOTHER CHILD MORE THAN AN HOUR
+Name=Q05B_VS1
+Value=0:7
+Value=99;MISSING
+
+[Item]
+Label=Q06 IS THE BABY STILL BEING BREASTFED
+Name=Q06
+Start=37
+Len=1
+
+[ValueSet]
+Label=Q06 IS THE BABY STILL BEING BREASTFED
+Name=Q06_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q07 IF NOT, AT WHAT AGE DID THE CHILD STOP BREASTFEEDING: MONTH
+Name=Q07A
+Start=38
+Len=2
+
+[ValueSet]
+Label=Q07 IF NOT, AT WHAT AGE DID THE CHILD STOP BREASTFEEDING: MONTH
+Name=Q07A_VS1
+Value=1:60
+Value=99;MISSING
+
+[Item]
+Label=Q07 IF NOT, AT WHAT AGE DID THE CHILD STOP BREASTFEEDING: WEEKS
+Name=Q07B
+Start=40
+Len=3
+
+[ValueSet]
+Label=Q07 IF NOT, AT WHAT AGE DID THE CHILD STOP BREASTFEEDING: WEEKS
+Name=Q07B_VS1
+Value=1:260
+Value=999;MISSING
+
+[Item]
+Label=Q08 DID THE CHILD DRINK PLAIN WATER YESTERDAY
+Name=Q08
+Start=43
+Len=1
+
+[ValueSet]
+Label=Q08 DID THE CHILD DRINK PLAIN WATER YESTERDAY
+Name=Q08_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q09 DID THE CHILD DRINK INFANT FORMULA YESTERDAY
+Name=Q09
+Start=44
+Len=1
+
+[ValueSet]
+Label=Q09 DID THE CHILD DRINK INFANT FORMULA YESTERDAY
+Name=Q09_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q10 HOW MANY TIMES DID THE CHILD DRINK INFANT FORMULA?
+Name=Q10
+Start=45
+Len=3
+
+[Item]
+Label=Q11 DID THE CHILD DRINK MILK SUCH AS TINNED, POWDERED,OR FRESH ANIMAL MILK
+Name=Q11
+Start=48
+Len=1
+
+[ValueSet]
+Label=Q11 DID THE CHILD DRINK MILK SUCH AS TINNED, POWDERED,OR FRESH ANIMAL MILK
+Name=Q11_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q12 IF YES, HOW MANY TIMES?
+Name=Q12
+Start=49
+Len=2
+
+[Item]
+Label=Q13 DID THE CHILD DRINK JUICE YESTERDAY
+Name=Q13
+Start=51
+Len=1
+
+[ValueSet]
+Label=Q13 DID THE CHILD DRINK JUICE YESTERDAY
+Name=Q13_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q14 DID THE CHILD DRINK VITAMIN OR MINERAL SUPPLEMENTS OR ANY MEDICINES YESTERDAY
+Name=Q14
+Start=52
+Len=1
+
+[ValueSet]
+Label=Q14 DID THE CHILD DRINK VITAMIN OR MINERAL SUPPLEMENTS OR ANY MEDICINES YESTERDAY
+Name=Q14_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q15 DID THE CHILD DRINK ANY OTHER LIQUIDS YESTERDAY
+Name=Q15
+Start=53
+Len=1
+
+[ValueSet]
+Label=Q15 DID THE CHILD DRINK ANY OTHER LIQUIDS YESTERDAY
+Name=Q15_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q16 DID THE CHILD DRINK OR EAT YOGURT YESTERDAY
+Name=Q16
+Start=54
+Len=1
+
+[ValueSet]
+Label=Q16 DID THE CHILD DRINK OR EAT YOGURT YESTERDAY
+Name=Q16_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q17 IF YES, HOW MANY TIMES
+Name=Q17
+Start=55
+Len=2
+
+[Item]
+Label=Q18 DID THE CHILD EAT THIN PORRIDGE YESTERDAY
+Name=Q18
+Start=57
+Len=1
+
+[ValueSet]
+Label=Q18 DID THE CHILD EAT THIN PORRIDGE YESTERDAY
+Name=Q18_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q19 DID THE CHILD EAT ANY SOLID OR SOFT, MUSHY FOODS YESTERDAY
+Name=Q19
+Start=58
+Len=1
+
+[ValueSet]
+Label=Q19 DID THE CHILD EAT ANY SOLID OR SOFT, MUSHY FOODS YESTERDAY
+Name=Q19_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=Q20 IF YES TO Q18 OR Q19, HOW MANY TIME DID THE CHILD IN TOTAL PORRIDGES, SOFT, MUSHY FOODS OR SOLID FOODS, INCLUDING SNACKS IN BETWEEN MAIN MEALS, YESTERDAY
+Name=Q20
+Start=59
+Len=2
+
+[Item]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: BREAKFAST TIME
+Name=Q21A
+Start=61
+Len=1
+
+[ValueSet]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: BREAKFAST TIME
+Name=Q21A_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: LATER IN MORNING
+Name=Q21B
+Start=62
+Len=1
+
+[ValueSet]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: LATER IN MORNING
+Name=Q21B_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: LUNCH (12-3PM)
+Name=Q21C
+Start=63
+Len=1
+
+[ValueSet]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: LUNCH (12-3PM)
+Name=Q21C_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: LATER IN AFTERNOON
+Name=Q21D
+Start=64
+Len=1
+
+[ValueSet]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: LATER IN AFTERNOON
+Name=Q21D_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: DINNER
+Name=Q21E
+Start=65
+Len=1
+
+[ValueSet]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: DINNER
+Name=Q21E_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: LATE NIGHT (9PM OR LATER)
+Name=Q21F
+Start=66
+Len=1
+
+[ValueSet]
+Label=Q21 TIMES OF THE DAY THE CHILD EAT ANY OF SOFT/MUSHY/SOLID FOODS: LATE NIGHT (9PM OR LATER)
+Name=Q21F_VS1
+Value=0;NO
+Value=1;YES
+Value=9;MISSING
+
+[Item]
+Label=Q22 DO YOU GROW SWEETPOTATO ON YOUR OWN LAND
+Name=Q22
+Start=67
+Len=1
+
+[Item]
+Label=IF GROWS SP, HOW MUCH LAND: UPLANDS M^
+Name=Q22A
+Start=68
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=IF GROWS SP, HOW MUCH LAND: UPLANDS ACRES
+Name=Q22B
+Start=75
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=IF GROWS SP, HOW MUCH LAND: UPLANDS HA
+Name=Q22C
+Start=82
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=IF GROWS SP, HOW MUCH LAND: LOWLANDS M^
+Name=Q22D
+Start=89
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=IF GROWS SP, HOW MUCH LAND: LOWLANDS ACRES
+Name=Q22E
+Start=96
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=IF GROWS SP, HOW MUCH LAND: LOWLANDS HA
+Name=Q22F
+Start=103
+Len=7
+Decimal=2
+DecimalChar=Yes
+
+[Item]
+Label=IF NO PLEASE TELL US WHY
+Name=Q22G
+Start=110
+Len=30
+DataType=Alpha
+
+[Record]
+Label=R. HOUSEHOLD FOOD SECURITY
+Name=R_SECURITY
+RecordTypeValue='R'
+RecordLen=170
+
+[Item]
+Label=R01 IN THE PAST MONTHS, DID YOU WORRY HH NOT HAVE ENOUGH FOOD TO EAT
+Name=R01A
+Start=20
+Len=1
+
+[ValueSet]
+Label=R01 IN THE PAST MONTHS, DID YOU WORRY HH NOT HAVE ENOUGH FOOD TO EAT
+Name=R01A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R01 HOW OFTEN WORRIED NOT HAVE ENOUGH FOOD TO EAT
+Name=R01B
+Start=21
+Len=1
+
+[ValueSet]
+Label=R01 HOW OFTEN WORRIED NOT HAVE ENOUGH FOOD TO EAT
+Name=R01B_VS1
+Value=0;NEVER
+Value=1;RARELY
+Value=2;SOMETIMES
+Value=3;OFTEN
+Value=9;MISSING
+
+[Item]
+Label=R02 IN THE PAST MONTH, DID YOU/ANY HH NOT ABLE TO EAT PREFERRED FOOD BECAUSE NO RESOURCES
+Name=R02A
+Start=22
+Len=1
+
+[ValueSet]
+Label=R02 IN THE PAST MONTH, DID YOU/ANY HH NOT ABLE TO EAT PREFERRED FOOD BECAUSE NO RESOURCES
+Name=R02A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R02 HOW OFTEN DID YOU/ANY HH NOT ABLE TO EAT PREFERRED FOOD BECAUSE NO RESOURCES
+Name=R02B
+Start=23
+Len=1
+
+[ValueSet]
+Label=R02 HOW OFTEN DID YOU/ANY HH NOT ABLE TO EAT PREFERRED FOOD BECAUSE NO RESOURCES
+Name=R02B_VS1
+Value=0;NEVER
+Value=1;RARELY
+Value=2;SOMETIMES
+Value=3;OFTEN
+Value=9;MISSING
+
+[Item]
+Label=R03 IN THE PAST MONTH, DID YOU/HH HAD TO EAT LIMITED VARIETY OF FOOD BECAUSE CAN'T BUY
+Name=R03A
+Start=24
+Len=1
+
+[ValueSet]
+Label=R03 IN THE PAST MONTH, DID YOU/HH HAD TO EAT LIMITED VARIETY OF FOOD BECAUSE CAN'T BUY
+Name=R03A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R03 HOW OFTEN DID YOU/HH EAT LIMITED VARIETY FOOD
+Name=R03B
+Start=25
+Len=1
+
+[ValueSet]
+Label=R03 HOW OFTEN DID YOU/HH EAT LIMITED VARIETY FOOD
+Name=R03B_VS1
+Value=0;NEVER
+Value=1;RARELY
+Value=2;SOMETIMES
+Value=3;OFTEN
+Value=9;MISSING
+
+[Item]
+Label=R04 IN THE LAST MONTH, YOU/HH MEMBER ATE FOOD YOU DIDN'T WANT BECAUSE CAN'T AFFORD BETTER FOOD
+Name=R04A
+Start=26
+Len=1
+
+[ValueSet]
+Label=R04 IN THE LAST MONTH, YOU/HH MEMBER ATE FOOD YOU DIDN'T WANT BECAUSE CAN'T AFFORD BETTER FOOD
+Name=R04A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R04 HOW OFTEN YOU/HH MEMBER ATE FOOD YOU DIDN'T WANT BECAUSE CAN'T AFFORD BETTER FOOD
+Name=R04B
+Start=27
+Len=1
+
+[ValueSet]
+Label=R04 HOW OFTEN YOU/HH MEMBER ATE FOOD YOU DIDN'T WANT BECAUSE CAN'T AFFORD BETTER FOOD
+Name=R04B_VS1
+Value=0;NEVER
+Value=1;RARELY
+Value=2;SOMETIMES
+Value=3;OFTEN
+Value=9;MISSING
+
+[Item]
+Label=R05 IN THE LAST MONTH, YOU/HH ATE SMALLER BECAUSE NOT ENOUGH
+Name=R05A
+Start=28
+Len=1
+
+[ValueSet]
+Label=R05 IN THE LAST MONTH, YOU/HH ATE SMALLER BECAUSE NOT ENOUGH
+Name=R05A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R05 HOW OFTEN YOU/HH ATE SMALLER BECAUSE NOT ENOUGH
+Name=R05B
+Start=29
+Len=1
+
+[ValueSet]
+Label=R05 HOW OFTEN YOU/HH ATE SMALLER BECAUSE NOT ENOUGH
+Name=R05B_VS1
+Value=0;NEVER
+Value=1;RARELY
+Value=2;SOMETIMES
+Value=3;OFTEN
+Value=9;MISSING
+
+[Item]
+Label=R06 IN THE PAST MONTH, YOU/HH ATE "FEWER MEAL PER DAY" BECAUSE NOT ENOUGH
+Name=R06A
+Start=30
+Len=1
+
+[ValueSet]
+Label=R06 IN THE PAST MONTH, YOU/HH ATE "FEWER MEAL PER DAY" BECAUSE NOT ENOUGH
+Name=R06A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R06 HOW OFTEN YOU/HH ATE "FEWER MEAL PER DAY" BECAUSE NOT ENOUGH
+Name=R06B
+Start=31
+Len=1
+
+[ValueSet]
+Label=R06 HOW OFTEN YOU/HH ATE "FEWER MEAL PER DAY" BECAUSE NOT ENOUGH
+Name=R06B_VS1
+Value=0;NEVER
+Value=1;RARELY
+Value=2;SOMETIMES
+Value=3;OFTEN
+Value=9;MISSING
+
+[Item]
+Label=R07 IN THE PAST MONTH, WAS THERE EVER NO FOOD FOR A DAY BECAUSE CAN'T AFFORD
+Name=R07A
+Start=32
+Len=1
+
+[ValueSet]
+Label=R07 IN THE PAST MONTH, WAS THERE EVER NO FOOD FOR A DAY BECAUSE CAN'T AFFORD
+Name=R07A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R07 HOW OFTEN WAS THERE EVER NO FOOD FOR A DAY BECAUSE CAN'T AFFORD
+Name=R07B
+Start=33
+Len=1
+
+[ValueSet]
+Label=R07 HOW OFTEN WAS THERE EVER NO FOOD FOR A DAY BECAUSE CAN'T AFFORD
+Name=R07B_VS1
+Value=0;NEVER
+Value=1;RARELY
+Value=2;SOMETIMES
+Value=3;OFTEN
+Value=9;MISSING
+
+[Item]
+Label=R08 IN THE PAST MONTH, YOU/HH SLEPT WITHOUT EATING BECAUSE NOT ENOUGH FOOD
+Name=R08A
+Start=34
+Len=1
+
+[ValueSet]
+Label=R08 IN THE PAST MONTH, YOU/HH SLEPT WITHOUT EATING BECAUSE NOT ENOUGH FOOD
+Name=R08A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R08 HOW OFTEN YOU/HH SLEPT WITHOUT EATING BECAUSE NOT ENOUGH FOOD
+Name=R08B
+Start=35
+Len=1
+
+[ValueSet]
+Label=R08 HOW OFTEN YOU/HH SLEPT WITHOUT EATING BECAUSE NOT ENOUGH FOOD
+Name=R08B_VS1
+Value=0;NEVER
+Value=1;RARELY
+Value=2;SOMETIMES
+Value=3;OFTEN
+Value=9;MISSING
+
+[Item]
+Label=R09 IN THE PAST MONTH, YOU/HH WENT DAY & NIGHT NOT EATING BECAUSE NOT ENOUGH FOOD
+Name=R09A
+Start=36
+Len=1
+
+[ValueSet]
+Label=R09 IN THE PAST MONTH, YOU/HH WENT DAY & NIGHT NOT EATING BECAUSE NOT ENOUGH FOOD
+Name=R09A_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R09 HOW OFTEN YOU/HH WENT DAY & NIGHT NOT EATING BECAUSE NOT ENOUGH FOOD
+Name=R09B
+Start=37
+Len=1
+
+[ValueSet]
+Label=R09 HOW OFTEN YOU/HH WENT DAY & NIGHT NOT EATING BECAUSE NOT ENOUGH FOOD
+Name=R09B_VS1
+Value=0;NEVER
+Value=1;RARELY
+Value=2;SOMETIMES
+Value=3;OFTEN
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: JAN
+Name=R10A
+Start=38
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: JAN
+Name=R10A_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: FEB
+Name=R10B
+Start=39
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: FEB
+Name=R10B_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: MAR
+Name=R10C
+Start=40
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: MAR
+Name=R10C_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: APR
+Name=R10D
+Start=41
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: APR
+Name=R10D_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: MAY
+Name=R10E
+Start=42
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: MAY
+Name=R10E_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: JUN
+Name=R10F
+Start=43
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: JUN
+Name=R10F_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: JUL
+Name=R10G
+Start=44
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: JUL
+Name=R10G_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: AUG
+Name=R10H
+Start=45
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: AUG
+Name=R10H_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: SEP
+Name=R10I
+Start=46
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: SEP
+Name=R10I_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: OCT
+Name=R10J
+Start=47
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: OCT
+Name=R10J_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: NOV
+Name=R10K
+Start=48
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: NOV
+Name=R10K_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: DEC
+Name=R10L
+Start=49
+Len=1
+
+[ValueSet]
+Label=R10 MONTHS OF THE YEAR YOU CONSUME SP AT LEAST TWICE A WEEK: DEC
+Name=R10L_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: MAR
+Name=R11A
+Start=50
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: MAR
+Name=R11A_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: APR
+Name=R11B
+Start=51
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: APR
+Name=R11B_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: MAY
+Name=R11C
+Start=52
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: MAY
+Name=R11C_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: JUN
+Name=R11D
+Start=53
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: JUN
+Name=R11D_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: JUL
+Name=R11E
+Start=54
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: JUL
+Name=R11E_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: AUG
+Name=R11F
+Start=55
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: AUG
+Name=R11F_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: SEP
+Name=R11G
+Start=56
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: SEP
+Name=R11G_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: OCT
+Name=R11H
+Start=57
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: OCT
+Name=R11H_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: NOV
+Name=R11I
+Start=58
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: NOV
+Name=R11I_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: DEC
+Name=R11J
+Start=59
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: DEC
+Name=R11J_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: JAN
+Name=R11K
+Start=60
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: JAN
+Name=R11K_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: FEB
+Name=R11L
+Start=61
+Len=1
+
+[ValueSet]
+Label=R11 IN LAST 12 MONTHS, MONTH YOU HAVE LESS THAN TWO MEALS A DAY FROM OWN RESOURCES: FEB
+Name=R11L_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: MAR
+Name=R12A
+Start=62
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: MAR
+Name=R12A_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: APR
+Name=R12B
+Start=63
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: APR
+Name=R12B_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: MAY
+Name=R12C
+Start=64
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: MAY
+Name=R12C_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: JUN
+Name=R12D
+Start=65
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: JUN
+Name=R12D_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: JUL
+Name=R12E
+Start=66
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: JUL
+Name=R12E_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: AUG
+Name=R12F
+Start=67
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: AUG
+Name=R12F_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: SEP
+Name=R12G
+Start=68
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: SEP
+Name=R12G_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: OCT
+Name=R12H
+Start=69
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: OCT
+Name=R12H_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: NOV
+Name=R12I
+Start=70
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: NOV
+Name=R12I_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: DEC
+Name=R12J
+Start=71
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: DEC
+Name=R12J_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: JAN
+Name=R12K
+Start=72
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: JAN
+Name=R12K_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: FEB
+Name=R12L
+Start=73
+Len=1
+
+[ValueSet]
+Label=R12 IN LAST 12 MONTHS, MONTH HH RECEIVE RELIEF FOOD OR FOOD FROM EXT SOURCE: FEB
+Name=R12L_VS1
+Value=0:1
+Value=9;MISSING
+
+[Item]
+Label=R13 IN LAST 3 YEARS, HAS THERE BEEN A PARTICULARLY DIFFICULT SITUATION FORCING HH TO SELL OR RENT OUT ASSETS TO BUY FOOD
+Name=R13
+Start=74
+Len=1
+
+[ValueSet]
+Label=R13 IN LAST 3 YEARS, HAS THERE BEEN A PARTICULARLY DIFFICULT SITUATION FORCING HH TO SELL OR RENT OUT ASSETS TO BUY FOOD
+Name=R13_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=R14 CROP NORMALLY STORED LONGER THAN A MONTH: CROP 1
+Name=R14A
+Start=75
+Len=2
+
+[ValueSet]
+Label=R14 CROP NORMALLY STORED LONGER THAN A MONTH: CROP 1
+Name=R14A_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;MISSING
+
+[Item]
+Label=R14 CROP NORMALLY STORED LONGER THAN A MONTH: CROP 2
+Name=R14B
+Start=77
+Len=2
+
+[ValueSet]
+Label=R14 CROP NORMALLY STORED LONGER THAN A MONTH: CROP 2
+Name=R14B_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;MISSING
+
+[Item]
+Label=R14 CROP NORMALLY STORED LONGER THAN A MONTH: CROP 3
+Name=R14C
+Start=79
+Len=2
+
+[ValueSet]
+Label=R14 CROP NORMALLY STORED LONGER THAN A MONTH: CROP 3
+Name=R14C_VS1
+Value=1;Maize
+Value=2;Rice
+Value=3;Sorghum
+Value=4;Cassava
+Value=5;Sweetpotato
+Value=6;Beans
+Value=7;Yam
+Value=8;Bananas/Plantain
+Value=9;Irish Potatoes
+Value=10;Eggplant
+Value=11;Pigieon peas
+Value=12;Millet
+Value=13;Cocoyam
+Value=14;Tobacco
+Value=15;Cotton
+Value=16;Paprika
+Value=17;Chillies or pepper
+Value=18;Pineapple
+Value=19;Sunflower
+Value=20;Sesame
+Value=21;Sugar cane
+Value=22;Cashew nut
+Value=23;Peanut/groundnut
+Value=24;Coconut
+Value=25;Palm Oil
+Value=26;Mango
+Value=99;MISSING
+
+[Item]
+Label=R15 WHERE DO YOU USUALLY STORE: CROP 1
+Name=R15A
+Start=81
+Len=30
+DataType=Alpha
+
+[Item]
+Label=R15 WHERE DO YOU USUALLY STORE: CROP 2
+Name=R15B
+Start=111
+Len=30
+DataType=Alpha
+
+[Item]
+Label=R15 WHERE DO YOU USUALLY STORE: CROP 3
+Name=R15C
+Start=141
+Len=30
+DataType=Alpha
+
+[Record]
+Label=S. LIVESTOCK, FISHERY AND ECONOMIC ACTIVITIES
+Name=S_LIVESTOCK
+RecordTypeValue='Q'
+MaxRecords=15
+RecordLen=47
+
+[Item]
+Label=S01 ANIMAL CODE
+Name=S01
+Start=20
+Len=2
+
+[ValueSet]
+Label=S01 ANIMAL CODE
+Name=S01_VS1
+Value=1;CATTLE
+Value=2;GOATS
+Value=3;SHEEP
+Value=4;PIGS
+Value=5;CHICKENS
+Value=6;RABBITS
+Value=7;DUCKS
+Value=8;GEESE/TURKEYS
+Value=9;DONKEY/HORSE
+Value=10;GUINES FOWLS
+Value=99;MISSING
+
+[Item]
+Label=S01 ANIMAL
+Name=S01A
+Start=22
+Len=20
+DataType=Alpha
+
+[Item]
+Label=S02 HOW MANY DO YOU HAVE
+Name=S02
+Start=42
+Len=4
+
+[Item]
+Label=S03 SOLD IN 2014
+Name=S03
+Start=46
+Len=1
+
+[ValueSet]
+Label=S03 SOLD IN 2014
+Name=S03_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=S04 OWNER
+Name=S04
+Start=47
+Len=1
+
+[ValueSet]
+Label=S04 OWNER
+Name=S04_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;BOTH
+Value=9;MISSING
+
+[Record]
+Label=S. LIVESTOCK, FISHERY AND ECONOMIC ACTIVITIES CONT...
+Name=S_1
+RecordTypeValue='S'
+RecordLen=27
+
+[Item]
+Label=S05 DID ANY WOMAN IN THE HH RAISE FISH
+Name=S05
+Start=20
+Len=1
+
+[ValueSet]
+Label=S05 DID ANY WOMAN IN THE HH RAISE FISH
+Name=S05_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=S06 DID THE WOMAN IN THE HH SELL THE FISH
+Name=S06
+Start=21
+Len=1
+
+[ValueSet]
+Label=S06 DID THE WOMAN IN THE HH SELL THE FISH
+Name=S06_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=S07 IF YES, STATE OF THE FISH
+Name=S07
+Start=22
+Len=1
+
+[ValueSet]
+Label=S07 IF YES, STATE OF THE FISH
+Name=S07_VS1
+Value=1;FRESH
+Value=2;SMOKED
+Value=3;DRY
+Value=9;MISSING
+
+[Item]
+Label=S08 DID THE WOMAN RAISE THE FISH SHE SOLD
+Name=S08
+Start=23
+Len=1
+
+[ValueSet]
+Label=S08 DID THE WOMAN RAISE THE FISH SHE SOLD
+Name=S08_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=S09 DID ANY MAN IN THE HH RAISE FRESH FISH
+Name=S09
+Start=24
+Len=1
+
+[ValueSet]
+Label=S09 DID ANY MAN IN THE HH RAISE FRESH FISH
+Name=S09_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=S10 DID THE MAN IN THE HH SELL FISH
+Name=S10
+Start=25
+Len=1
+
+[ValueSet]
+Label=S10 DID THE MAN IN THE HH SELL FISH
+Name=S10_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=S11 IF YES, STATE OF THE FISH:
+Name=S11
+Start=26
+Len=1
+
+[ValueSet]
+Label=S11 IF YES, STATE OF THE FISH:
+Name=S11_VS1
+Value=1;FRESH
+Value=2;SMOKED
+Value=3;DRIED
+Value=9;MISSING
+
+[Item]
+Label=S12 DID THE MAN RAISE THE FISH HE SOLD
+Name=S12
+Start=27
+Len=1
+
+[ValueSet]
+Label=S12 DID THE MAN RAISE THE FISH HE SOLD
+Name=S12_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Record]
+Label=T. HOUSEHOLD ASSETS
+Name=T_ASSET
+RecordTypeValue='W'
+MaxRecords=45
+RecordLen=94
+
+[Item]
+Label=T02 ASSET
+Name=T02
+Start=20
+Len=2
+
+[ValueSet]
+Label=T02 ASSET
+Name=T02_VS1
+Value=1;STORAGE FACILITY FOR CROPS
+Value=2;WATER TANK
+Value=3;RADIO/ CASSETTE PLAYER
+Value=4;TV
+Value=5;TELEPHONE/MOBILE
+Value=6;SOLAR PANELS
+Value=7;GAS COOKER
+Value=8;BICYCLE
+Value=9;WHEELBARROW
+Value=10;MILKING EQUIPMENT
+Value=11;CHAFF CUTTER
+Value=12;SEWING/KNITTING MACHINE
+Value=13;BOREHOLE OR WELL
+Value=14;POSHO MILL
+Value=15;SHELLER
+Value=16;OTHER AGRO-PROCESSING EQUIP.
+Value=17;WEIGHING MACHINE
+Value=18;RECHARGABLE LAMP
+Value=19;SAW
+Value=20;SPRAY PUMP (BACK PACK)
+Value=21;MOTORIZED WATER PUMP
+Value=21;MOTORIZED WATER PUMP
+Value=22;MECHANICAL WATER PUMP
+Value=23;DRIP IRRIGATION EQUIP.
+Value=24;OTHER IRRIGATION EQUIP.
+Value=25;CART
+Value=26;PLOUGH
+Value=27;HARROW, TILLER, RIDGER, WEEDER
+Value=28;MOTOR CYCLE
+Value=29;CAR/TRUCK
+Value=30;TRACTOR
+Value=31;GENERATOR
+Value=32;WATERING CAN
+Value=33;AXES
+Value=34;WATCH
+Value=35;FARM EQUIP
+Value=36;MOTOR AND PESTLE
+Value=37;FLASH LIGHT
+Value=88;N/A
+Value=99;MISSING
+
+[Item]
+Label=T02 ASSET NAME
+Name=T02A
+Start=22
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T03 QUANTITY/NUMBER
+Name=T03
+Start=52
+Len=12
+
+[Item]
+Label=T04 VALUE PER UNIT
+Name=T04
+Start=64
+Len=15
+
+[Item]
+Label=T05 TOTAL VALUE
+Name=T05
+Start=79
+Len=15
+
+[Item]
+Label=T06 OWNER
+Name=T06
+Start=94
+Len=1
+
+[ValueSet]
+Label=T06 OWNER
+Name=T06_VS1
+Value=0;WOMAN
+Value=1;MAN
+Value=2;BOTH
+Value=3;SON
+Value=4;DAUGHTER
+Value=9;MISSING
+
+[Record]
+Label=U. MAIN DWELLING CHARACTERISTICS
+Name=U_DWELLING
+RecordTypeValue='X'
+RecordLen=329
+
+[Item]
+Label=T07 WHAT IS THE ROOFING MATERIAL OF THE HH MAIN HOUSE
+Name=T07
+Start=20
+Len=1
+
+[ValueSet]
+Label=T07 WHAT IS THE ROOFING MATERIAL OF THE HH MAIN HOUSE
+Name=T07_VS1
+Value=1;GRASS
+Value=2;IRON SHEET
+Value=3;TILES
+Value=4;OTHER
+Value=9;MISSING
+
+[Item]
+Label=T07 OTHER ROOFING MATERIAL
+Name=T07A
+Start=21
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T08 WHAT IS THE WALL MATERIAL OF THE MAIN HOUSE
+Name=T08
+Start=51
+Len=1
+
+[ValueSet]
+Label=T08 WHAT IS THE WALL MATERIAL OF THE MAIN HOUSE
+Name=T08_VS1
+Value=1;MUD
+Value=2;BRICKS/STONES
+Value=3;IRON SHEETS
+Value=4;WOOD
+Value=5;PLASTERED
+Value=6;UN-BURNT BRICKS
+Value=7;OTHER
+Value=9;MISSING
+
+[Item]
+Label=T08 OTHER WALL MATERIAL
+Name=T08A
+Start=52
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T09 WHAT IS THE FLOOR MATERIAL OF THE MAIN HOUSE
+Name=T09
+Start=82
+Len=1
+
+[ValueSet]
+Label=T09 WHAT IS THE FLOOR MATERIAL OF THE MAIN HOUSE
+Name=T09_VS1
+Value=1;EARTH
+Value=2;CEMENT
+Value=3;WOOD
+Value=4;TILES
+Value=5;OTHER
+Value=9;MISSING
+
+[Item]
+Label=T09 OTHER FLOOR MATERIAL
+Name=T09B
+Start=83
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T10 WHO OWNS THE HOUSE
+Name=T10
+Start=113
+Len=1
+
+[ValueSet]
+Label=T10 WHO OWNS THE HOUSE
+Name=T10_VS1
+Value=1;MAN OF THE HOUSE
+Value=2;WOMAN OF THE HOUSE
+Value=3;JOINTLY OWNED
+Value=4;OTHER HH MEMBER
+Value=5;OWNED BY NON RESIDENT RELATIVE
+Value=6;RENTED
+Value=7;OTHER
+Value=9;MISSING
+
+[Item]
+Label=T10 WHO OWNS THE HOUSE
+Name=T10A
+Start=114
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T11 DOES THE HH HAVE THEIR OWN TOILET
+Name=T11
+Start=144
+Len=1
+
+[ValueSet]
+Label=T11 DOES THE HH HAVE THEIR OWN TOILET
+Name=T11_VS1
+Value=1;YES
+Value=0;NO
+Value=9;MISSING
+
+[Item]
+Label=T12 WHAT TYPE OF A TOILET IS IT
+Name=T12
+Start=145
+Len=1
+
+[ValueSet]
+Label=T12 WHAT TYPE OF A TOILET IS IT
+Name=T12_VS1
+Value=1;PIT LATRINE
+Value=2;FLUSH TOILET
+Value=3;COMPOST OR ECO TOILET
+Value=4;OUTDOOR WALLED
+Value=5;OTHER
+Value=9;MISSING
+
+[Item]
+Label=T12 OTHER TYPE OF TOILET
+Name=T12A
+Start=146
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T13 WHAT IS THE MAIN SOURCE OF YOUR DRINKING WATER DUING THE WET SEASON
+Name=T13
+Start=176
+Len=2
+
+[ValueSet]
+Label=T13 WHAT IS THE MAIN SOURCE OF YOUR DRINKING WATER DUING THE WET SEASON
+Name=T13_VS1
+Value=1;POND
+Value=2;DAM/SAND DAM
+Value=3;LAKE
+Value=4;STREAM/RIVER
+Value=5;UNPROTECTED SPRING
+Value=6;PROTECTED SPRING
+Value=7;UNPROTECTED WELL
+Value=8;BOREHOLE
+Value=9;WATER TANK
+Value=10;ROOF CATCHMENT
+Value=11;PIPED WATER INTO COMPOUND
+Value=12;PIPED WATER OUTSIDE COMPOUND
+Value=13;WATER HAWKER CART
+Value=14;BODABODA
+Value=15;PROTECTED WELL
+Value=16;OTHER (SPECIFY)
+Value=99;MISSING
+
+[Item]
+Label=T13 OTHER MAIN SOURCE OF DRINKING WATER
+Name=T13A
+Start=178
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T14 DISTANCE TO MAIN SOURCE OF WATER FOR DOMESTIC USE WET SEASON: MINUTES
+Name=T14A
+Start=208
+Len=3
+
+[Item]
+Label=T14 DISTANCE TO MAIN SOURCE OF WATER FOR DOMESTIC USE WET SEASON: KM
+Name=T14B
+Start=211
+Len=6
+Decimal=2
+ZeroFill=Yes
+
+[Item]
+Label=T15 MAIN SOURCE OF DRINKING WATER DURING DRY SEASON
+Name=T15
+Start=217
+Len=2
+
+[ValueSet]
+Label=T15 MAIN SOURCE OF DRINKING WATER DURING DRY SEASON
+Name=T15_VS1
+Value=1;POND
+Value=2;DAM/SAND DAM
+Value=3;LAKE
+Value=4;STREAM/RIVER
+Value=5;UNPROTECTED SPRING
+Value=6;PROTECTED SPRING
+Value=7;UNPROTECTED WELL
+Value=8;BOREHOLE
+Value=9;WATER TANK
+Value=10;ROOF CATCHMENT
+Value=11;PIPED WATER INTO COMPOUND
+Value=12;PIPED WATER OUTSIDE COMPOUND
+Value=13;WATER HAWKER CART
+Value=14;BODABODA
+Value=15;PROTECTED WELL
+Value=16;SPECIFY
+Value=88;N/A
+Value=99;MISSING
+
+[Item]
+Label=T15 OTHER WATER SOURCE (DRY SEASON)
+Name=T15A
+Start=219
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T16 DISTANCE TO MAIN SOURCE OF WATER FOR DOMESTIC USE DRY SEASON: MINUTES
+Name=T16
+Start=249
+Len=3
+
+[Item]
+Label=T16 DISTANCE TO MAIN SOURCE OF WATER FOR DOMESTIC USE DRY SEASON: KM
+Name=T16A
+Start=252
+Len=6
+Decimal=2
+ZeroFill=Yes
+
+[Item]
+Label=T17 WHAT IS THE MAIN COOKING FUEL IN THIS HH
+Name=T17
+Start=258
+Len=2
+
+[ValueSet]
+Label=T17 WHAT IS THE MAIN COOKING FUEL IN THIS HH
+Name=T17_VS1
+Value=1;FIREWOOD
+Value=2;CHARCOAL
+Value=3;PARAFFIN
+Value=4;SOLAR POWER
+Value=5;BIOGAS
+Value=6;LPG GAS
+Value=7;ELECTRICITY
+Value=8;ANIMAL DUNG
+Value=9;OTHER
+Value=99;MISSING
+
+[Item]
+Label=T17 OTHER COOKING FUEL SOURCE
+Name=T17A
+Start=260
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T18 WHAT IS THE MAIN TYPE OF LIGHTING IN MAIN HOUSE
+Name=T18
+Start=290
+Len=2
+
+[ValueSet]
+Label=T18 WHAT IS THE MAIN TYPE OF LIGHTING IN MAIN HOUSE
+Name=T18_VS1
+Value=1;TIN LAMP
+Value=2;LANTERN
+Value=3;PRESSURE LAMP
+Value=4;WOOD FUEL
+Value=5;SOLAR POWER
+Value=6;ELECTRICITY
+Value=7;RECHARGEABLE LAMPS
+Value=8;GENERATOR
+Value=9;OTHER
+Value=99;MISSING
+
+[Item]
+Label=T18 OTHER MAIN TYPE OF LIGHTING MAIN HOUSE
+Name=T18A
+Start=292
+Len=30
+DataType=Alpha
+
+[Item]
+Label=T19 DISTANCE TO THE CLOSEST HEALTH CARE CENTER THAT YOUR HH USES: MINUTES
+Name=T19
+Start=322
+Len=2
+
+[Item]
+Label=T19 DISTANCE TO CLOSEST HEALTH CARE CENTER THAT YOUR HH USES: KM
+Name=T19A
+Start=324
+Len=5
+Decimal=2
+ZeroFill=Yes
+
+[Item]
+Label=T20 QUALITY OF MAIN HOUSE
+Name=T20
+Start=329
+Len=1
+
+[ValueSet]
+Label=T20 QUALITY OF MAIN HOUSE
+Name=T20_VS1
+Value=1;EXCELLENT
+Value=2;GOOD
+Value=3;FAIR
+Value=4;POOR
+Value=5;VERY POOR
+Value=9;MISSING

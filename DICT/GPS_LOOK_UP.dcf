@@ -1,0 +1,46 @@
+﻿[Dictionary]
+Version=CSPro 6.1
+Label=GPS_LOOK_UP
+Name=GPS_LOOK_UP_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=GPS_LOOK_UP questionnaire
+Name=GPS_LOOK_UP_QUEST
+
+[IdItems]
+
+[Item]
+Label=COMMUNITY
+Name=GPS_LOOK_UP_COMMUNITY
+Start=2
+Len=4
+ZeroFill=Yes
+
+[Record]
+Label=GPS_LOOK_UP record
+Name=GPS_LOOK_UP_REC
+RecordTypeValue='1'
+RecordLen=19
+
+[Item]
+Label=LATITUDE
+Name=GPS_LOOK_UP_LATITUDE
+Start=6
+Len=7
+Decimal=3
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=LONGITUDE
+Name=GPS_LOOK_UP_LONGITUDE
+Start=13
+Len=7
+Decimal=3
+DecimalChar=Yes
+ZeroFill=Yes

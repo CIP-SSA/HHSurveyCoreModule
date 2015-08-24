@@ -1,0 +1,29 @@
+﻿[CSPro Application]
+Version=CSPro 6.1
+Label=JS_BASELINE_GH
+Name=JS_BASELINE_GH
+AppType=DataEntry
+PartialSave=Yes
+CAPI=Yes
+CAPIFont1=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont2=-016 0000 0000 0000 0400 0000 0000 0000 0000 0000 0000 0000 0000 Arial
+CAPIFont1Color=0
+CAPIFont2Color=16711680
+CaseTree=Always
+[External Dictionaries]
+File=.\DICT\DISTRICT_LOOK_UP.dcf
+File=.\DICT\COMMUNITY_LOOK_UP.dcf
+File=.\DICT\GPS_LOOK_UP.dcf
+[AppCode]
+File=.\JS_BASELINE_GH.ent.apc
+[Message]
+File=.\JS_BASELINE_GH.ent.mgf
+[Help]
+File=.\JS_BASELINE_GH.ent.qsf
+[Forms]
+File=.\JS_BASELINE_GH.fmf
+[Dictionary Types]
+Dict-Type=.\DICT\CORE_MODULE.dcf,Input,.\JS_BASELINE_GH.fmf
+Dict-Type=.\DICT\COMMUNITY_LOOK_UP.dcf,External
+Dict-Type=.\DICT\DISTRICT_LOOK_UP.dcf,External
+Dict-Type=.\DICT\GPS_LOOK_UP.dcf,External

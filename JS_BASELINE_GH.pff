@@ -1,0 +1,18 @@
+﻿[Run Information]
+Version=CSPro 6.1
+AppType=Entry
+
+[DataEntryInit]
+Interactive=Ask
+
+[Files]
+Application=.\JS_BASELINE_GH.ent
+InputData=G:\ghana sample data\JS_BASELINE_GHANA\DATA\NDICHU_TEST.DAT
+
+[ExternalFiles]
+GPS_LOOK_UP_DICT=.\DATA\GPS_LOOK_UP.DAT
+COMMUNITY_LOOK_UP_DICT=.\DATA\COMMUNITY_LOOK_UP.DAT
+DISTRICT_LOOK_UP_DICT=.\DATA\DISTRICT_LOOK_UP.DAT
+
+[Parameters]
+

@@ -1,0 +1,15 @@
+﻿Application     D:\DATA_MAIN\04 M&E\Jumpstarting OFSP\JS_BASELINE_GHANA\JS_BASELINE_GH.ent
+Type            ENTRY
+Input Data      D:\DATA_MAIN\04 M&E\Jumpstarting OFSP\JS_BASELINE_GHANA\DATA\TEST.DAT
+External (DISTRICT_LOOK_UP_DICT): D:\DATA_MAIN\04 M&E\Jumpstarting OFSP\JS_BASELINE_GHANA\DATA\DISTRICT_LOOK_UP.DAT
+External (COMMUNITY_LOOK_UP_DICT): D:\DATA_MAIN\04 M&E\Jumpstarting OFSP\JS_BASELINE_GHANA\DATA\COMMUNITY_LOOK_UP.DAT
+External (GPS_LOOK_UP_DICT): D:\DATA_MAIN\04 M&E\Jumpstarting OFSP\JS_BASELINE_GHANA\DATA\GPS_LOOK_UP.DAT
+
+Date            Jul 16, 2015
+Start Time      14:32:14
+End Time        14:32:20
+
+CSPRO Process Summary
+
+CSPRO Executor Normal End
+--------------------------------------------------------------------------------
